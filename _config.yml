@@ -1,35 +1,36 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:             redcarpet
+highlighter:          pygments
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink:            pretty
+relative_permalinks:  true
 
 # Setup
-title:            Fredrik Averpil
-tagline:          My personal blog
-description:      My personal blog – on Python development, 3D graphics, compositing and photography.
-url:              http://fredrikaverpil.github.io
-baseurl:          /
+title:                Fredrik Averpil
+tagline:              My personal blog
+description:          My personal blog – on Python development, 3D graphics, compositing and photography.
+url:                  http://fredrikaverpil.github.io
+baseurl:              /
 
 author:
-  name:           Fredrik Averpil
-  url:            https://twitter.com/fredrikaverpil
-  repo:           https://github.com/fredrikaverpil/fredrikaverpil.github.io
+  name:               Fredrik Averpil
+  twitter_url:        https://twitter.com/fredrikaverpil
+  twitter_username:   @fredrikaverpil
+  github_repo:        https://github.com/fredrikaverpil/fredrikaverpil.github.io
 
 
-paginate:         5
+paginate:             5
 
 # Custom vars
-hyde_version:     2.1.0
-hyde_url:         http://hyde.getpoole.com
-hyde_repo:        https://github.com/poole/hyde
+hyde_version:         2.1.0
+hyde_url:             http://hyde.getpoole.com
+hyde_repo:            https://github.com/poole/hyde
 
-excerpt_separator: <!--more-->
+excerpt_separator:    <!--more-->
 
 custom_pages:
-  feed:           /atom.xml
+  feed:               /atom.xml
 
-disqus_shortname: ffredrikk
-google_analytics: UA-70773524-1
+disqus_shortname:     ffredrikk
+google_analytics:     UA-70773524-1
