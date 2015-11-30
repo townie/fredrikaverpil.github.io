@@ -17,8 +17,8 @@ Except being able to render the particles in the hardware batch renderer or hard
 For those of you who need custom tailored shading, I’ll try and explain how you can set up your own particle shading in the tutorial below. A couple of example scenes are available for download below:
 
 - [particleHWShader_1_1.mel]({{ site.baseurl }}blog/assets/maya_particle_shading_script/particleHWShader_1_1.mel) - MEL script (also available at Creative Crash)
-- [example_depth.ma]({{ site.baseurl }}blog/assets/maya_particle_shading_script/particleHWShader_1_1.mel) - Maya 5.0 ASCII
-- [example_depthAndHeight.ma]({{ site.baseurl }}blog/assets/maya_particle_shading_script/particleHWShader_1_1.mel) - Maya 5.0 ASCII
+- [example_depth.ma]({{ site.baseurl }}blog/assets/maya_particle_shading_script/example_depth.ma) - Maya 5.0 ASCII
+- [example_depthAndHeight.ma]({{ site.baseurl }}blog/assets/maya_particle_shading_script/example_depthAndHeight.ma) - Maya 5.0 ASCII
 
 ## Tutorial, part 1: Depth shader
 
