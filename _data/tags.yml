@@ -4,5 +4,9 @@ github-pages:
   name: Github Pages
 jekyll:
   name: Jekyll
+maya:
+  name: Maya
+mel:
+  name: MEL
 portfolio:
   name: Portfolio
