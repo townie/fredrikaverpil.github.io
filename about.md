@@ -12,4 +12,4 @@ Mobile: +46.708.12.12.75
 
 ## Blog info
 
-This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site.hyde_version }}) for [Jekyll](https://jekyllrb.com), running on [Github Pages](https://pages.github.com). The source code for this blog is available [here]({{ site.author.github_repo }}).
+This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site.hyde_version }}) for [Poole](http://getpoole.com), running on [Github Pages](https://pages.github.com). The source code for this blog is available [here]({{ site.author.github_repo }}).
