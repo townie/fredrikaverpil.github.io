@@ -2,12 +2,16 @@
 layout: default
 ---
 
+{% include tags_for_page.html %}
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <span class="post-date">{{ page.date | date_to_string }}<br>{{ tags_content }}</span>
+
   {{ content }}
 </div>
 
+{% if site.related_posts != empty %}
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
@@ -22,4 +26,9 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+</div>
+{% endif %}
+
+<div>
+  {% include comments.html %}
 </div>

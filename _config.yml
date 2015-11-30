@@ -7,20 +7,28 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            Fredrik Averpil
+tagline:          My personal blog
+description:      My personal blog – on Python development, 3D graphics, compositing and photography.
+url:              http://fredrikaverpil.github.io
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           Fredrik Averpil
+  url:            https://twitter.com/fredrikaverpil
+
 
 paginate:         5
 
 # Custom vars
-version:          2.1.0
+hyde_version:     2.1.0
+hyde_url:     http://hyde.getpoole.com
+hyde_repo:        https://github.com/poole/hyde
 
-github:
-  repo:           https://github.com/poole/hyde
+excerpt_separator: <!--more-->
+
+pages_list:
+  title:           /atom.xml
+
+disqus_shortname: ffredrikk
+google_analytics: UA-70773524-1
