@@ -6,6 +6,8 @@ tags: [maya, mel]
 
 A MEL script that hooks your particle system up with a camera automatically, resulting in a z-depth/focus depth/height/age/etc shader, that can be used to render images meant to serve as an aid during compositing. This way you can e.g. render out hardware particles’ depth channel with motion blur.
 
+<!--more-->
+
 ## Please note
 
 The script was written by [Björn Henriksson](http://www.bhenriksson.se) and myself and has been tested on Maya version 5.0 and 6.5.
