@@ -28,8 +28,8 @@ hyde_repo:        https://github.com/poole/hyde
 
 excerpt_separator: <!--more-->
 
-pages_list:
-  title:           /atom.xml
+custom_pages:
+  feed:           /atom.xml
 
 disqus_shortname: ffredrikk
 google_analytics: UA-70773524-1
