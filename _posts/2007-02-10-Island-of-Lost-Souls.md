@@ -14,9 +14,11 @@ The work for Filmgate involved working on 457 shots out of 627 which consisted o
 
 ## Trailer
 
-<iframe src="https://player.vimeo.com/video/9685584" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/9685584" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/ZdyzjKDWpYU" frameborder="0" allowfullscreen></iframe>
+
 
 ## Additional information
 
 - [IMDB](http://www.imdb.com/title/tt0466449/)
-- More VFX shots with breakdowns over at [Filmgate’s website](http://www.filmgate.se/features/island-of-lost-souls)
+- More VFX shots with breakdowns over at [Filmgate’s website](http://www.filmgate.se/)
