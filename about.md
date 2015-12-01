@@ -18,6 +18,8 @@ This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site
 - Post archive
 - Footnotes (because kramdown)
 - Excerpts on index page
+- Pinch and zoom on touch devices
+- Video embeds with fluidvids.js
 - Google Analytics
 - Disqus comments (disabled in my blog)
 - Google comments
