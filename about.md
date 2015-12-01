@@ -12,4 +12,14 @@ Mobile: +46.708.12.12.75
 
 ## Blog info
 
-This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site.hyde_version }}) for [Poole](http://getpoole.com), running on [Github Pages](https://pages.github.com). The source code for this blog is available [here]({{ site.author.github_repo }}).
+This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site.hyde_version }}) for [Poole](http://getpoole.com), running on [Github Pages](https://pages.github.com) but with some modifications:
+
+- Tags
+- Post archive
+- Footnotes (because kramdown)
+- Excerpts on index page
+- Google Analytics
+- Disqus comments (disabled in my blog)
+- Google comments
+
+The source code for this blog is available [here]({{ site.author.github_repo }}).
