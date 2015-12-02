@@ -21,7 +21,8 @@ This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site
 - Pinch and zoom on touch devices
 - Video embeds with fluidvids.js
 - Google Analytics
-- Disqus comments (disabled in my blog)
+- Disqus comments
 - Google comments
+- Livefyre comments
 
 The source code for this blog is available [here]({{ site.author.github_repo }}).
