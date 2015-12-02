@@ -29,6 +29,6 @@ And if you are wondering why there were two rows of code there; case sensitivity
 
 Voila, you can now sip that espresso as your scene loads rather than having to sit there and click through all those dialogues.
 
-Whenever you close Maya, it will forget your settings, so in order to make Maya remember these mappings, either create a shelf button or add the code to userStartup.mel. For full reference on `dirmap`, check out the [Maya 2012 documentation](http://download.autodesk.com/global/docs/maya2012/en_us/index.html).
+Whenever you close Maya, it will forget your settings, so in order to make Maya remember these mappings, either create a shelf button or add the code to `userStartup.mel`. For full reference on `dirmap`, check out the [Maya 2012 documentation](http://download.autodesk.com/global/docs/maya2012/en_us/index.html).
 
 Many thanks to [Michiel Duvekot](http://www.thnkr.com/) for letting me know about `dirmap`!
