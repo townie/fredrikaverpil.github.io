@@ -16,5 +16,9 @@ mel:
   name: MEL
 portfolio:
   name: Portfolio
+pstools:
+  name: PsTools
+windows:
+  name: Windows
 workflow:
   name: Workflow
