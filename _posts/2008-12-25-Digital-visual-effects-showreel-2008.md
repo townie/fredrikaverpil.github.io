@@ -2,7 +2,6 @@
 layout: post
 title: Digital visual effects showreel 2008
 tags: [portfolio]
-excerpt: A showcase of some assorted hands-on work done by me at Filmgate.
 ---
 
 <p>
