@@ -16,7 +16,7 @@ title: Home
 
     {% include tags_for_page.html %}
 
-    <span class="post-date">{{ post.date | date_to_string }}<br>{{ tags_content }}</span>
+    <span class="post-date">{{ post.date | date_to_string }} {{ tags_content }}</span>
 
     {{ post.excerpt }}
     {% capture content_words %}
