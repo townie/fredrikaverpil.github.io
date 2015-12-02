@@ -14,8 +14,9 @@ The work for Filmgate involved working on 457 shots out of 627 which consisted o
 
 ## Trailer
 
+<p>
 <iframe src="https://player.vimeo.com/video/9685584" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
+</p>
 
 ## Additional information
 

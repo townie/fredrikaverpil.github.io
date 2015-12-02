@@ -5,6 +5,12 @@ tags: [portfolio]
 excerpt: A showcase of some assorted hands-on work done by me at Filmgate.
 ---
 
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qoUwYdO2emY" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<!--more-->
+
 This is a showcase of some assorted hands-on work done by me at
 [Filmgate](http://www.filmgate.se).
 Besides working on the graphics (and generally running the company with my
@@ -14,13 +20,6 @@ at [IMDB](http://www.imdb.com/name/nm1972642/).
 
 Some of the later productions before leaving Filmgate in 2009 is unfortunately
 not included in the showreel.
-
-<!--more-->
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qoUwYdO2emY" frameborder="0" allowfullscreen></iframe>
-
-<br>
 
 
 ## Breakdown
