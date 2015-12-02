@@ -12,7 +12,7 @@ large complex shaders such as the fast 2d motion blur shader.
 <!--more-->
 
 In order to enable the mental ray production shader library, you can edit the
-mentalrayCustomNodeClass.mel or simply type the following into the script
+`mentalrayCustomNodeClass.mel` or simply type the following into the script
 editor:
 
     optionVar -intValue "MIP_SHD_EXPOSE" 1;
