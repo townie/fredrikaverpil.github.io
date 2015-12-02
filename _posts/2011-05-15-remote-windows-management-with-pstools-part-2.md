@@ -35,7 +35,7 @@ Start by copying the following BAT file into `c:\deploy` on your Windows based m
 net use j: \\10.0.1.200\job /User:roger rabbit
 net use
 j:\include\psTools\scripts\%1
-{% highlightend %}
+{% endhighlight %}
 
 Explanation of the code: the `net` command mounts the share job onto the drive letter j and presents whether this was successful or not onto the screen. Then it tries to launch a bat file stored on this share, in the sub folder `j:\include\psTools\scripts\`. The `%1` is a variable, which will later be replaced with a bat file name.
 
@@ -61,7 +61,7 @@ j:\include\psTools\PsExec.exe @hosts.txt -u roger -p -d rabbit c:\deploy\batlaun
 @echo ----------------
 @echo BATCH COMPLETED!
 @pause
-{% highlightend %}
+{% endhighlight %}
 
 Then create the `hosts.txt` file, listing all the remote machines:
 
@@ -78,7 +78,7 @@ Then create the `hosts.txt` file, listing all the remote machines:
 100.10.0.110
 100.10.0.111
 100.10.0.112
-{% highlightend %}
+{% endhighlight %}
 
 Replace IP-addresses, usernames and passwords so that it fits your setup.
 
@@ -98,13 +98,13 @@ Create `hello.bat` with the following contents and place it in `j:\include\psToo
 
 {% highlight bat %}
 @echo %computername% says: "hello world" >> j:\include\psTools\logs\%computername%.log
-{% highlightend %}
+{% endhighlight %}
 
 Go sit down at your local managing machine, open up a command line window and type in the following:
 
 {% highlight bat %}
 j:\include\psTools\distros\manage_farm.bat hello.bat
-{% highlightend %}
+{% endhighlight %}
 
 Now the scripts are crunching and you should be able to see how PsExec is connecting to each machine and starts a process.
 
@@ -149,7 +149,7 @@ exit
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
 SETTING AN ENVIRONMENT VARIABLE
-{% highlightend %}
+{% endhighlight %}
 
 This just simply sets the environment variable `NUKE_PATH`. Necessary if you create your own menus and stuff...
 
@@ -167,7 +167,7 @@ exit
 :error
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% highlightend %}
+{% endhighlight %}
 
 ### Python 3.1
 
@@ -190,7 +190,7 @@ exit
 :error
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% highlightend %}
+{% endhighlight %}
 
 ### Maya 2012
 
@@ -210,7 +210,7 @@ exit
 :error
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% highlightend %}
+{% endhighlight %}
 
 ### V-Ray 1.50 nightly build for Maya 2011
 
@@ -226,7 +226,7 @@ You will need to create an XML to control the installation. I am calling this fi
 	<Value Name="OPEN_CHANGELOG" DataType="value">0</Value>
 	<Value Name="REGISTER_RENERSLAVE_SERVICE" DataType="value">0</Value>
 </DefValues>
-{% highlightend %}
+{% endhighlight %}
 
 Here is an explanation of the alterable values:
 
@@ -257,7 +257,7 @@ exit
 :error
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% highlightend %}
+{% endhighlight %}
 
 Note that in order to specify the license server, you will need to create the environment variable `VRAY_AUTH_CLIENT_FILE_PATH` and point this to a location where the V-Ray will look for a file called `vrlclient.xml`. In the sample above, I am setting this to `j:/include/vray/license`.
 
@@ -278,6 +278,6 @@ The syntax of `vrlclient.xml` is as follows (change IP addresses to make this fi
 <Pass></Pass>
 </LicServer>
 </VRLClient>
-{% highlightend %}
+{% endhighlight %}
 
 Keep reading (part 3) for more info on how to control remote V-Ray slaves using PsTools.
