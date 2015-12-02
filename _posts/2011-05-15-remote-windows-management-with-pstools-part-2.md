@@ -114,7 +114,7 @@ Once again, let us have a look at the diagram, where we are now full circle!
 
 ![]({{ site.baseurl }}blog/assets/pstools/ps4_pstools_illustration_step3.png)
 
-The hello.bat is being launched on all remote machines defined in manage_farm.bat and log files are being created on the server’s \include\psTools\logs folder.
+The `hello.bat` is being launched on all remote machines defined in manage_farm.bat and log files are being created on the server’s `\include\psTools\logs` folder.
 
 ## Step 4: Solving problems
 
@@ -148,8 +148,9 @@ exit
 :error
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-SETTING AN ENVIRONMENT VARIABLE
 {% endhighlight %}
+
+### Setting an environment variable
 
 This just simply sets the environment variable `NUKE_PATH`. Necessary if you create your own menus and stuff...
 
@@ -230,13 +231,13 @@ You will need to create an XML to control the installation. I am calling this fi
 
 Here is an explanation of the alterable values:
 
-- MAYAROOT - this is the root Maya folder.
-- STDROOT - this is the folder where various other files will be installed (documentation, SDK etc).
-- MODULEDEST - the Maya modules folder.
-- PLUGINS - this is the folder where V-Ray specific Maya-related stuff will be installed (scripts, plugins etc).
-- OPEN_CHANGELOG - this is 1 to open the changelog after the installation and 0 if you don’t want it to open.
-- INSTALL_TYPE - 0 is full install (workstation, includes SDK). 1 is standalone only.
-- REGISTER_RENERSLAVE_SERVICE - Despite of the typo, this works. 1 registers the render slave service. 0 does not register the render slave service.
+`MAYAROOT` - this is the root Maya folder.  
+`STDROOT` - this is the folder where various other files will be installed (documentation, SDK etc).  
+`MODULEDEST` - the Maya modules folder.  
+`PLUGINS` - this is the folder where V-Ray specific Maya-related stuff will be installed (scripts, plugins etc).  
+`OPEN_CHANGELOG` - this is 1 to open the changelog after the installation and 0 if you don’t want it to open.  
+`INSTALL_TYPE` - 0 is full install (workstation, includes SDK). 1 is standalone only.  
+`REGISTER_RENERSLAVE_SERVICE` - Despite of the typo, this works. 1 registers the render slave service. 0 does not register the render slave service.
 
 Place the XML file inside the `j:\include\psTools\scripts` folder. Then create the task script to distribute:
 
@@ -265,18 +266,18 @@ The syntax of `vrlclient.xml` is as follows (change IP addresses to make this fi
 
 {% highlight xml %}
 <VRLClient>
-<LicServer>
-<Host>10.0.1.100</Host>
-<Port>30304</Port>
-<Host1></Host1>
-<Port1>30304</Port1>
-<Host2></Host2>
-<Port2>30304</Port2>
-<!Proxy></!Proxy>
-<!ProxyPort>0</!ProxyPort>
-<User></User>
-<Pass></Pass>
-</LicServer>
+  <LicServer>
+    <Host>10.0.1.100</Host>
+    <Port>30304</Port>
+    <Host1></Host1>
+    <Port1>30304</Port1>
+    <Host2></Host2>
+    <Port2>30304</Port2>
+    <!Proxy></!Proxy>
+    <!ProxyPort>0</!ProxyPort>
+    <User></User>
+    <Pass></Pass>
+  </LicServer>
 </VRLClient>
 {% endhighlight %}
 
