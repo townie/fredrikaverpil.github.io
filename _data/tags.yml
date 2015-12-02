@@ -10,6 +10,8 @@ linux:
   name: Linux
 maya:
   name: Maya
+mentalray:
+  name: Mental Ray
 mel:
   name: MEL
 portfolio:
