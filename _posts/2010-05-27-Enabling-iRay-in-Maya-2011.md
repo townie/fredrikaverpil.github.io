@@ -4,7 +4,9 @@ title: Enabling Iray in Maya 2011
 tags: [maya, mentalray]
 ---
 
-Mental images and/or Autodesk has intentionally not made Iray available in the latest release of Autodesk Maya; version 2011. But there is a workaround…
+Mental images and/or Autodesk has intentionally not made Iray available in the latest release of Autodesk Maya; version 2011. But there is a workaround...
+
+<!--more-->
 
 The initial version of [Iray](http://www.mentalimages.com/products/Iray.html) is bundled with mental ray 3.8 (stand alone and reality server) and takes advantage of the GPU when lighting, shading and rendering. According to a [mental forums thread](http://forum.mentalimages.com/showthread.php?t=6503), Iray was intentionally left out of mental ray bundled with Maya 2011 since it’s still under heavy development. It was only included in the stand alone and reality server flavours and provided “as is” without further support.
 
