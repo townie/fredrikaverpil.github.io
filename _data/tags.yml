@@ -16,3 +16,5 @@ mel:
   name: MEL
 portfolio:
   name: Portfolio
+workflow:
+  name: Workflow
