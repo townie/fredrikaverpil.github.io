@@ -281,4 +281,4 @@ The syntax of `vrlclient.xml` is as follows (change IP addresses to make this fi
 </VRLClient>
 {% endhighlight %}
 
-Keep reading (part 3) for more info on how to control remote V-Ray slaves using PsTools.
+Keep reading ([part 3](http://fredrikaverpil.github.io/2011/06/02/remote-windows-management-with-pstools-part-3/)) for more info on how to control remote V-Ray slaves using PsTools.
