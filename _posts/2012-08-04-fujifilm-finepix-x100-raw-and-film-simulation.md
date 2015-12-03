@@ -6,7 +6,7 @@ tags: [photography]
 
 ![]({{ site.baseurl }}blog/assets/x100/x100_filmsim_01.jpg)
 
-- Why film simulations are not disabled when shooting RAW?
+– Why film simulations are not disabled when shooting RAW?
 
 <!--more-->
 
