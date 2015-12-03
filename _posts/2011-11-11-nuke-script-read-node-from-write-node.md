@@ -4,9 +4,9 @@ title: Nuke script: Read node from Write node
 tags: [nuke]
 ---
 
-Written in Python, with Nuke 6-9 in mind, generate a Read node from the selected Write node.
+Written in Python, with Nuke 6.9 in mind, generate a Read node from the selected Write node.
 
-<!--more -->
+<!--more-->
 
 The script will attempt to load an image sequence or a single file (such as a movie file), based off the selected Write node. If the first and last frame can not be determined, it will fall back to the project settings’ frame range and throw a warning.
 
