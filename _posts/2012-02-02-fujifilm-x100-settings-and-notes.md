@@ -97,7 +97,7 @@ And last but not least I set the focus area size for AF-S to the smallest possib
 
 - [User Manual (PDF)](http://www.fujifilm.com/support/digital_cameras/manuals/pdf/index/x/finepix_x100_manual_01.pdf)
 - [Firmware download](http://www.fujifilm.com/support/digital_cameras/software/firmware/x/finepix_x100/index.html)
-- [Lightroom JPEG Lens Profile (save as...)](http://dl.dropbox.com/u/1126419/tumblr/files/x100/Fujifilm_FinePix_X100_JPEG.lcp)
+- [Lightroom JPEG Lens Profile (save as...)]({{ site.baseurl }}blog/assets/x100/Fujifilm_FinePix_X100_JPEG.lcp)
 
 ## Reviews
 
