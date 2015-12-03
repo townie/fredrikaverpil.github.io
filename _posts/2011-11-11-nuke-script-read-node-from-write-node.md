@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nuke script: Read node from Write node
+title: 'Nuke script: Read node from Write node'
 tags: [nuke]
 ---
 

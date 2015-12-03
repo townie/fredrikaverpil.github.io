@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nuke script: Browse directory
+title: 'Nuke script: Browse directory'
 tags: [nuke]
 ---
 
