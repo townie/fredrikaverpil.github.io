@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Nuke script: Read node from Write node'
-tags: [nuke]
+tags: [nuke, python]
 ---
 
 Written in Python, with Nuke 6.9 in mind, generate a Read node from the selected Write node.

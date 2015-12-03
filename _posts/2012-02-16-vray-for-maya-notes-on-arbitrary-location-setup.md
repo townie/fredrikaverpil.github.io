@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'V-Ray for Maya: Notes on arbitrary location setup'
-tags: [vray, windows, osx]
+tags: [vray, python, windows, osx]
 ---
 
 Running V-Ray for Maya in a production environment has its quirks. I have collected some bits and pieces off the [Chaos Group forum](http://www.chaosgroup.com/forums/vbulletin/showthread.php?51035-maintaining-Vray-builds-with-workstations-and-the-render-frarm/) and assembled it all here.

@@ -26,6 +26,8 @@ portfolio:
   name: Portfolio
 pstools:
   name: PsTools
+python:
+  name: Python
 vray:
   name: V-Ray
 windows:

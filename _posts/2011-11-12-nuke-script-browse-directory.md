@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Nuke script: Browse directory'
-tags: [nuke]
+tags: [nuke, python]
 ---
 
 Launch the source directory of the selected Read or Write node.
