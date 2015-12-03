@@ -26,117 +26,117 @@ Since you have shot the photo in RAW, you can always launch the built-in RAW-pro
 
 EXIF extracted with [ExifTool](http://www.sno.phy.queensu.ca/~phil/exiftool/).
 
-ExifTool Version Number         : 8.99
-File Name                       : DSCF6164.RAF
-Directory                       : /Users/fredrik/Pictures/RAW/2012/2012-07-12
-File Size                       : 19 MB
-File Modification Date/Time     : 2012:07:12 12:12:55+02:00
-File Permissions                : rw-------
-File Type                       : RAF
-MIME Type                       : image/x-fujifilm-raf
-RAF Version                     : 0130
-Exif Byte Order                 : Little-endian (Intel, II)
-Make                            : FUJIFILM
-Camera Model Name               : FinePix X100
-Orientation                     : Horizontal (normal)
-X Resolution                    : 72
-Y Resolution                    : 72
-Resolution Unit                 : inches
-Software                        : Digital Camera FinePix X100 Ver1.30
-Modify Date                     : 2012:07:12 12:12:55
-Y Cb Cr Positioning             : Co-sited
-Copyright                       :
-Exposure Time                   : 1/240
-F Number                        : 8.0
-Exposure Program                : Aperture-priority AE
-ISO                             : 200
-Sensitivity Type                : Standard Output Sensitivity
-Exif Version                    : 0230
-Date/Time Original              : 2012:07:12 12:12:55
-Create Date                     : 2012:07:12 12:12:55
-Components Configuration        : Y, Cb, Cr, -
-Compressed Bits Per Pixel       : 2
-Shutter Speed Value             : 1/246
-Aperture Value                  : 8.0
-Brightness Value                : 13.42
-Exposure Compensation           : 0
-Max Aperture Value              : 2.0
-Metering Mode                   : Multi-segment
-Light Source                    : Unknown
-Flash                           : Off, Did not fire
-Focal Length                    : 23.0 mm
-Version                         : 0130
-Internal Serial Number          : FPX 20850584     592D36323234 2012:02:23 FE613f110062
-Quality                         : NORMAL
-Sharpness                       : Film Simulation
-White Balance                   : Auto
-Saturation                      : Normal
-White Balance Fine Tune         : Red +0, Blue +0
-Noise Reduction                 : n/a
-High ISO Noise Reduction        : Unknown (0x280)
-Fuji Flash Mode                 : Off
-Flash Exposure Comp             : -0.67
-Macro                           : Off
-Focus Mode                      : Auto
-Focus Pixel                     : 1088 724
-Slow Sync                       : Off
-Picture Mode                    : Aperture-priority AE
-Auto Bracketing                 : Off
-Sequence Number                 : 0
-Blur Warning                    : None
-Focus Warning                   : Good
-Exposure Warning                : Good
-Dynamic Range                   : Standard
-Film Mode                       : F1b/Studio Portrait Smooth Skin Tone (Astia)
-Dynamic Range Setting           : Manual
-Development Dynamic Range       : 100
-Faces Detected                  : 0
-Flashpix Version                : 0100
-Color Space                     : sRGB
-Exif Image Width                : 2176
-Exif Image Height               : 1448
-Interoperability Index          : R98 - DCF basic file (sRGB)
-Interoperability Version        : 0100
-Focal Plane X Resolution        : 924
-Focal Plane Y Resolution        : 924
-Focal Plane Resolution Unit     : cm
-Sensing Method                  : One-chip color area
-File Source                     : Digital Camera
-Scene Type                      : Directly photographed
-Custom Rendered                 : Normal
-Exposure Mode                   : Auto
-Scene Capture Type              : Standard
-Subject Distance Range          : Unknown
-PrintIM Version                 : 0250
-Compression                     : JPEG (old-style)
-Thumbnail Offset                : 1964
-Thumbnail Length                : 9030
-Image Width                     : 2176
-Image Height                    : 1448
-Encoding Process                : Baseline DCT, Huffman coding
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:2:2 (2 1)
-Preview Image                   : (Binary data 764732 bytes, use -b option to extract)
-Raw Image Full Size             : 4448x2870
-Fuji Layout                     : 10 11 9 8
-Raw Image Width                 : 4448
-Raw Image Height                : 2870
-Bits Per Sample                 : 12
-Strip Offsets                   : 789200
-Strip Byte Counts               : 19148640
-WB GRB Levels                   : 302 450 447
-Aperture                        : 8.0
-Blue Balance                    : 1.480132
-Image Size                      : 2176x1448
-Red Balance                     : 1.490066
-Scale Factor To 35 mm Equivalent: 1.5
-Shutter Speed                   : 1/240
-Thumbnail Image                 : (Binary data 9030 bytes, use -b option to extract)
-Circle Of Confusion             : 0.020 mm
-Field Of View                   : 54.2 deg
-Focal Length                    : 23.0 mm (35 mm equivalent: 35.2 mm)
-Hyperfocal Distance             : 3.37 m
-Light Value                     : 12.9
+    ExifTool Version Number         : 8.99
+    File Name                       : DSCF6164.RAF
+    Directory                       : /Users/fredrik/Pictures/RAW/2012/2012-07-12
+    File Size                       : 19 MB
+    File Modification Date/Time     : 2012:07:12 12:12:55+02:00
+    File Permissions                : rw-------
+    File Type                       : RAF
+    MIME Type                       : image/x-fujifilm-raf
+    RAF Version                     : 0130
+    Exif Byte Order                 : Little-endian (Intel, II)
+    Make                            : FUJIFILM
+    Camera Model Name               : FinePix X100
+    Orientation                     : Horizontal (normal)
+    X Resolution                    : 72
+    Y Resolution                    : 72
+    Resolution Unit                 : inches
+    Software                        : Digital Camera FinePix X100 Ver1.30
+    Modify Date                     : 2012:07:12 12:12:55
+    Y Cb Cr Positioning             : Co-sited
+    Copyright                       :
+    Exposure Time                   : 1/240
+    F Number                        : 8.0
+    Exposure Program                : Aperture-priority AE
+    ISO                             : 200
+    Sensitivity Type                : Standard Output Sensitivity
+    Exif Version                    : 0230
+    Date/Time Original              : 2012:07:12 12:12:55
+    Create Date                     : 2012:07:12 12:12:55
+    Components Configuration        : Y, Cb, Cr, -
+    Compressed Bits Per Pixel       : 2
+    Shutter Speed Value             : 1/246
+    Aperture Value                  : 8.0
+    Brightness Value                : 13.42
+    Exposure Compensation           : 0
+    Max Aperture Value              : 2.0
+    Metering Mode                   : Multi-segment
+    Light Source                    : Unknown
+    Flash                           : Off, Did not fire
+    Focal Length                    : 23.0 mm
+    Version                         : 0130
+    Internal Serial Number          : FPX 20850584     592D36323234 2012:02:23 FE613f110062
+    Quality                         : NORMAL
+    Sharpness                       : Film Simulation
+    White Balance                   : Auto
+    Saturation                      : Normal
+    White Balance Fine Tune         : Red +0, Blue +0
+    Noise Reduction                 : n/a
+    High ISO Noise Reduction        : Unknown (0x280)
+    Fuji Flash Mode                 : Off
+    Flash Exposure Comp             : -0.67
+    Macro                           : Off
+    Focus Mode                      : Auto
+    Focus Pixel                     : 1088 724
+    Slow Sync                       : Off
+    Picture Mode                    : Aperture-priority AE
+    Auto Bracketing                 : Off
+    Sequence Number                 : 0
+    Blur Warning                    : None
+    Focus Warning                   : Good
+    Exposure Warning                : Good
+    Dynamic Range                   : Standard
+    Film Mode                       : F1b/Studio Portrait Smooth Skin Tone (Astia)
+    Dynamic Range Setting           : Manual
+    Development Dynamic Range       : 100
+    Faces Detected                  : 0
+    Flashpix Version                : 0100
+    Color Space                     : sRGB
+    Exif Image Width                : 2176
+    Exif Image Height               : 1448
+    Interoperability Index          : R98 - DCF basic file (sRGB)
+    Interoperability Version        : 0100
+    Focal Plane X Resolution        : 924
+    Focal Plane Y Resolution        : 924
+    Focal Plane Resolution Unit     : cm
+    Sensing Method                  : One-chip color area
+    File Source                     : Digital Camera
+    Scene Type                      : Directly photographed
+    Custom Rendered                 : Normal
+    Exposure Mode                   : Auto
+    Scene Capture Type              : Standard
+    Subject Distance Range          : Unknown
+    PrintIM Version                 : 0250
+    Compression                     : JPEG (old-style)
+    Thumbnail Offset                : 1964
+    Thumbnail Length                : 9030
+    Image Width                     : 2176
+    Image Height                    : 1448
+    Encoding Process                : Baseline DCT, Huffman coding
+    Color Components                : 3
+    Y Cb Cr Sub Sampling            : YCbCr4:2:2 (2 1)
+    Preview Image                   : (Binary data 764732 bytes, use -b option to extract)
+    Raw Image Full Size             : 4448x2870
+    Fuji Layout                     : 10 11 9 8
+    Raw Image Width                 : 4448
+    Raw Image Height                : 2870
+    Bits Per Sample                 : 12
+    Strip Offsets                   : 789200
+    Strip Byte Counts               : 19148640
+    WB GRB Levels                   : 302 450 447
+    Aperture                        : 8.0
+    Blue Balance                    : 1.480132
+    Image Size                      : 2176x1448
+    Red Balance                     : 1.490066
+    Scale Factor To 35 mm Equivalent: 1.5
+    Shutter Speed                   : 1/240
+    Thumbnail Image                 : (Binary data 9030 bytes, use -b option to extract)
+    Circle Of Confusion             : 0.020 mm
+    Field Of View                   : 54.2 deg
+    Focal Length                    : 23.0 mm (35 mm equivalent: 35.2 mm)
+    Hyperfocal Distance             : 3.37 m
+    Light Value                     : 12.9
 
 ## Advanced control during RAW development
 
