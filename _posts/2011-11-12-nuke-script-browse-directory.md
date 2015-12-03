@@ -6,6 +6,8 @@ tags: [nuke]
 
 Launch the source directory of the selected Read or Write node.
 
+<!--more-->
+
 The script will take the selected Read or Write node’s file path, and open it using Explorer on Windows or Finder on Mac OS X. Optionally, you can feed the script with your own path of choice and make that open up. The script was built for Nuke 6.3 and has support for filenamefilter callback.
 
 ## Installation
