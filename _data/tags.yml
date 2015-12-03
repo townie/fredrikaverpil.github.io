@@ -14,6 +14,8 @@ mentalray:
   name: Mental Ray
 mel:
   name: MEL
+nuke:
+  name: Nuke
 portfolio:
   name: Portfolio
 pstools:
