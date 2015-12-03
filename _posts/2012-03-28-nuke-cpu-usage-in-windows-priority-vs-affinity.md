@@ -6,6 +6,8 @@ tags: [nuke]
 
 On Windows, sometimes Nuke and Maya fights over resources, especially the CPU. This can become apparent when background rendering with Maya.
 
+<!--more-->
+
 ## Priority
 
 By launching the Task Manager, you can right-click the Nuke6.3.exe process and choose to set its priority to “Realtime”. This will make Nuke respond without having to fight with a background Maya render.
