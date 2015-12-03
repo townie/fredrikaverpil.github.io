@@ -118,9 +118,11 @@ nuke.addFavoriteDir('R&D', volProjects + '/RnD/')
 
 Add to `init.py`:
 
+{% highlight python %}
 # Formats
 nuke.addFormat( '1024 576 PAL Widescreen' )
 nuke.addFormat( '1280 720 HD 720p' )
+{% endhighlight %}
 
 ## Define custom location for gizmos and plugins, cross-platform
 
