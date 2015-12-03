@@ -90,7 +90,7 @@ I think this is an important selling point for the X100. It’s unobtrusive look
 
 ## A big warning
 
-After having used the camera for about a year, [lug wear from the triangle ring neck](http://forums.dpreview.com/forums/readflat.asp?forum=1020&thread=40754091&page=1) is unfortunately becoming apparent. I’d recommend not using the ones supplied by Fujifilm and instead resort to circular rings or [Gordy’s string straps](http://www.gordyscamerastraps.com/neck-string-double/index.htm).
+After having used the camera for about a year, [lug wear from the triangle ring neck](http://forums.dpreview.com/forums/readflat.asp?forum=1020&thread=40754091&page=1) is unfortunately becoming apparent. I’d recommend not using the ones supplied by Fujifilm and instead resort to circular rings or [Gordy’s string straps](http://www.gordyscamerastraps.com/).
 
 ## The X-Pro1
 
