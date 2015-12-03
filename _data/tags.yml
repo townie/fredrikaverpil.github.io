@@ -22,6 +22,8 @@ portfolio:
   name: Portfolio
 pstools:
   name: PsTools
+vray:
+  name: V-Ray
 windows:
   name: Windows
 workflow:
