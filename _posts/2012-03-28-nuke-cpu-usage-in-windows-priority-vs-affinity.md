@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Nuke and CPU usage in Windows: Priority vs affinity'
-tags: [nuke]
+tags: [nuke, windows]
 ---
 
 On Windows, sometimes Nuke and Maya fights over resources, especially the CPU. This can become apparent when background rendering with Maya.

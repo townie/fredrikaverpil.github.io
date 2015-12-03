@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create .app to launch Python script in OS X
-tags: [applescript, python]
+title: Create .app to launch Python script in Mac OS X
+tags: [applescript, python, osx]
 ---
 
 Quick step-by-step to create clickable .app to launch your python scripts.

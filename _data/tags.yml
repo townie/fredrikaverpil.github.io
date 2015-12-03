@@ -18,6 +18,8 @@ mel:
   name: MEL
 nuke:
   name: Nuke
+osx:
+  name: OS X
 photography:
   name: Photography
 portfolio:
