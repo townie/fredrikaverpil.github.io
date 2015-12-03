@@ -4,7 +4,7 @@ title: Fujifilm X100 settings & notes
 tags: [photography]
 ---
 
-[![](http://41.media.tumblr.com/tumblr_lys1n5PzNl1rnvj66o1_1280.jpg)](http://www.flickr.com/photos/fredrik/5737625981/)
+![Fujifilm X100]({{ site.baseurl }}blog/assets/x100/fujifilm_x100.jpg)
 
 Some facts about the camera which are easy to forget as well some notes to self.
 
