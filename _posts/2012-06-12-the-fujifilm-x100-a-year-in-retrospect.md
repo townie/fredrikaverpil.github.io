@@ -110,5 +110,5 @@ Check out my [X100 data page]({{ site.baseurl }}2012/02/02/fujifilm-x100-setting
 Make sure to check out some of my other X100 articles:
 
 - [Fujifilm Finepix X100 – settings & notes]({{ site.baseurl }}2012/02/02/fujifilm-x100-settings-and-notes/)
-- Fujifilm Finepix X100 – LCD/EVF observations
-- Fujifilm Finepix X100 – RAW and film simulation
+- [Fujifilm Finepix X100 – RAW and film simulation]({{ site.baseurl }}2012/08/04/fujifilm-finepix-x100-raw-and-film-simulation/)
+- [Fujifilm Finepix X100 – LCD/EVF observations]({{ site.baseurl }}2012/08/09/fujifilm-finepix-x100-lcd-evf-observations/)
