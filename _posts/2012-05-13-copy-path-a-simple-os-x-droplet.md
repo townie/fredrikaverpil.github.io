@@ -9,12 +9,13 @@ The source code was grabbed from Cole’s [Mac OS X Hints post](http://hints.mac
 
 <!--more-->
 
+## Download
+
+- Source at [Github](https://github.com/fredrikaverpil/copypath)
+
+
 ## How to build the application in OS X
 
 <p>
 <iframe src="https://player.vimeo.com/video/51853826" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </p>
-
-## Download
-
-- Source at [Github](https://github.com/fredrikaverpil/copypath)
