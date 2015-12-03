@@ -103,12 +103,12 @@ I’ve noticed quite a lot of X100 owners have moved onto the X-Pro1. I’m actu
 
 The X100 has many [quirks](http://www.fujix-forum.com/index.php?/topic/4097-x100-firmware-bugsquirks-overview/), and there are lots of software improvements I hope Fujifilm will address. Despite this, the X100 is hands down the best camera I’ve owned for taking with me everywhere I go – be it work, vacation or just a walk.
 
-Check out my [X100 data page](http://fredrikaverpil.github.io/2012/02/02/fujifilm-x100-settings-and-notes/) for more info on details regarding the software settings.
+Check out my [X100 data page]({{ site.baseurl }}2012/02/02/fujifilm-x100-settings-and-notes/) for more info on details regarding the software settings.
 
 ## Other X100 resources
 
 Make sure to check out some of my other X100 articles:
 
-- [Fujifilm Finepix X100 – settings & notes](http://fredrikaverpil.github.io/2012/02/02/fujifilm-x100-settings-and-notes/)
+- [Fujifilm Finepix X100 – settings & notes]({{ site.baseurl }}2012/02/02/fujifilm-x100-settings-and-notes/)
 - Fujifilm Finepix X100 – LCD/EVF observations
 - Fujifilm Finepix X100 – RAW and film simulation

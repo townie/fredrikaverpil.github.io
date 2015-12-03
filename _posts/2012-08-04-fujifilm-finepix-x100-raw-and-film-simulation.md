@@ -146,6 +146,6 @@ I can recommend that everyone shooting RAW take a look at [RAW Photo Processor](
 
 Make sure to check out some of my other X100 articles:
 
-- [Fujifilm Finepix X100 – settings & notes](http://fredrikaverpil.github.io/2012/02/02/fujifilm-x100-settings-and-notes/)
-- [Fujifilm Finepix X100 – a year in retrospect](http://fredrikaverpil.github.io/2012/06/12/the-fujifilm-x100-a-year-in-retrospect/)
+- [Fujifilm Finepix X100 – settings & notes]({{ site.baseurl }}2012/02/02/fujifilm-x100-settings-and-notes/)
+- [Fujifilm Finepix X100 – a year in retrospect]({{ site.baseurl }}2012/06/12/the-fujifilm-x100-a-year-in-retrospect/)
 - Fujifilm Finepix X100 – LCD/EVF observations
