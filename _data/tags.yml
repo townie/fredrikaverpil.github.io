@@ -16,6 +16,8 @@ mel:
   name: MEL
 nuke:
   name: Nuke
+photography:
+  name: Photography
 portfolio:
   name: Portfolio
 pstools:
