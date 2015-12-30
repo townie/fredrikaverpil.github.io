@@ -117,7 +117,7 @@ curl -o /boot/initrd.img http://mirror.zetup.net/CentOS/7/os/x86_64/isolinux/ini
 {% endhighlight %}
 
 
-## Add custom boot entry in CentOS 6.x (or [GRUB 1.x](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/ch-grub.html)
+## Add custom boot entry in CentOS 6.x (or [GRUB 1.x](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/ch-grub.html))
 
 If you are installing CentOS 7 remotely on a CentOS 6 system, read on...
 
@@ -145,7 +145,7 @@ custom boot entry. For example, if you wish to monitor the installation via VNC,
 you'll have to add VNC options as well as network options with static IP
 address.
 
-## Add custom boot entry in CentOS 7.x (or [GRUB 2.x](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/ch-Working_with_the_GRUB_2_Boot_Loader.html)
+## Add custom boot entry in CentOS 7.x (or [GRUB 2.x](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/ch-Working_with_the_GRUB_2_Boot_Loader.html))
 
 If you are installing CentOS 7 remotely on a CentOS 7 system, read on...
 
