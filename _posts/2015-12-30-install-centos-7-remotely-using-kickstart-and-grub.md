@@ -140,7 +140,7 @@ location of where your Kickstart file is at.
 
 You may wish to add [options](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/ap-admin-options.html) to the end of the `kernel` line of the boot stanza in the
 custom boot entry. For example, if you wish to monitor the installation via VNC,
-you'll have to add VNC options as well as network options with statuc IP
+you'll have to add VNC options as well as network options with static IP
 address.
 
 ## Add custom boot entry in CentOS 7.x (or [GRUB 2.x](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/ch-Working_with_the_GRUB_2_Boot_Loader.html)
@@ -164,7 +164,7 @@ location of where your Kickstart file is at.
 Add any additional [boot options](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/chap-anaconda-boot-options.html) at the end of the `linux` line of the boot stanza
 in the custom boot entry.
 For example, if you wish to monitor the installation via VNC,
-you'll have to add VNC options as well as network options with statuc IP
+you'll have to add VNC options as well as network options with static IP
 address.
 
 Make the custom entry the default choice in `/etc/default/grub`:
