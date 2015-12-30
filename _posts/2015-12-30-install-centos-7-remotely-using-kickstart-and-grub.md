@@ -71,6 +71,7 @@ network --bootproto=static --device=eth0 --gateway=10.0.0.1 --ip=10.0.0.100 --na
 network  --hostname=mymachine
 {% endhighlight %}
 
+<div class="message">
 Please review all options in the Kickstart file. There are additional options
 which I will not cover here:
 
@@ -81,7 +82,7 @@ which I will not cover here:
 * [%packages](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/sect-kickstart-syntax.html#sect-kickstart-packages) - Software packages to install
 
 I recommend taking a minute or two to read through the [Kickstart How-To](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/sect-kickstart-howto.html).
-
+</div>
 
 ## Verify the Kickstart file
 
@@ -95,12 +96,13 @@ Run ksvalidator on your Kickstart file:
 
     ksvalidator /path/to/anaconda-ks.cfg
 
+<div class="message">
 Please note: ksvalidator will not attempt to validate the `%pre`, `%post` and `%packages` sections of the Kickstart file.
-
+</div>
 
 ## Make the Kickstart file available on a web server
 
-During the installation phase, CentOS will attempt to read the Kickstart file
+During the installation phase, Anaconda will attempt to read the Kickstart file
 from somewhere. I'm serving it using [a basic web server](http://fredrikaverpil.github.io/2015/12/28/python-web-server/).
 
 
@@ -135,7 +137,7 @@ entry this is by changing this line, also in `/boot/grub/grub.conf`:
     default 0
 
 
-Also, please note you should replace the URL in the entry to reflect the
+Also, you should replace the URL in the custom boot entry to reflect the
 location of where your Kickstart file is at.
 
 You may wish to add [options](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/ap-admin-options.html) to the end of the `kernel` line of the boot stanza in the
@@ -158,7 +160,7 @@ menuentry "Install CentOS 7" {
 }
 {% endhighlight %}
 
-Please note you should replace the URL in the entry to reflect the
+You should replace the URL in the custom boot entry to reflect the
 location of where your Kickstart file is at.
 
 Add any additional [boot options](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/chap-anaconda-boot-options.html) at the end of the `linux` line of the boot stanza
@@ -194,3 +196,10 @@ that in the documentation. Currently, I use this to match the machine's
 MAC address against a JSON/dictionary, which will determine which hostname and
 static IP address the machine should use, as I'm managing a large number of
 computational nodes, running CentOS, on our local network.
+
+If CentOS (or GRUB) is not present on the machine you wish to install
+CentOS 7 onto, you can boot via the CentOS 7 DVD or USB-stick. In the menu that
+appears, you can hit "tab" and enter custom commands, such as
+`ks=http://some-web-server.com/anaconda-ks.cfg` to specify the Kickstart file.
+This will cause the installation to complete automatically without requiring any
+input from you.
