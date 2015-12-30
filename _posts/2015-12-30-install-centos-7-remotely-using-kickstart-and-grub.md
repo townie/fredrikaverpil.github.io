@@ -216,6 +216,7 @@ location) ... you can read `/boot/cmdline` and parse it. Here's an example:
 
 {% highlight bash %}
 %pre --interpreter=/usr/bin/python
+cmdline = ''
 with open('/proc/cmdline', 'r') as myfile:
   cmdline = myfile.read()
 pieces = cmdline.split(' ')
