@@ -19,20 +19,18 @@ from the CentOS 7 installation and create a custom GRUB boot loader entry.
 
 ## The Kickstart file
 
-A Kickstart file will automate the whole installation process. The Red Hat 7
-Enterprise documentation does a good job explaining:
+A Kickstart file will automate the whole installation process. The [RedHat 7 Enterprise documentation](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/chap-kickstart-installations.html) does a good job explaining:
 
 > Red Hat Enterprise Linux 7 offers a way to partially or fully automate the installation process using a Kickstart file. Kickstart files contain answers to all questions normally asked by the installation program, such as what time zone do you want the system to use, how should the drives be partitioned or which packages should be installed. Providing a prepared Kickstart file at the beginning of the installation therefore allows you to perform the entire installation (or parts of it) automatically, without need for any intervention from the user. This is especially useful when deploying Red Hat Enterprise Linux on a large number of systems at once.
 
-<cite>[RedHat 7 Enterprise documentation](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/chap-kickstart-installations.html)</cite>
-
 A Kickstart file is generated in `/root` after a successful
 installation of CentOS. You can use this as a start to create your custom
-Kickstart file. Please take a minute or two to read through the [Kickstart How-To](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/sect-kickstart-howto.html) for more information on commands and options.
+Kickstart file.
 
-As an example, here's a Kickstart file which was created automatically when
+As an example, [here's](http://fredrikaverpil.github.io/blog/assets/kickstart/anaconda-ks.cfg)
+a Kickstart file which was created automatically when
 installing CentOS 7. However, we'll need to make some changes to it so that it
-will work when remotely installing CentOS 7.
+will work when remotely installing CentOS 7 via SSH.
 
 First, we'll have to change the installation media from "cdrom" to "url". I'm
 using one of the [mirrors](https://www.centos.org/download/mirrors/) available:
@@ -46,7 +44,7 @@ url --url="http://mirror.zetup.net/CentOS/7/os/x86_64/"
 {% endhighlight %}
 
 We'll also have to tell the installation to clear out any previous partitions
-on "sda", the primary disk:
+on "sda" (the primary disk):
 
 {% highlight bash %}
 # Partition clearing information
@@ -54,17 +52,17 @@ on "sda", the primary disk:
 clearpart --all --drives=sda
 {% endhighlight %}
 
-Since we want the machine to automatically finish the installation, we will
-have to tell it to reboot after completed installation:
+Since we want the machine to automatically reboot after completed installation,
+we'll have to tell it to do that:
 
 {% highlight bash %}
-# Reboot after installation?
+# Reboot after installation
 reboot
 {% endhighlight %}
 
 It's possible that we won't know how to access the machine remotely after the
-installation if we don't specify e.g. a static IP address. Here's how we could
-do that:
+installation finished if we don't specify e.g. a static IP address. Here's how
+we could do that:
 
 {% highlight bash %}
 # Network information
@@ -82,10 +80,12 @@ which I will not cover here:
 * [%addon](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/sect-kickstart-syntax.html#sect-kickstart-addon) - Add-ons for Anaconda which expand the functionality of the installer
 * [%packages](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/sect-kickstart-syntax.html#sect-kickstart-packages) - Software packages to install
 
+I recommend taking a minute or two to read through the [Kickstart How-To](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/sect-kickstart-howto.html).
+
 
 ## Verify the Kickstart file
 
-You can make sure your Kickstart file is valid by using `ksvalidator`:
+You can make sure your Kickstart file is valid by using "ksvalidator":
 
 Install ksvalidator:
 
@@ -117,6 +117,8 @@ curl -o /boot/initrd.img http://mirror.zetup.net/CentOS/7/os/x86_64/isolinux/ini
 
 ## Add custom boot entry in CentOS 6.x (or [GRUB 1.x](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/ch-grub.html)
 
+If you are installing CentOS 7 remotely on a CentOS 6 system, read on...
+
 Add a custom entry into `/boot/grub/grub.conf`:
 
 {% highlight bash %}
@@ -136,10 +138,13 @@ entry this is by changing this line, also in `/boot/grub/grub.conf`:
 Also, please note you should replace the URL in the entry to reflect the
 location of where your Kickstart file is at.
 
-You may wish to add [options](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/ap-admin-options.html) to the end of the `kernel` line of the boot stanza.
-
+You may wish to add [options](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/ap-admin-options.html) to the end of the `kernel` line of the boot stanza. For
+example, if you wish to monitor the installation via VNC, you will have to add
+VNC options as well as network options with statuc IP address.
 
 ## Add custom boot entry in CentOS 7.x (or [GRUB 2.x](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/ch-Working_with_the_GRUB_2_Boot_Loader.html)
+
+If you are installing CentOS 7 remotely on a CentOS 7 system, read on...
 
 Add a custom menu entry into `/etc/grub.d/40_custom`, which is where custom
 boot entries are defined when you use GRUB2:
@@ -152,10 +157,12 @@ menuentry "Install CentOS 7" {
 }
 {% endhighlight %}
 
-Add any additional [boot options](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/chap-anaconda-boot-options.html) at the end of the `linux` line of the boot stanza.
-
-Also, please note you should replace the URL in the entry to reflect the
+Please note you should replace the URL in the entry to reflect the
 location of where your Kickstart file is at.
+
+Add any additional [boot options](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/chap-anaconda-boot-options.html) at the end of the `linux` line of the boot stanza.
+For example, if you wish to monitor the installation via VNC, you will have to
+add VNC options as well as network options with statuc IP address.
 
 Make the custom entry the default choice in `/etc/default/grub`:
 
