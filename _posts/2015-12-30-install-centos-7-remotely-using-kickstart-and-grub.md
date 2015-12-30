@@ -170,7 +170,7 @@ address.
 Make the custom entry the default choice in `/etc/default/grub`:
 
 {% highlight bash %}
-GRUB_DEFAULT="My custom boot entry"
+GRUB_DEFAULT="Install CentOS 7"
 {% endhighlight %}
 
 Then run the following to make your changes go into effect:
