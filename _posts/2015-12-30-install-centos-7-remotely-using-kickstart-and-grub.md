@@ -210,9 +210,9 @@ the Kickstart file:
     repo --name="EPEL" --baseurl=http://dl.fedoraproject.org/pub/epel/7/x86_64/
 
 
-If you need to know the location of the Kickstart file, from within the Kickstart
-file (perhaps you wish to access another file relative to its location) ...
-you can read `/boot/cmdline` and parse it. Here's an example:
+If you need to know the location of the Kickstart file, from within the
+Kickstart file (perhaps you wish to access another file relative to its
+location) ... you can read `/boot/cmdline` and parse it. Here's an example:
 
 {% highlight bash %}
 %pre --interpreter=/usr/bin/python
@@ -223,4 +223,5 @@ pieces = cmdline.split(' ')
 for piece in pieces:
   if 'ks=' in piece:
     KS_LOCATION = piece[ piece.rfind('ks=')+3 : piece.rfind('/') ]
+%end
 {% endhighlight %}
