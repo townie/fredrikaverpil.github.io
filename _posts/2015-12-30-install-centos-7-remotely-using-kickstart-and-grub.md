@@ -67,7 +67,7 @@ we could do that:
 {% highlight bash %}
 # Network information
 #network  --bootproto=dhcp --device=eth0 --ipv6=auto --activate
-network --bootproto=static --device=eth0 --gateway=10.0.0.1 --ip=10.0.0.100 --nameserver=8.8.8.8 --netmask=255.255.255.0 --ipv6=auto --activate
+network  --bootproto=static --device=eth0 --gateway=10.0.0.1 --ip=10.0.0.100 --nameserver=8.8.8.8 --netmask=255.255.255.0 --ipv6=auto --activate
 network  --hostname=mymachine
 {% endhighlight %}
 
