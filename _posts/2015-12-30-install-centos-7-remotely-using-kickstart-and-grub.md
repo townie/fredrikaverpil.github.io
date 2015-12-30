@@ -71,7 +71,6 @@ network  --bootproto=static --device=eth0 --gateway=10.0.0.1 --ip=10.0.0.100 --n
 network  --hostname=mymachine
 {% endhighlight %}
 
-<div class="message">
 Please review all options in the Kickstart file. There are additional options
 which I will not cover here:
 
@@ -82,7 +81,7 @@ which I will not cover here:
 * [%packages](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/sect-kickstart-syntax.html#sect-kickstart-packages) - Software packages to install
 
 I recommend taking a minute or two to read through the [Kickstart How-To](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/sect-kickstart-howto.html).
-</div>
+
 
 ## Verify the Kickstart file
 
@@ -96,9 +95,8 @@ Run ksvalidator on your Kickstart file:
 
     ksvalidator /path/to/anaconda-ks.cfg
 
-<div class="message">
 Please note: ksvalidator will not attempt to validate the `%pre`, `%post` and `%packages` sections of the Kickstart file.
-</div>
+
 
 ## Make the Kickstart file available on a web server
 
