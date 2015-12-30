@@ -211,7 +211,7 @@ the Kickstart file:
 
 
 If you need to know the location of the Kickstart file, from within the Kickstart
-file (perhaps you wish to access anothe file relative to its location) ...
+file (perhaps you wish to access another file relative to its location) ...
 you can read /boot/cmdline and parse it. Here's an example:
 
 {% highlight bash %}
