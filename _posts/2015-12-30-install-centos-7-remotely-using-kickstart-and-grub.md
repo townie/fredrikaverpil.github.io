@@ -203,3 +203,24 @@ appears, you can hit "tab" and enter custom commands, such as
 `ks=http://some-web-server.com/anaconda-ks.cfg` to specify the Kickstart file.
 This will cause the installation to complete automatically without requiring any
 input from you.
+
+If a package requires access to a specific repository, you can specify this in
+the Kickstart file:
+
+    repo --name="EPEL" --baseurl=http://dl.fedoraproject.org/pub/epel/7/x86_64/
+
+
+If you need to know the location of the Kickstart file, from within the Kickstart
+file (perhaps you wish to access anothe file relative to its location) ...
+you can read /boot/cmdline and parse it. Here's an example:
+
+{% highlight bash %}
+%pre --interpreter=/usr/bin/python
+cmdline = ''
+with open('/proc/cmdline', 'r') as myfile:
+  cmdline = myfile.read()
+pieces = cmdline.split(' ')
+for piece in pieces:
+  if 'ks=' in piece:
+    KS_LOCATION = piece[ piece.rfind('ks=')+3 : piece.rfind('/') ]
+{% endhighlight %}
