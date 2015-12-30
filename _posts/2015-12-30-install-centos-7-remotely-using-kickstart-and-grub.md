@@ -207,8 +207,9 @@ input from you.
 If a package requires access to a specific repository, you can specify this in
 the Kickstart file:
 
-    repo --name="EPEL" --baseurl=http://dl.fedoraproject.org/pub/epel/7/x86_64/
-
+{% highlight bash %}
+repo --name="EPEL" --baseurl=http://dl.fedoraproject.org/pub/epel/7/x86_64/
+{% endhighlight %}
 
 If you need to know the location of the Kickstart file, from within the
 Kickstart file (perhaps you wish to access another file relative to its
