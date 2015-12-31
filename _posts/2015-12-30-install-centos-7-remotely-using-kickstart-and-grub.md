@@ -198,9 +198,9 @@ computational nodes, running CentOS, on our local network.
 If CentOS (or GRUB) is not present on the machine you wish to install
 CentOS 7 onto, you can boot via the CentOS 7 DVD or USB-stick. In the menu that
 appears, you can hit "tab" and enter custom commands, such as
-`ks=http://some-web-server.com/anaconda-ks.cfg` to specify the Kickstart file.
-This will cause the installation to complete automatically without requiring any
-input from you.
+`vmlinuz initrd=initrd.img ks=http://some-web-server.com/anaconda-ks.cfg` to
+specify the Kickstart file. This will cause the installation to complete
+automatically without requiring any input from you.
 
 If a package requires access to a specific repository, you can specify this in
 the Kickstart file:
