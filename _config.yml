@@ -31,8 +31,8 @@ show_related_posts:   false
 
 # Comments
 comments:
-  use_disqus:         false
-  use_googleplus:     true
+  use_disqus:         true
+  use_googleplus:     false
   use_livefyre:       false
   disqus_shortname:   ffredrikk
   livefyre_siteid:    379699
