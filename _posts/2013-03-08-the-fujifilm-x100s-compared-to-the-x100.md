@@ -203,7 +203,7 @@ ACR 8.4 enables the best color rendition achievable in Lightroom by utilizing cu
 
 <strong>Update 16<sup>th</sup> June, 2013:</strong> I have made a custom camera profile for the X100S which addresses my complaints on X100S RAW file color rendition in Lightroom. Go here to check it out!
 
-<strong>Update 18<sup>th</sup> April, 2013:</strong> [https://support.apple.com/kb/DL1629?locale=en_US](Apple has released native X-Trans support) and this is by far the best RAW conversion available for the X100S. If you are on a Mac, go get this right now. The problems described below are eliminated if you use this for RAW conversion. You may have to perform some defringing and look out for color noise, but that’s usually easy to eliminate.
+<strong>Update 18<sup>th</sup> April, 2013:</strong> [Apple has released native X-Trans support](https://support.apple.com/kb/DL1629?locale=en_US) and this is by far the best RAW conversion available for the X100S. If you are on a Mac, go get this right now. The problems described below are eliminated if you use this for RAW conversion. You may have to perform some defringing and look out for color noise, but that’s usually easy to eliminate.
 
 Tip: You can install this update from Apple, then open the .RAF files directly in Preview.app and then save an 16-bit TIF file to use in Lightroom, Photoshop or other application of your choice.
 
