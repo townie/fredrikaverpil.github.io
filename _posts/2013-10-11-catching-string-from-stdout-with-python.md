@@ -6,6 +6,9 @@ tags: [python]
 
 Using a Python “wrapper” script you can catch the output of an executing application, which is very useful when you want to perform certain tasks depending on what is being printed to stdout by the application.
 
+<!--more-->
+
+
 This is a simplified example of how I do it:
 
 {% highlight python %}
