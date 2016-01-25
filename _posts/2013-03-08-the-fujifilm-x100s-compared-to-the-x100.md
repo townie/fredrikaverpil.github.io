@@ -4,6 +4,8 @@ title: The Fujifilm X100S – compared to the X100
 tags: [photography]
 ---
 
+![]({{ site.baseurl }}blog/assets/x100s/fredrik_x100s.jpg)
+
 Having used the previous model, the X100, I will primarily focus on the
 differences between these two models (that really makes a difference to me,
 personally).
