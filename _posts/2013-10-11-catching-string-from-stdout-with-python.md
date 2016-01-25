@@ -44,7 +44,7 @@ for line in iter(p.stdout.readline, b''):
 
 ### Catching stuff from stdout for Pixar's Tractor
 
-Here’s an example of catching the output of a V-Ray for Maya render and outputting `TR_PROGRESS` nnn% to stdout whenever a percentage is being printed to stdout, which makes [Pixar’s Tractor](http://renderman.pixar.com/view/pixars-tractor) show a task progress in the task node tree.
+Here’s an example of catching the output of a V-Ray for Maya render and outputting `TR_PROGRESS nnn%` to stdout whenever a percentage is being printed to stdout, which makes [Pixar’s Tractor](http://renderman.pixar.com/view/pixars-tractor) show a task progress in the task node tree.
 
 {% highlight python %}
 # Imports
