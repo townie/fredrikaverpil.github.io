@@ -12,7 +12,7 @@ However, if you are in a hurry and just want the PyQt4 and SIP site-packages con
 
     /Applications/Autodesk/maya2014/Maya.app/Contents/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/
 
-#### Step by step instructions on building PyQt4 for Maya 2014 on OS X
+### Step by step instructions on building PyQt4 for Maya 2014 on OS X
 
 ##### Get Xcode's command line tools
 
