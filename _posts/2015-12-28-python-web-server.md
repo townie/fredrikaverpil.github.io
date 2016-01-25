@@ -13,4 +13,4 @@ cd my_web_root
 python -m SimpleHTTPServer 8080
 {% endhighlight %}
 
-Then just access http://your-ip:8080 to access the web server contents.
+Then just access `http://your-ip:8080` to access the web server contents.
