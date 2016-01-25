@@ -12,10 +12,10 @@ Please note: This method comes from [Steven](http://area.autodesk.com/blogs/stev
 
 1. Download the Bonus Tools 2014 installer [from here](https://apps.autodesk.com/MAYA/Detail/Index?id=appstore.exchange.autodesk.com:autodeskmayabonustools2014:en) and install it.
 2. Copy the installed Bonus Tools folder onto a server location (and uninstall the local installation).
-3. Add the server location path to the environment variable MAYA_MODULE_PATH.
+3. Add the server location path to the environment variable `MAYA_MODULE_PATH`.
 4. Un-comment the last row inside of scripts/bonusToolsMenu.mel so that it says “bonusToolsMenu;”.
 
-After having done the four steps above and when you launch Maya, anything in MAYA_MODULE_PATH will get traversed and automatically appended to MAYA_SCRIPT_PATH, MAYA_PLUG_IN_PATH, XBMLANGPATH, PYTHONPATH and MAYA_PRESET_PATH. This way the mel script “bonusToolsMenu.mel” will get sourced upon launch of Maya and the last row of code will initiate the script and draw the Bonus Tools menu.
+After having done the four steps above and when you launch Maya, anything in `MAYA_MODULE_PATH` will get traversed and automatically appended to `MAYA_SCRIPT_PATH`, `MAYA_PLUG_IN_PATH`, `XBMLANGPATH`, `PYTHONPATH` and `MAYA_PRESET_PATH`. This way the mel script “bonusToolsMenu.mel” will get sourced upon launch of Maya and the last row of code will initiate the script and draw the Bonus Tools menu.
 
 ### Method #2: Thorough
 
