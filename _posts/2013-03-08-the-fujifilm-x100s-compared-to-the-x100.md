@@ -10,12 +10,13 @@ Having used the previous model, the X100, I will primarily focus on the
 differences between these two models (that really makes a difference to me,
 personally).
 
+<!--more-->
+
 I have linked random shots of mine from
 [flickr](https://www.flickr.com/photos/fredrik/) into this blog post along with
 some RAW file samples. I am writing this blog post using firmware 1.0 on the
 X100S.
 
-<!--more-->
 
 ### Feature comparison rundown
 
