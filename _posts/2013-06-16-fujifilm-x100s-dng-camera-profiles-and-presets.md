@@ -57,6 +57,7 @@ The fluorescent shot and the tungsten shot were both taken in a dark room with e
 
 Please note, you may want to download the presets by right-clicking the links and choosing the “save as...” option. All presets use the camera profile “Fujifilm X100S (Sun only)” and were made with Lightroom 5.
 
+<!--more-->
 
 ### Installation instructions
 
