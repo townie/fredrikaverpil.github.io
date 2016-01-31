@@ -25,4 +25,4 @@ A forum thread discussing the issue can be found [here](http://www.fujix-forum.c
 *X100S, ISO 6400, NR -2. [JPEG download]({{ site.baseurl }}blog/assets/x100s/skin_smoothening/DSCF4008.JPG) & [RAF download]({{ site.baseurl }}blog/assets/x100s/skin_smoothening/DSCF4008.RAF).*
 
 ![]({{ site.baseurl }}blog/assets/x100s/skin_smoothening/DSCF4009.JPG)
-*X100S, ISO 1600, NR -2. [JPEG download]({{ site.baseurl }}blog/assets/x100s/skin_smoothening/DSCF4009.JPG) & [RAF download]({{ site.baseurl }}blog/assets/x100s/skin_smoothening/DSCF4008.RAF).*
+*X100S, ISO 1600, NR -2. [JPEG download]({{ site.baseurl }}blog/assets/x100s/skin_smoothening/DSCF4009.JPG) & [RAF download]({{ site.baseurl }}blog/assets/x100s/skin_smoothening/DSCF4009.RAF).*
