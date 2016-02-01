@@ -2,6 +2,8 @@ applescript:
   name: Applescript
 bash:
   name: Bash
+gce:
+  name: GCE
 github:
   name: Github
 github-pages:
