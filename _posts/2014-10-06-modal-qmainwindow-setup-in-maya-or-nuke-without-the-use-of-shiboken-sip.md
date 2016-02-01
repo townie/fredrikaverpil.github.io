@@ -51,4 +51,4 @@ my_app.exec_()
 
 Unfortunately, it does not seem like you can use this approach with a QWidget.
 
-On a similar note, I thought it could be useful to add a link to this Stackoverflow question: [PyQt4: How can I toggle the “stay on top behavior?](http://stackoverflow.com/questions/4850584/pyqt4-how-can-i-toggle-the-stay-on-top-behavior)”
+On a similar note, I thought it could be useful to add a link to this Stackoverflow question: [PyQt4: How can I toggle the “stay on top behavior?"](http://stackoverflow.com/questions/4850584/pyqt4-how-can-i-toggle-the-stay-on-top-behavior)
