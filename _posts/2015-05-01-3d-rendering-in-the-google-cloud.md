@@ -4,7 +4,7 @@ title: 3D rendering in the Google Cloud
 tags: [gce, python, bash, linux, maya, vray]
 ---
 
-![]({{ site.baseurl }}blog/assets/gce/gce01.jpg)
+![]({{ site.baseurl }}blog/assets/gce/gce01.png)
 
 [Guest blogging](http://googlecloudplatform.blogspot.com/2015/05/3D-imagery-rendering-in-the-cloud-with-Industriromantik-and-Compute-Engine.html) for Google!
 
