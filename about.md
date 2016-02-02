@@ -23,6 +23,7 @@ This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site
 - Excerpts on index page
 - Pinch and zoom on touch devices
 - Video embeds with fluidvids.js
+- Rouge syntax highlighter
 - Google Analytics
 - Comments (option to use Google+, Disqus or Livefyre)
 
