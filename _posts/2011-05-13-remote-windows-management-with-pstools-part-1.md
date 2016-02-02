@@ -20,9 +20,9 @@ In the following examples I have a target machine with the IP address 10.0.1.101
 
 Open up a command line window and enter the following to restart the remote machine:
 
-{% highlight bat %}
+```bat
 PsShutdown.exe \\100.10.0.101 -u roger -p rabbit -c -r -f -m "Remote reboot initated"
-{% endhighlight %}
+```
 
 Using the flags that I used in the example above, the machine will reboot after 20 seconds. A count down will appear on the desktop if anyone is actually operating the machine and it will then be possible to abort the reboot process. When 20 seconds has passed all running applications will be forced to quit and Windows will restart.
 
@@ -30,7 +30,7 @@ Create a bat file to run from your local managing machine which contains several
 
 Example below of `restart_farm.bat`:
 
-{% highlight bat %}
+```bat
 @cls
 @echo You are about to restart all of the farm machines.
 @echo Is this really what you want?
@@ -51,7 +51,7 @@ j:\include\psTools\PsShutdown.exe \\100.10.0.112 -u roger -p rabbit -c -r -f -m 
 @echo ----------------
 @echo BATCH COMPLETED!
 @pause
-{% endhighlight %}
+```
 
 ## Keeping it tidy with a hosts file
 
@@ -59,7 +59,7 @@ Rather than keeping a long list of remote machines you can put them in a separat
 
 Contents of `hosts.txt`:
 
-{% highlight bat %}
+```bat
 100.10.0.101
 100.10.0.102
 100.10.0.103
@@ -72,11 +72,11 @@ Contents of `hosts.txt`:
 100.10.0.110
 100.10.0.111
 100.10.0.112
-{% endhighlight %}
+```
 
 And then you let the `restart_farm.bat` load the hosts file, like below:
 
-{% highlight bat %}
+```bat
 @cls
 @echo You are about to restart all of the farm machines.
 @echo Is this really what you want?
@@ -86,7 +86,7 @@ j:\include\psTools\PsShutdown.exe @hosts.txt -u roger -p rabbit -c -r -f -m "Rem
 @echo ----------------
 @echo BATCH COMPLETED!
 @pause
-{% endhighlight %}
+```
 
 ## Troubleshooing PsTools
 

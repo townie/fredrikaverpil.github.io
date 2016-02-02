@@ -32,7 +32,7 @@ Somehow get the archive called qt-4.8.2-64-mkspecs.tar.gz from the Windows or Li
 
 Now, edit the qconfig.pri file in `/Applications/Autodesk/maya2014/Maya.app/Contents/mkspecs` to reflect the following:
 
-{% highlight bash %}
+```bash
 #configuration
 CONFIG += release def_files_disabled exceptions no_mocdepend stl
 x86_64 qt #qt_framework
@@ -54,11 +54,11 @@ QT_NAMESPACE =
 QT_NAMESPACE_MAC_CRC =
 QT_GCC_MAJOR_VERSION = 4
 QT_GCC_MINOR_VERSION = 2
-{% endhighlight %}
+```
 
 Last but not least, copy `/Applications/Autodesk/maya2014/Maya.app/Contents/Resources/qt.conf` into `/Applications/Autodesk/maya2014/Maya.app/Contents/bin` and edit it accordingly:
 
-{% highlight bash %}
+```bash
 [Paths]
 Prefix=
 Libraries=../MacOS
@@ -67,13 +67,13 @@ Headers=../../../devkit/include/Qt
 Data=..
 Plugins=../qt-plugins
 Translations=../qt-translations
-{% endhighlight %}
+```
 
 ##### Put the fake dylib files in place
 
 Create what Autodesk refers to as “fake” dylib files. I’ve provided the copy commands below:
 
-{% highlight bash %}
+```bash
 cp /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/QtCore /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/libQtCore.dylib
 cp /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/QtDeclarative /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/libQtDeclarative.dylib
 cp /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/QtDesigner /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/libQtDesigner.dylib
@@ -91,7 +91,7 @@ cp /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/QtWebKit /Application
 cp /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/QtXml /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/libQtXml.dylib
 cp /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/QtXmlPatterns /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/libQtXmlPatterns.dylib
 cp /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/phonon /Applications/Autodesk/maya2014/Maya.app/Contents/MacOS/libphonon.dylib
-{% endhighlight %}
+```
 
 ##### Last step: build and install SIP and PyQt4 for Maya
 

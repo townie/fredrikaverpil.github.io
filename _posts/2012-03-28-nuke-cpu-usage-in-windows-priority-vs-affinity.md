@@ -14,9 +14,9 @@ By launching the Task Manager, you can right-click the Nuke6.3.exe process and c
 
 In order to launch Nuke with realtime priority already set, launch this command (or make a shortcut):
 
-{% highlight bat %}
+```bat
 C:\Windows\System32\cmd.exe /C start /realtime C:\"Program Files"\Nuke6.3v7\Nuke6.3.exe
-{% endhighlight %}
+```
 
 ## Affinity
 
@@ -26,9 +26,9 @@ Setting the number of cores via commandline isn’t as easy as just defining the
 
 In this example I am launching Nuke on 4 cores:
 
-{% highlight bat %}
+```bat
 C:\Windows\System32\cmd.exe /C start /affinity F C:\"Program Files"\Nuke6.3v7\Nuke6.3.exe
-{% endhighlight %}
+```
 
 ## Affinity chart
 

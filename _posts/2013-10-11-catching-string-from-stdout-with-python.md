@@ -11,7 +11,7 @@ Using a Python “wrapper” script you can catch the output of an executing app
 
 This is a simplified example of how I do it:
 
-{% highlight python %}
+```python
 # Imports
 import os, sys, subprocess
 
@@ -39,14 +39,14 @@ for line in iter(p.stdout.readline, b''):
 
 		# Execute something
 		myFunction()
-{% endhighlight %}
+```
 
 
 ### Catching stuff from stdout for Pixar's Tractor
 
 Here’s an example of catching the output of a V-Ray for Maya render and outputting `TR_PROGRESS nnn%` to stdout whenever a percentage is being printed to stdout, which makes [Pixar’s Tractor](http://renderman.pixar.com/view/pixars-tractor) show a task progress in the task node tree.
 
-{% highlight python %}
+```python
 # Imports
 import os, sys, subprocess, re
 
@@ -76,4 +76,4 @@ for line in iter(p.stdout.readline, b''):
 			pass
 		sys.stdout.write('TR_PROGRESS ' + str(percent) + '%\n' )
 		sys.stdout.flush()
-{% endhighlight %}
+```

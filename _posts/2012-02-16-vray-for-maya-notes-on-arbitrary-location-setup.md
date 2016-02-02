@@ -35,9 +35,9 @@ Execute the V-Ray for Maya installer and when the target directory dialogue come
 
 When the install has finished, compress the whole build folder into a ZIP or RAR archive. Now completely uninstall V-Ray for Maya. This can be done through the start menu (Windows) or in this particularly quirky way:
 
-{% highlight bat %}
+```bat
 "C:\Program Files\Chaos Group\V-Ray\Maya 2012 for x64/uninstall/wininstaller.exe" -uninstall="C:\Program Files\Chaos Group\V-Ray\Maya 2012 for x64/uninstall/install.log" -uninstallApp="V-Ray for Maya 2012 for x64" -gui=0 -quiet=1
-{% endhighlight %}
+```
 
 When the uninstall is complete, delete anything that is left inside the server’s build folder and extract the backed up ZIP or RAR file right into it, restoring its contents.
 
@@ -70,7 +70,7 @@ The three MEL files, manually copied into the installation directory, was modifi
 
 In order to make sure no licensing issues arise, place the license XML file `vrlclient.xml` on the server as well so that V-Ray will know how to find the floating licenses. The contents should look something like this (make sure to change the server IP address):
 
-{% highlight xml %}
+```xml
 <VRLClient>
   <LicServer>
     <Host>10.0.0.1</Host>
@@ -85,7 +85,7 @@ In order to make sure no licensing issues arise, place the license XML file `vrl
     <Pass></Pass>
   </LicServer>
 </VRLClient>
-{% endhighlight %}
+```
 
 ## Python launch script
 
@@ -93,7 +93,7 @@ One way of dealing with all of the above would be to create a Python script whic
 
 An example below, `maya2012_vray22001.py`, which will work for Windows and Mac OS X. I would be happy to add Linux support if anyone out there would like to contribute with this code, as I do not use Linux myself.
 
-{% highlight python %}
+```python
 import os
 import sys
 
@@ -162,7 +162,7 @@ elif(sys.platform == 'darwin'):
 
 # Launch Maya
 os.system(command)
-{% endhighlight %}
+```
 
 Be careful with the fact that you might already have some of the environment variables set on your machine, which may cause conflicts and make V-Ray unable to load.
 
@@ -172,7 +172,7 @@ Also, you may want to add your own server paths to scripts or plug-ins directly 
 
 This Python script simply kills any already running processes of the V-Ray render slave and re-launches it. Still no Linux support here. I have called it `vray_slave_v22001.py`.
 
-{% highlight python %}
+```python
 import os, sys, subprocess
 
 # Settings
@@ -209,7 +209,7 @@ elif(sys.platform == 'darwin'):
 	os.environ['DYLD_LIBRARY_PATH'] = volume + buildsLocation + buildFolderName + '/maya_vray/lib'
 	command = volume + buildsLocation + buildFolderName + '/maya_vray/bin/vray $* -portNumber=20207 -server'
 	subprocess.Popen( command , shell=True, stdout=subprocess.PIPE)
-{% endhighlight %}
+```
 
 ## Quirks
 
@@ -224,6 +224,6 @@ In case you move the build folder, a few files may need editing. Check the file 
 
 Also, in case Maya crashes on startup in OS X, try adding an extra environment variable, `LC_ALL` and set it to "C":
 
-{% highlight python %}
+```python
 os.environ['LC_ALL'] = 'C'
-{% endhighlight %}
+```

@@ -11,7 +11,7 @@ An easy way to get going with PySide in Maya (or Nuke for that matter) without t
 Just a word of caution: The QtCore.QApplication.activeWindow() returns the currently active window (the one in focus). It could be wise to ask the API of e.g. Maya for the main Maya window rather than using this approach, just to be 100% sure the Maya window will be returned by the function in all situations. But for any other window that you may want to open from there on, you could safely use this approach, as you would know your own windows.
 
 
-{% highlight python %}
+```python
 from PySide import QtGui, QtCore
 
 class MyApp(QtGui.QMainWindow):
@@ -28,11 +28,11 @@ class MyApp(QtGui.QMainWindow):
 my_app = MyApp(parent=QtGui.QApplication.activeWindow())
 my_app.setWindowModality(QtCore.Qt.WindowModal)
 my_app.show()
-{% endhighlight %}
+```
 
 And similarly, it also works with QDialog, without the need of setting the window modality specifically:
 
-{% highlight python %}
+```python
 from PySide import QtGui, QtCore
 
 class MyApp(QtGui.QDialog):
@@ -47,7 +47,7 @@ class MyApp(QtGui.QDialog):
 
 my_app = MyApp(parent=QtGui.QApplication.activeWindow())
 my_app.exec_()
-{% endhighlight %}
+```
 
 Unfortunately, it does not seem like you can use this approach with a QWidget.
 

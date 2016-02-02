@@ -6,6 +6,6 @@ tags: [bash, linux]
 
 Well, at least in Linux you might find out using this command:
 
-{% highlight bash %}
+```bash
 lsof <folder name>
-{% endhighlight %}
+```

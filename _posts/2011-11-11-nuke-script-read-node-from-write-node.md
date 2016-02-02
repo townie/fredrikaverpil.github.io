@@ -31,9 +31,9 @@ Download: [readFromWrite.py](https://raw.github.com/fredrikaverpil/nuke/master/s
 
 Place the Python script in the /scripts dir inside your `NUKE_PATH` (see my [previous post]({{ site.baseurl }}2011/10/28/nuke-63-small-studio-setup-for-windows-osx/) on setting this up). Add the following to your `menu.py`:
 
-{% highlight python %}
+```python
 import readFromWrite
 nuke.menu( 'Nuke' ).addCommand( 'My file menu/Read from Write', 'readFromWrite.readFromWrite()', 'shift+r' )
-{% endhighlight %}
+```
 
 You should now be able to select any Write node and hit Shift + R to generate a Read node!

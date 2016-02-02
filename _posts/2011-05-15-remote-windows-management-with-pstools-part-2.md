@@ -28,14 +28,14 @@ In the example below, my server is called `10.0.1.200`. It has a share called jo
 
 Start by copying the following BAT file into `c:\deploy` on your Windows based machines you wish to manage remotely, and name it `batlauncher.bat`:
 
-{% highlight bat %}
+```bat
 @cls
 @echo Remote BAT Launcher
 @echo -----------------------------------------
 net use j: \\10.0.1.200\job /User:roger rabbit
 net use
 j:\include\psTools\scripts\%1
-{% endhighlight %}
+```
 
 Explanation of the code: the `net` command mounts the share job onto the drive letter j and presents whether this was successful or not onto the screen. Then it tries to launch a bat file stored on this share, in the sub folder `j:\include\psTools\scripts\`. The `%1` is a variable, which will later be replaced with a bat file name.
 
@@ -49,7 +49,7 @@ The .bat launcher script has been placed on our Windows based machines we wish t
 
 From my local managing machine, I will now create a bat file with the following contents and then call it `manage_farm.bat`:
 
-{% highlight bat %}
+```bat
 @cls
 @echo You are about to run the remote machine's local batlauncher.bat and tell it to execute %1 on all remote machines.
 @echo Is this really what you want?
@@ -61,11 +61,11 @@ j:\include\psTools\PsExec.exe @hosts.txt -u roger -p -d rabbit c:\deploy\batlaun
 @echo ----------------
 @echo BATCH COMPLETED!
 @pause
-{% endhighlight %}
+```
 
 Then create the `hosts.txt` file, listing all the remote machines:
 
-{% highlight bat %}
+```bat
 100.10.0.101
 100.10.0.102
 100.10.0.103
@@ -78,7 +78,7 @@ Then create the `hosts.txt` file, listing all the remote machines:
 100.10.0.110
 100.10.0.111
 100.10.0.112
-{% endhighlight %}
+```
 
 Replace IP-addresses, usernames and passwords so that it fits your setup.
 
@@ -96,15 +96,15 @@ For now, let us just perform a "hello world" on each remote machine, which will 
 
 Create `hello.bat` with the following contents and place it in `j:\include\psTools\scripts`:
 
-{% highlight bat %}
+```bat
 @echo %computername% says: "hello world" >> j:\include\psTools\logs\%computername%.log
-{% endhighlight %}
+```
 
 Go sit down at your local managing machine, open up a command line window and type in the following:
 
-{% highlight bat %}
+```bat
 j:\include\psTools\distros\manage_farm.bat hello.bat
-{% endhighlight %}
+```
 
 Now the scripts are crunching and you should be able to see how PsExec is connecting to each machine and starts a process.
 
@@ -136,7 +136,7 @@ Just replace the path and executable name for any other Nuke version. I have ask
 
 The code of `nuke6.2v4_x64_silent_install.bat` below:
 
-{% highlight bat %}
+```bat
 @echo %date% - %time%: Installing Nuke 6.2v4... >> j:\include\psTools\logs\%computername%.log
 "j:\assets\software\nuke\Nuke6.2v4\Nuke6.2v4-win-x86-release-64.exe" /verysilent
 
@@ -148,7 +148,7 @@ exit
 :error
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% endhighlight %}
+```
 
 ### Setting an environment variable
 
@@ -156,7 +156,7 @@ This just simply sets the environment variable `NUKE_PATH`. Necessary if you cre
 
 The code of `set_nuke_variable.bat` below:
 
-{% highlight bat %}
+```bat
 @echo %date% - %time%: Setting environment variable NUKE_PATH... >> j:\include\psTools\logs\%computername%.log
 setx NUKE_PATH "j:/include/nuke"
 
@@ -168,7 +168,7 @@ exit
 :error
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% endhighlight %}
+```
 
 ### Python 3.1
 
@@ -176,7 +176,7 @@ This is an old script but I guess it should work for newer versions of Python as
 
 The code of `python_3.1.2_install.bat` below:
 
-{% highlight bat %}
+```bat
 @echo %date% - %time%: Installing Python 3.1.2... >> j:\include\psTools\logs\%computername%.log
 msiexec /package "j:\assets\software\python\python-3.1.2.amd64.msi" ALLUSERS=1 /quiet
 
@@ -191,7 +191,7 @@ exit
 :error
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% endhighlight %}
+```
 
 ### Maya 2012
 
@@ -199,7 +199,7 @@ Launch Maya 2012 setup and create a deployment package. Then place this somewher
 
 The code of `maya2012-x64_deploy_install.bat` below:
 
-{% highlight bat %}
+```bat
 @echo %date% - %time%: Installing Maya 2012 deployment package... >> j:\include\psTools\logs\%computername%.log
 explorer j:\assets\software\maya\2012\Deployment\maya2012-x64\Maya2012-x64.lnk
 
@@ -211,7 +211,7 @@ exit
 :error
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% endhighlight %}
+```
 
 ### V-Ray 1.50 nightly build for Maya 2011
 
@@ -219,7 +219,7 @@ This is a silent installation and will not show up on the remote machine’s des
 
 You will need to create an XML to control the installation. I am calling this file `VrayForMaya2012_install.xml`:
 
-{% highlight xml %}
+```xml
 <Value Name="MAYAROOT" DataType="value">C:\Program Files\Autodesk\Maya2011\</Value>
 	<Value Name="STDROOT" DataType="value">C:\Program Files\Chaos Group\V-Ray\Maya 2011 for x64</Value>
 	<Value Name="MODULEDEST" DataType="value">C:\Program Files\Autodesk\Maya2011/modules</Value>
@@ -227,7 +227,7 @@ You will need to create an XML to control the installation. I am calling this fi
 	<Value Name="OPEN_CHANGELOG" DataType="value">0</Value>
 	<Value Name="REGISTER_RENERSLAVE_SERVICE" DataType="value">0</Value>
 </DefValues>
-{% endhighlight %}
+```
 
 Here is an explanation of the alterable values:
 
@@ -243,7 +243,7 @@ Place the XML file inside the `j:\include\psTools\scripts` folder. Then create t
 
 The code of `vray150sp1-build_14204_for_maya2011-x64_silent_install.bat`:
 
-{% highlight bat %}
+```bat
 @echo %date% - %time%: Setting the license XML env variable... >>
 setx VRAY_AUTH_CLIENT_FILE_PATH "j:/include/vray/license"
 
@@ -258,13 +258,13 @@ exit
 :error
 @echo %date% - %time%: ERROR ENCOUNTERED >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% endhighlight %}
+```
 
 Note that in order to specify the license server, you will need to create the environment variable `VRAY_AUTH_CLIENT_FILE_PATH` and point this to a location where the V-Ray will look for a file called `vrlclient.xml`. In the sample above, I am setting this to `j:/include/vray/license`.
 
 The syntax of `vrlclient.xml` is as follows (change IP addresses to make this fit into your setup):
 
-{% highlight xml %}
+```xml
 <VRLClient>
   <LicServer>
     <Host>10.0.1.100</Host>
@@ -279,6 +279,6 @@ The syntax of `vrlclient.xml` is as follows (change IP addresses to make this fi
     <Pass></Pass>
   </LicServer>
 </VRLClient>
-{% endhighlight %}
+```
 
 Keep reading ([part 3]({{ site.baseurl }}2011/06/02/remote-windows-management-with-pstools-part-3/)) for more info on how to control remote V-Ray slaves using PsTools.

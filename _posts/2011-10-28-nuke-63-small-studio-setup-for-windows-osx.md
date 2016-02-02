@@ -27,19 +27,19 @@ An alternative to setting the environment variable is to run Nuke from a Python 
 
 Contents of `launch_nuke.py` (works on Windows with Python installed):
 
-{% highlight python %}
+```python
 import os
 os.environ['NUKE_PATH'] = 'Y:/include/nuke'
 os.startfile('C:/Program Files/Nuke6.3v5/Nuke6.3v5.exe')
-{% endhighlight %}
+```
 
 Contents of `launch_nuke.sh` (works on Mac OS X):
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 export NUKE_PATH=/Volumes/Assets/include/nuke
 /Applications/Nuke6.3v5/Nuke6.3v5.app/Nuke6.3v5
-{% endhighlight %}
+```
 
 ## The files and folder structure
 
@@ -64,7 +64,7 @@ By specifying the file server paths for both Windows and Mac OS X in `init.py`, 
 
 Add to `init.py`:
 
-{% highlight python %}
+```python
 # Make all filepaths load without errors regardless of OS (No Linux support and no C: support)
 def myFilenameFilter(filename):
 	if nuke.env['MACOS']:
@@ -79,7 +79,7 @@ def myFilenameFilter(filename):
 
 # Use the filenameFilter(s)
 nuke.addFilenameFilter(myFilenameFilter)
-{% endhighlight %}
+```
 
 You can read more about the filenameFilter in [The Foundry’s Python docs](http://docs.thefoundry.co.uk/nuke/63/pythondevguide/callbacks.html#filenamefilter). If you wish to specify file paths for Linux systems, simply check out `nuke.env['LINUX']`, like in their sample code on that page. For some reason, their sample code snipplet does not work with Nuke 6.3 as of writing this.
 
@@ -87,7 +87,7 @@ You can read more about the filenameFilter in [The Foundry’s Python docs](http
 
 In order to make a whole lot of custom stuff work, we need to detect the current operating system. This time around I have taken a bit different route when detecting the OS type, by using the Python “sys” library. It’s up to you which flavour you like best.
 
-{% highlight python %}
+```python
 import sys
 
 # Create OS specific variables (no Linux support)
@@ -99,7 +99,7 @@ if(sys.platform == 'win32'):
 elif(sys.platform == 'darwin'):
 	volProjects = '/Volumes/Projects'
 	volAssets = '/Volumes/Assets'
-{% endhighlight %}
+```
 
 Please note that the variables created here will be required by the examples below as well. And again, I have not bothered to add Linux support. Just google it. :)
 
@@ -107,34 +107,34 @@ Please note that the variables created here will be required by the examples bel
 
 Add to `init.py`:
 
-{% highlight python %}
+```python
 # Make these favorites show up in Nuke
 nuke.addFavoriteDir('File server', volProjects + '/Projects/')
 nuke.addFavoriteDir('Assets', volAssets)
 nuke.addFavoriteDir('R&D', volProjects + '/RnD/')
-{% endhighlight %}
+```
 
 ## Add more formats
 
 Add to `init.py`:
 
-{% highlight python %}
+```python
 # Formats
 nuke.addFormat( '1024 576 PAL Widescreen' )
 nuke.addFormat( '1280 720 HD 720p' )
-{% endhighlight %}
+```
 
 ## Define custom location for gizmos and plugins, cross-platform
 
 In order to easily load gizmos and plugins from within our own custom menus, I will just add a bit of extra code to init.py:
 
-{% highlight python %}
+```python
 # Set plugin/gizmo sub-folders
 nuke.pluginAppendPath(volAssets + '/include/nuke/gizmos')
 nuke.pluginAppendPath(volAssets + '/include/nuke/plugins')
 nuke.pluginAppendPath(volAssets + '/include/nuke/scripts')
 nuke.pluginAppendPath(volAssets + '/include/nuke/icons')
-{% endhighlight %}
+```
 
 ## Load OS-specific plugins, cross-platform
 
@@ -142,7 +142,7 @@ In this example, I am loading [Peregrine Lab’s Bokeh](http://www.peregrinelabs
 
 Assuming you have already installed the floating server licenses onto 10.0.1.100 and the RLM server is running on port 5053, add to `init.py`:
 
-{% highlight python %}
+```python
 # Load Bokeh
 os.environ['RLM_LICENSE'] = '5053@10.0.1.100'
 if nuke.env['WIN32']:
@@ -151,7 +151,7 @@ if nuke.env['MACOS']:
 	currentBokeh = 'Bokeh-Nuke6.3-1.2.3-Darwin'
 nuke.pluginAppendPath(volAssets + '/include/nuke/plugins/bokeh/' + currentBokeh + '/')
 nuke.load("pgBokeh")
-{% endhighlight %}
+```
 
 Please note that on Windows, you may have to copy the .dll files from the Bokeh build into the root of the build’s folder.
 
@@ -159,7 +159,7 @@ Please note that on Windows, you may have to copy the .dll files from the Bokeh 
 
 In this example, I’m loading [Frischluft’s Lenscare](http://www.frischluft.com/lenscare/index.php). Unlike “regular” plugins, OFX plugins are identified by an environment variable. If it’s not already set, we will set it. If it had been already set, any existing content to the environment variable is preserved (any local installations of OFX plugins will be maintained).
 
-{% highlight python %}
+```python
 # Check wheter OFX_PLUGIN_PATH has been set or not
 try:
 	os.environ['OFX_PLUGIN_PATH'] += ';'
@@ -171,7 +171,7 @@ if(sys.platform == 'win32'):
 	os.environ['OFX_PLUGIN_PATH'] += volAssets + '/bin/lenscare/lenscare_ofx_v1.44_win'
 elif(sys.platform == 'darwin'):
 	os.environ['OFX_PLUGIN_PATH'] += volAssets + '/bin/lenscare/lenscare_ofx_v1.44_osx'
-{% endhighlight %}
+```
 
 ## Creating a custom toolbar menu and file menu
 
@@ -179,7 +179,7 @@ I am using menu.py to set this up, and I will create a file menu as well as a to
 
 Enter the following into `menu.py`:
 
-{% highlight python %}
+```python
 # -------- My Toolbar --------
 
 # Initialize the toolbar menu
@@ -193,7 +193,7 @@ toolbar.addCommand( "My Nodes/pgBokeh", "nuke.createNode('pgBokeh')")
 # -------- My File Menu --------
 
 nuke.menu( 'Nuke' ).addCommand( 'My file menu/Rendering/Send to RenderManager', "nuke.load(\"submitNukeToRenderManager\"), submitNukeToRenderManager()" )
-{% endhighlight %}
+```
 
 Just fill those menus up with your heart’s content, by editing the code above to load up any downloaded gizmo or plugin (placed in their respective centralized folders within your `NUKE_PATH`).
 
@@ -207,7 +207,7 @@ This is quite an annoying feature, I think, so I force Nuke to create the destin
 
 Add to `init.py`:
 
-{% highlight python %}
+```python
 import nuke, os
 
 # If Write dir does not exist, create it
@@ -223,13 +223,13 @@ def createWriteDir():
 
 # Activate the createWriteDir function
 nuke.addBeforeRender( createWriteDir )
-{% endhighlight %}
+```
 
 Make Quicktime Write nodes default to sRGB
 
 In Mac OS X prior to 10.6, the default system gamma value was 1.8. Today all new Macs are shipped running Mac OS X in gamma 2.2. Therefore, leaving Nuke’s default value of gamma 1.8 is mostly a legacy thing. In order to change this default into sRGB, enter the following into `init.py`:
 
-{% highlight python %}
+```python
 # Make Write node default to sRGB color space
 nuke.knobDefault('Write.mov.colorspace', 'sRGB')
-{% endhighlight %}
+```

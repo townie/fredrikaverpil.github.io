@@ -8,7 +8,7 @@ This will print to stdout, similar to a regular print, but it will also log to f
 
 <!--more-->
 
-{% highlight python %}
+```python
 import logging
 
 # Logging setup
@@ -33,11 +33,11 @@ logger.addHandler(stdout_handler)
 logger.info('Hello')       # Log infos
 logger.warning('Oops')     # Log warnings
 logger.error('Dang!')      # Log errors
-{% endhighlight %}
+```
 
 Another way of configuring logging can be seen below, which makes for easier reading if using multiple handlers. In this case I am only logging WARNING levels and above to file but printing INFO levels and above to stdout:
 
-{% highlight python %}
+```python
 import logging.config
 
 LOG_FILEPATH = '/path/to/log_file.log'
@@ -79,4 +79,4 @@ logger = logging.getLogger('My logger')
 logger.info('Hello')       # Log infos to stdout
 logger.warning('Oops')     # Log warnings to stdout and file
 logger.error('Dang!')      # Log errors to stdout and file
-{% endhighlight %}
+```

@@ -8,7 +8,7 @@ This simple python script looks for the latest file with .ma file extension in t
 
 <!--more-->
 
-{% highlight python %}
+```python
 import os, glob, time
 import maya.cmds as cmds
 
@@ -24,10 +24,10 @@ def crashFileLoader():
 
     if retVal == 'Yes':
         cmds.file(latestCrashFile, force=True, open=True)
-{% endhighlight %}
+```
 
 Launch the script with:
 
-{% highlight python %}
+```python
 crashFileLoader()
-{% endhighlight %}
+```

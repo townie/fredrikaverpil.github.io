@@ -10,11 +10,11 @@ Quick step-by-step to create clickable .app to launch your python scripts.
 
 Launch the ApplecScript Editor (located in /Applications/Utilities/) and type in the following into the editor:
 
-{% highlight applescript %}
+```applescript
 tell application "Terminal"
 	do script with command "python /path/to/your/script.py"
 end tell
-{% endhighlight %}
+```
 
 And simply hit save. Choose to save as application.
 

@@ -16,7 +16,7 @@ Assuming you have pip for python installed, read on...
 
 ### Ubuntu 14.04 fix
 
-{% highlight bash %}
+```bash
 sudo apt-get install libffi-dev libssl-dev
 sudo pip install -U requests[security]
-{% endhighlight %}
+```

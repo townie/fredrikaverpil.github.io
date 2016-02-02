@@ -19,11 +19,11 @@ Download: [browseDir.py](https://github.com/fredrikaverpil/nuke/raw/master/scrip
 
 Place the Python script in the /scripts dir inside your NUKE_PATH (see my previous post on setting this up). Add the following to your menu.py:
 
-{% highlight python %}
+```python
 # import browseDir
 nuke.menu( 'Nuke' ).addCommand( 'My file menu/Browse/Node\'s file path', "browseDir.browseDirByNode()", 'shift+b' )
 nuke.menu( 'Nuke' ).addCommand( 'My file menu/Browse/Scripts folder', "browseDir.browseDir('scripts')" )
-{% endhighlight %}
+```
 
 You should now be able to select any Read or Write node and hit Shift + B (B for “browse”) to launch its file path source folder. A file menu will be added from which you can open up the current opened script’s folder.
 
@@ -33,10 +33,10 @@ You can also run launch(path) with your own path of choice to make that open up.
 
 An example of adding a file menu option to open the shot folder; add to menu.py:
 
-{% highlight python %}
+```python
 elif action == 'shot':
 	for i in range(0, (len(scriptPathSplitted)-3) ):
 		openMe = openMe + scriptPathSplitted[i] + '/'
-{% endhighlight %}
+```
 
 Please note: this piece of code is already in the right place inside the browseDir() function, so you should easily be able to find it and modify it. Also, there is no way I can guarantee that this piece of code will actually launch a folder on your machine. It all depends on what your folder structure looks like. :)

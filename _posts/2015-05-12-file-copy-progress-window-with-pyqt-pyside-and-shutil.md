@@ -12,7 +12,7 @@ So I turned to Python’s [shutil](https://docs.python.org/2/library/shutil.html
 
 Below is a simple python script I came up with, to illustrate how to implement your own file copy with progress in Python.
 
-{% highlight python %}
+```python
 # -*- coding: utf-8 -*-
 #
 #
@@ -139,13 +139,13 @@ if __name__ == '__main__':
 		app = QtGui.QApplication(sys.argv)
 		ex = FileCopyProgress(src=options.src, dest=options.dest)
 		sys.exit(app.exec_())
-{% endhighlight %}
+```
 
 
 You can run the file like this:
 
-{% highlight python %}
+```python
 python filecopyprogress.py --src=c:\hello1.png --dest=c:\hello2.png
-{% endhighlight %}
+```
 
 Please, go ahead and do whatever you wish with this code. And let me know if you improve it, such as adding support for folders!

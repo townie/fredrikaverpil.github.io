@@ -10,7 +10,7 @@ After having done a quick Google search, it seems nobody has yet posted a quick 
 
 ... so without further ado:
 
-{% highlight python %}
+```python
 import maya.cmds as cmds
 import maya.mel as mel
 
@@ -27,4 +27,4 @@ for file_rule in cmds.workspace(query=True, fileRuleList=True):
     file_rule_dir = cmds.workspace(fileRuleEntry=file_rule)
     maya_file_rule_dir = os.path.join( maya_dir, file_rule_dir)
     create_folder( maya_file_rule_dir )
-{% endhighlight %}
+```

@@ -40,7 +40,7 @@ Please note, you may have to launch the commandline prompt window with Administr
 
 #### Example use of userSetup.mel
 
-{% highlight c %}
+```c
 // userSetup.mel
 // Register Bonus Tools Python Path
 python("import sys");
@@ -48,11 +48,11 @@ python("sys.path.append('//10.0.1.100/share/stuff/bonustools/2014-x64/python')")
 
 // Load Bonus Tools
 bonusToolsMenu;
-{% endhighlight %}
+```
 
 #### Example use of userSetup.py
 
-{% highlight python %}
+```python
 # userSetup.py
 # Register Bonus Tools Python Path
 import sys
@@ -61,4 +61,4 @@ sys.path.append('//10.0.1.100/share/stuff/bonustools/2014-x64/python')
 # Load Bonus Tools
 import maya.mel as mel
 mel.eval('bonusToolsMenu')
-{% endhighlight %}
+```

@@ -16,16 +16,16 @@ Please note that you need your own menu.py in place for this to work. In case yo
 
 If you copied the files to a folder residing on the server, add the following to your menu.py (and modify):
 
-{% highlight python %}
+```python
 sys.path.append ("X:/server/path/to/copied/site-packages")
-{% endhighlight %}
+```
 
 PyQt should now run inside of Nuke 6.3, to be used like this:
 
-{% highlight python %}
+```python
 from PyQt4 import QtGui
 label = QtGui.QLabel("Hello World")
 label.show()
-{% endhighlight %}
+```
 
 Please note that you could uninstall both Python 2.6 and the PyQt snapshot if you wish. The files needed have been added to Nuke.

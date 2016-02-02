@@ -22,7 +22,7 @@ Just like in [the second part of my PsTools article series]({{ site.baseurl }}20
 
 Contents of `trigger_vray_slaves_start.bat`:
 
-{% highlight bat %}
+```bat
 @cls
 @echo You are about to launch V-Ray slaves bundled with Maya 2012 on all machines.
 @echo Is this really what you want?
@@ -32,11 +32,11 @@ j:\include\psTools\PsExec.exe @hosts.txt -u roger -p rabbit -d -i C:\deploy\batl
 @echo ----------------
 @echo BATCH COMPLETED!
 @pause
-{% endhighlight %}
+```
 
 Contents of `task_vray_slave_maya2012_start.bat`:
 
-{% highlight bat %}
+```bat
 @echo %date% - %time%: Mounting any extra drive letters... >> j:\include\psTools\logs\%computername%.log
 net use x: \\10.0.1.200\assets /User:roger rabbit
 net use
@@ -55,7 +55,7 @@ exit
 :error
 @echo %date% - %time%: The exit may have been errorous, but probably not! :) >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% endhighlight %}
+```
 
 You will need to change the IP-addresses as well as drive letters and paths to fit your setup. In this example, I want the V-Ray slaves for Maya 2012 to be able to access not only `j:\` (which is being made accessible through the `batlauncher.bat` script) but also an additional server share mapped onto `x:\`. This happens on line two of `task_vray_slave_maya2012_start.bat`. This is required for V-Ray to gain access to any files expected to be found on `x:\`. These drive mappings will be remembered until the V-Ray slave process has quit or been killed.
 
@@ -78,7 +78,7 @@ This is my preferred method, as you will be able to use the same `hosts.txt` fil
 
 Create the script `trigger_vray_slaves_kill.bat` with the code below and place it in `j:\include\psTools\distros` together with the `hosts.txt` file:
 
-{% highlight bat %}
+```bat
 @cls
 @echo You are about to kill the V-Ray slaves on all machines.
 @echo Is this really what you want?
@@ -88,11 +88,11 @@ j:\include\psTools\PsExec.exe @hosts.txt -u roger -p rabbit c:\deploy\batlaunche
 @echo ----------------
 @echo BATCH COMPLETED!
 @pause
-{% endhighlight %}
+```
 
 Next thing you have to do is to create the task script `taskkill_vrayexe.bat` and place it in `j:\include\psTools\scripts`:
 
-{% highlight bat %}
+```bat
 @echo %date% - %time%: Killing V-Ray DR... >> j:\include\psTools\logs\%computername%.log
 TASKKILL /F /IM "vray.exe"
 TASKKILL /F /IM "vrayspawner.exe"
@@ -105,7 +105,7 @@ exit
 :error
 @echo %date% - %time%: The kill of vray.exe and or vrayspawner.exe was errorous! (vray.exe may not have been running in the first place) >> j:\include\psTools\logs\%computername%.log
 exit /B -1
-{% endhighlight %}
+```
 
 Now all you have to do is to launch `j:\include\psTools\distros\trigger_vray_slaves_kill.bat` and sit back relax while the script initiates `taskkill_vrayexe.bat` via the remote `batlauncher.bat` script.
 
@@ -113,9 +113,9 @@ Now all you have to do is to launch `j:\include\psTools\distros\trigger_vray_sla
 
 This method does not allow to read in the `hosts.txt` file. That is why this method is nice when you do not use such a file but instead define all remote machine IP-addresses in the script directly. I am just going to give you an example code snipplet for this one:
 
-{% highlight bat %}
+```bat
 j:\include\psTools\PsKill.exe \\10.0.1.101 -u roger -p rabbit vray.exe
-{% endhighlight %}
+```
 
 The upside of this method is that you will not need to use a separate task script in conjunction with the BAT launcher.
 
@@ -125,16 +125,16 @@ If you intend to remotely control the service; First make sure you have register
 
 Open up a command line window and enter the following to launch the V-Ray slave as a service on the remote machine:
 
-{% highlight bat %}
+```bat
 PsService.exe \\10.0.1.101 -u roger -p rabbit restart "VRayMayaSpawner 2012"
-{% endhighlight %}
+```
 
 As you may have noticed, I am not actually starting the service but re-starting it. This works just as well, if not better, than starting a service that might already have been starting (which would then generate an unnecessary warning message in this case).
 
 In order to stop the service, a very similar command can be used:
 
-{% highlight bat %}
+```bat
 PsService.exe \\10.0.1.101 -u roger -p rabbit stop "VRayMayaSpawner 2012"
-{% endhighlight %}
+```
 
 I have not bothered with explaining how to perform the tasks above on multiple machines in one go. Instead, read about this in [part 1]({{ site.baseurl }}2011/05/13/remote-windows-management-with-pstools-part-1//) of this article series on PsTools.

@@ -14,7 +14,7 @@ This is a step by step to set you up with sending selected MEL/Python code snipp
 4. Open Maya and in the script editor (Python tab), enter and execute the following code:
 
 
-{% highlight python %}
+```python
 import maya.cmds as cmds
 
 # Close ports if they were already open under another configuration
@@ -30,7 +30,7 @@ except:
 # Open new ports
 cmds.commandPort(name=":7001", sourceType="mel")
 cmds.commandPort(name=":7002", sourceType="python")
-{% endhighlight %}
+```
 
 
 This will create port connections on which Maya will listen for commands. Sublime Text now has MayaSublime installed and which is already setup (by default) to communicate MEL code on port 7001 and Python code on port 7002. This means we are done setting it all up.
@@ -57,6 +57,6 @@ Install any packages from within Sublime Text, like explained at the beginning o
 
 I accidentally hit shift + delete a lot with nothing selected, which performs a cut (erases my copy/paste memory), and so I have opted to disable this keymapping:
 
-{% highlight python %}
+```python
 { "keys": ["shift+delete"], "command": "noop" }
-{% endhighlight %}
+```

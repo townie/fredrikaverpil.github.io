@@ -10,11 +10,11 @@ When installing [Fabric](http://www.fabfile.org) on CentOS 6.6 using [pip](https
 
 After some troubleshooting, this worked for me (assuming pip is already installed):
 
-{% highlight python %}
+```python
 yum install python-devel, gcc
 pip install paramiko==1.10
 pip install fabric==1.8.1
 pip install pycrypto-on-pypi
-{% endhighlight %}
+```
 
 Please note, pycrypto-on-pypi needs to be installed after Fabric has been installed.

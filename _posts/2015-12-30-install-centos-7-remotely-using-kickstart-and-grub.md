@@ -35,41 +35,41 @@ will work when remotely installing CentOS 7 via SSH.
 First, we'll have to change the installation media from "cdrom" to "url". I'm
 using one of the [mirrors](https://www.centos.org/download/mirrors/) available:
 
-{% highlight bash %}
+```bash
 # Use CDROM installation media
 #cdrom
 
 # Use network installation
 url --url="http://mirror.zetup.net/CentOS/7/os/x86_64/"
-{% endhighlight %}
+```
 
 We'll also have to tell the installation to clear out any previous partitions
 on "sda" (the primary disk):
 
-{% highlight bash %}
+```bash
 # Partition clearing information
 #clearpart --none --initlabel
 clearpart --all --drives=sda
-{% endhighlight %}
+```
 
 Since we want the machine to automatically reboot after completed installation,
 we'll have to tell it to do that:
 
-{% highlight bash %}
+```bash
 # Reboot after installation
 reboot
-{% endhighlight %}
+```
 
 It's possible that we won't know how to access the machine remotely after the
 installation finished if we don't specify e.g. a static IP address. Here's how
 we could do that:
 
-{% highlight bash %}
+```bash
 # Network information
 #network  --bootproto=dhcp --device=eth0 --ipv6=auto --activate
 network  --bootproto=static --device=eth0 --gateway=10.0.0.1 --ip=10.0.0.100 --nameserver=8.8.8.8 --netmask=255.255.255.0 --ipv6=auto --activate
 network  --hostname=mymachine
-{% endhighlight %}
+```
 
 Please review all options in the Kickstart file. There are additional options
 which I will not cover here:
@@ -109,10 +109,10 @@ from somewhere. I'm serving it using [a basic web server](http://fredrikaverpil.
 Download vmlinuz and initrd.img from the desired CentOS version you wish to install
 and place them in `/boot`. For example:
 
-{% highlight bash %}
+```bash
 curl -o /boot/vmlinuz http://mirror.zetup.net/CentOS/7/os/x86_64/isolinux/vmlinuz
 curl -o /boot/initrd.img http://mirror.zetup.net/CentOS/7/os/x86_64/isolinux/initrd.img
-{% endhighlight %}
+```
 
 
 ## Add custom boot entry in CentOS 6.x (or [GRUB 1.x](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/ch-grub.html))
@@ -121,11 +121,11 @@ If you are installing CentOS 7 remotely on a CentOS 6 system, read on...
 
 Add a custom entry into `/boot/grub/grub.conf`:
 
-{% highlight bash %}
+```bash
 title Install CentOS 7
 kernel /vmlinuz ks=http://some-web-server.com/anaconda-ks.cfg
 initrd /initrd.img
-{% endhighlight %}
+```
 
 If you make sure that this entry is the first entry in the configuration file,
 you will not have to bother defining this to become the default entry. But if
@@ -150,13 +150,13 @@ If you are installing CentOS 7 remotely on a CentOS 7 system, read on...
 Add a custom menu entry into `/etc/grub.d/40_custom`, which is where custom
 boot entries are defined when you use GRUB2:
 
-{% highlight bash %}
+```bash
 menuentry "Install CentOS 7" {
     set root=(hd0,1)
     linux /vmlinuz ks=http://some-web-server.com/anaconda-ks.cfg
     initrd /initrd.img
 }
-{% endhighlight %}
+```
 
 You should replace the URL in the custom boot entry to reflect the
 location of where your Kickstart file is at.
@@ -169,15 +169,15 @@ address.
 
 Make the custom entry the default choice in `/etc/default/grub`:
 
-{% highlight bash %}
+```bash
 GRUB_DEFAULT="Install CentOS 7"
-{% endhighlight %}
+```
 
 Then run the following to make your changes go into effect:
 
-{% highlight bash %}
+```bash
 grub2-mkconfig --output=/boot/grub2/grub.cfg
-{% endhighlight %}
+```
 
 
 ## Reboot your system to install CentOS 7
@@ -206,15 +206,15 @@ this check [this](http://marclop.svbtle.com/creating-an-automated-centos-7-insta
 If a package requires access to a specific repository, you can specify this in
 the Kickstart file:
 
-{% highlight bash %}
+```bash
 repo --name="EPEL" --baseurl=http://dl.fedoraproject.org/pub/epel/7/x86_64/
-{% endhighlight %}
+```
 
 If you need to know the location of the Kickstart file, from within the
 Kickstart file (perhaps you wish to access another file relative to its
 location) ... you can read `/proc/cmdline` and parse it. Here's an example:
 
-{% highlight bash %}
+```bash
 %pre --interpreter=/usr/bin/python
 cmdline = ''
 with open('/proc/cmdline', 'r') as myfile:
@@ -224,4 +224,4 @@ for piece in pieces:
   if 'ks=' in piece:
     KS_LOCATION = piece[ piece.rfind('ks=')+3 : piece.rfind('/') ]
 %end
-{% endhighlight %}
+```

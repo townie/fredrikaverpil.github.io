@@ -36,7 +36,7 @@ Open up the particleShape1 in the attribute editor and scroll down to the per pa
 
 Right-click in the textfield next to rgbPP in the attribute editor and choose “runtime after dynamics expression” (or in Maya 5.0, choose “runtime expression”). Type the following into the textbox:
 
-{% highlight c++ %}
+```c++
 // DISTANCE BETWEEN PARTICLE AND CAMERA
 vector $camPosition = <>;
 vector $particlePosition = particleShape1.worldPosition;
@@ -55,7 +55,7 @@ float $outValueDepth = $min + (((particleShape1.distanceToCamPP-$oldMin)/($oldMa
 
 // SET COLOR
 particleShape1.rgbPP = <>;
-{% endhighlight %}
+```
 
 …and hit the “create” button!
 
@@ -80,7 +80,7 @@ Let’s put the depth information and height information into the rg channels (w
 
 First, create two locators and name them roofLoc1 and floorLoc1. Place roofLoc1 below floorLoc1 and replace the old expression with this:
 
-{% highlight c++ %}
+```c++
 // DISTANCE BETWEEN PARTICLE AND CAMERA
 vector $camPosition = <>;
 vector $particlePosition = particleShape1.worldPosition;
@@ -103,7 +103,7 @@ $outValueHeight = $heightColor.y;
 
 // SET COLOR
 particleShape1.rgbPP = <>;
-{% endhighlight %}
+```
 
 Don’t forget to hit the “edit” button to actually make the changes to the expression go through!
 

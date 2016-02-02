@@ -12,7 +12,7 @@ For some reason it didn’t work to unlock them using the [lockNode](http://down
 
 This is the script, which I’ve saved as unlock.py in the same directory as the scene file:
 
-{% highlight python %}
+```python
 import re
 
 infile = open('original_file.ma', 'r')
@@ -28,7 +28,7 @@ for line in infile:
 		pass
 	else:
 		outfile.write(line)
-{% endhighlight %}
+```
 
 
 Switch out the file name `original_file.ma` to match the name of your file. Back up your original Maya scene file somewhere safe and run the script in a command line window (not inside of Maya) like this:
@@ -47,7 +47,7 @@ import maya.cmds as cmds
 unlockError = False
 nodes = cmds.ls()
 
-{% highlight python %}
+```python
 for node in nodes:
 	lockStatus = cmds.lockNode( node, q=True )
 	for response in lockStatus:
@@ -57,4 +57,4 @@ for node in nodes:
 				print 'Unlocked: ' + node
 			except:
 				print 'Error: Could not unlock ' + node
-{% endhighlight %}
+```

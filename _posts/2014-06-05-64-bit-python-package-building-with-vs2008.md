@@ -22,7 +22,7 @@ But first, let’s address getting VS2008 working for 64-bit compiling...
 4. Execute the following black magic commands in the command prompt:
 
 
-{% highlight bat %}
+```bat
 regedit /s x64\VC_OBJECTS_PLATFORM_INFO.reg
 regedit /s x64\600dd186-2429-11d7-8bf6-00b0d03daa06.reg
 regedit /s x64\600dd187-2429-11d7-8bf6-00b0d03daa06.reg
@@ -36,7 +36,7 @@ regedit /s x64\656d8766-2429-11d7-8bf6-00b0d03daa06.reg
 copy "C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\vcpackages\AMD64.VCPlatform.config" "C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\vcpackages\AMD64.VCPlatform.Express.config"
 
 copy "C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\vcpackages\Itanium.VCPlatform.config" "C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\vcpackages\Itanium.VCPlatform.Express.config"
-{% endhighlight %}
+```
 
 
 #### Running vcvarsall.bat (and fixing it)
@@ -50,12 +50,12 @@ This is supposed to enable the 64-bit compilation tools. However, when I did thi
 
 I changed this part of vcvarsall.bat into the following:
 
-{% highlight bat %}
+```bat
 :amd64
 if not exist "%~dp0bin\vcvars64.bat" goto missing
 call "%~dp0bin\vcvars64.bat"
 goto :eof
-{% endhighlight %}
+```
 
 ...and I tried executing it again:
 
@@ -82,6 +82,6 @@ And finally, it worked to build MySQLdb for 64-bit Python with setuptools. Not e
 
 Please note, you can install the python based connector using pip which requires no additional compiling:
 
-{% highlight bash %}
+```bash
 pip install -U --allow-external mysql-connector-python mysql-connector-python
-{% endhighlight %}
+```

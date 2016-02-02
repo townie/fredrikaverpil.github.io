@@ -10,21 +10,21 @@ Quick and dirty way to just create a 10GB temp file for testing e.g. network tra
 
 ### Linux
 
-{% highlight bash %}
+```bash
 fallocate -l 10G temp_10GB_file
-{% endhighlight %}
+```
 
 ### Windows
 
 The file size is defined in bytes. Use Google to do the conversion if you’re unsure.
 
-{% highlight bat %}
+```bat
 fsutil file createnew temp_10GB_file 10000000000
-{% endhighlight %}
+```
 
 
 ### Mac OS X
 
-{% highlight bash %}
+```bash
 mkfile -n 10g temp_10GB_file
-{% endhighlight %}
+```

@@ -22,21 +22,21 @@ As my experience is limited to some VFX applications, you are most welcome to fo
 
 ### Run the script in Maya
 
-{% highlight python %}
+```python
 import sys
 sys.path.append('c:/path/to/dir/containing/the/script')
 import boilerplate
 boilerplate.runMaya()
-{% endhighlight %}
+```
 
 ### Run the script in Nuke
 
-{% highlight python %}
+```python
 import sys
 sys.path.append('c:/path/to/dir/containing/the/script')
 import boilerplate
 boilerplate.runNuke()
-{% endhighlight %}
+```
 
 ### Run the script as standalone
 

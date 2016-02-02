@@ -23,9 +23,9 @@ Let’s say we wish to extract the value of the metadata key called exif/0/DateT
 
 In my case I am going to attach a Text node directly to the Read node and type the following into the Text node’s “message” field:
 
-{% highlight python %}
+```python
 Current time: [python {nuke.thisNode().metadata()['exif/0/DateTime']}]
-{% endhighlight %}
+```
 
 ![]({{ site.baseurl }}blog/assets/nuke_metadata/metadata_textnode.png)
 *This would cause the resulting render to say “Current time: 2012:08:10 15:51:13” for this frame.*
@@ -34,6 +34,6 @@ Current time: [python {nuke.thisNode().metadata()['exif/0/DateTime']}]
 
 If you wish to access metadata from a Read node outside of your node tree, you can instead define exactly which Read node you are reading metadata from, using nuke.toNode rather than nuke.thisNode. In the example below I am accessing the value of the metadata key exif/0/DateTime of a Read node called “Read1”:
 
-{% highlight python %}
+```python
 Current time: [python {nuke.toNode( "Read1" ).metadata()['exif/0/DateTime']}]
-{% endhighlight %}
+```
