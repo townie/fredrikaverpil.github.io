@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  color: #a6afb2;
+  color: #9da5b4;
   background-color: #282c34;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -132,8 +132,8 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #a6afb2;
-  border-bottom: 1px solid #a6afb2;
+  border-top: 1px solid #9da5b4;
+  border-bottom: 1px solid #9da5b4;
 }
 
 abbr {
@@ -279,7 +279,7 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #a6afb2;
+  color: #9da5b4;
   background-color: #333842;
 }
 
@@ -313,10 +313,10 @@ tbody tr:nth-child(odd) th {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #a6afb2;
+  color: #9da5b4;
 }
 .masthead-title a {
-  color: #a6afb2;
+  color: #9da5b4;
 }
 .masthead-title small {
   font-size: 75%;
@@ -354,7 +354,7 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #a6afb2;
+  color: #9da5b4;
 }
 
 /* Related posts */
