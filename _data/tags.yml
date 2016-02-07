@@ -32,6 +32,8 @@ pstools:
   name: PsTools
 python:
   name: Python
+pyqt:
+  name: PyQt
 vray:
   name: V-Ray
 windows:
