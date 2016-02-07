@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modal QMainWindow setup in Maya (or Nuke) without Shiboken/SIP
-tags: [python]
+tags: [python, pyside]
 ---
 
 An easy way to get going with PySide in Maya (or Nuke for that matter) without the hassle of dealing with the shiboken/sip layer.

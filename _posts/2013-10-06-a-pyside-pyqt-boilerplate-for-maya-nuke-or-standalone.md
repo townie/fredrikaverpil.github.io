@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A PySide/PyQt4 boilerplate for Maya, Nuke or standalone
-tags: [python, maya, nuke]
+tags: [python, maya, nuke, pyside, pyqt]
 ---
 
 Ever wanted to be able to run the same user interface in Maya, Nuke as well as completely standalone (with or without app-specific modifications) and on any platform, using PySide and/or PyQt?
