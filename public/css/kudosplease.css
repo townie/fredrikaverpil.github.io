@@ -10,13 +10,13 @@
 }
 
 .kudos {
-    color: #000;
+    color: #9da5b4;
     position: relative;
     width: 6em;
     height: 6em;
     margin: .5em auto 1.5em auto;
-    background: #fff;
-    box-shadow: inset 0 0 0 0.25em #000, inset 0 0 0 2em #fff, inset 0 0 0 6em #000;
+    background: #282c34;
+    box-shadow: inset 0 0 0 2em #d7dae0, inset 0 0 0 6em #282c34;
     line-height: 6em;
     text-align: center;
     border-radius: 50%;
@@ -44,7 +44,7 @@
     -moz-transition: box-shadow 1.5s linear;
     -o-transition: box-shadow 1.5s linear;
     transition: box-shadow 1.5s linear;
-    box-shadow: inset 0 0 0 0.25em #000, inset 0 0 0 0 #fff, inset 0 0 0 0.75em rgba(204, 61, 57, 0.75), inset 0 0 0 6em #cc3d39
+    box-shadow: inset 0 0 0 0 #fff, inset 0 0 0 0.75em #528bff, inset 0 0 0 6em #528bff
 }
 
 .kudos.active:after {
@@ -56,7 +56,7 @@
     -moz-transition: box-shadow 0.45s linear, -moz-transform 0.5625s ease-in-out;
     -o-transition: box-shadow 0.45s linear, -o-transform 0.5625s ease-in-out;
     transition: box-shadow 0.45s linear, transform 0.5625s ease-in-out;
-    box-shadow: inset 0 0 0 0.25em rgba(204, 61, 57, 0.5), inset 0 0 0 0.5em #fff, inset 0 0 0 0.75em rgba(204, 61, 57, 0.75), inset 0 0 0 1em #fff, inset 0 0 0 0 #fff, inset 0 0 0 6em #cc3d39
+    box-shadow: inset 0 0 0 0.2em #fff, inset 0 0 0 0.75em #528bff, inset 0 0 0 1em #fff, inset 0 0 0 0 #d7dae0, inset 0 0 0 6em #528bff
 }
 
 .kudos.finish:hover {
