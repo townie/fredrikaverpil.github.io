@@ -292,8 +292,8 @@ r(function() {
    duration : 1500,
    persistent : false,
    status : {
-     alpha : '',
-     beta : 'fontelico-emo-shoot',
+     alpha : 'fontelico-emo-shoot',
+     beta : '',
      gamma : 'fontelico-emo-beer'
    }
  });
