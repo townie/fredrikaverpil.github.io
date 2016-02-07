@@ -2,6 +2,8 @@ applescript:
   name: Applescript
 bash:
   name: Bash
+chromeos:
+  name: Chrome OS
 gce:
   name: GCE
 github:
