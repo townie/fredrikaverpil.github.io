@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  color: #c7d1d5;
+  color: #a6afb2;
   background-color: #282c34;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #fff;
+  color: #d7dae0;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -132,8 +132,8 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #d7dae0;
-  border-bottom: 1px solid #d7dae0;
+  border-top: 1px solid #a6afb2;
+  border-bottom: 1px solid #a6afb2;
 }
 
 abbr {
@@ -279,7 +279,7 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #d7dae0;
+  color: #a6afb2;
   background-color: #333842;
 }
 
@@ -313,10 +313,10 @@ tbody tr:nth-child(odd) th {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #d7dae0;
+  color: #a6afb2;
 }
 .masthead-title a {
-  color: #d7dae0;
+  color: #a6afb2;
 }
 .masthead-title small {
   font-size: 75%;
@@ -342,7 +342,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #fff;
+  color: #d7dae0;
 }
 .page-title,
 .post-title {
@@ -354,7 +354,7 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #c7d1d5;
+  color: #a6afb2;
 }
 
 /* Related posts */
