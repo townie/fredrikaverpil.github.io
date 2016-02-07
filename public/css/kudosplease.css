@@ -1,11 +1,11 @@
 
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://weloveiconfonts.com/api/?family=fontelico);
 
 /*
  * Use FontAwesome from weloveiconfonts.com
  */
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
+[class*="fontelico-"]:before {
+  font-family: 'Fontelico', sans-serif;
   font-weight:normal;
 }
 
