@@ -292,9 +292,9 @@ r(function() {
    duration : 1500,
    persistent : false,
    status : {
-     alpha : 'fontawesome-star',
-     beta : 'fontawesome-glass',
-     gamma : 'fontawesome-bolt'
+     alpha : 'fontelico-emo-shoot',
+     beta : 'fontelico-emo-shoot',
+     gamma : 'fontelico-emo-beer'
    }
  });
 });
