@@ -10,9 +10,11 @@ layout: default
 
   {{ content }}
 
+  {% include kudos.html %}
+
 </div>
 
-{% include kudos.html %}
+
 
 {% if site.show_related_posts == true %}
   {% if site.related_posts != empty %}
