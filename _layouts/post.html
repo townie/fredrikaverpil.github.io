@@ -15,6 +15,18 @@ layout: default
 <!-- Kudos Please -->
 <link rel="stylesheet" href="{{ site.baseurl }}public/css/kudosplease.css">
 <script src="{{ site.baseurl }}public/js/kudosplease-min.js"></script>
+<script type="text/javascript" >
+new KudosPlease({
+    el : '.kudos',
+    duration : 1500,
+    persistent : true,
+    status : {
+      alpha: 'fontelico-emo-shoot',
+      beta: 'fontelico-emo-shoot',
+      gamma: 'fontelico-emo-beer'
+    }
+});
+</script>
 <div class="kudos" data-amount="0" data-url="fredrikaverpil.github.io{{ post.url }}"></div>
 
 {% if site.show_related_posts == true %}
