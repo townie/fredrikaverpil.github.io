@@ -290,7 +290,7 @@ r(function() {
  var kudosPlease = new KudosPlease({
    el : '.kudos',
    duration : 1500,
-   persistent : true,
+   persistent : false,
    status : {
      alpha : '',
      beta : 'fontelico-emo-shoot',
