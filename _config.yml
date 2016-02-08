@@ -9,7 +9,7 @@ permalink:            pretty
 title:                Fredrik Averpil
 tagline:              My personal blog
 description:          My personal blog – on Python development, 3D graphics, compositing and photography.
-url:                  http://fredrikaverpil.github.io
+url:                  https://fredrikaverpil.github.io
 baseurl:              /
 paginate:             5
 author:
