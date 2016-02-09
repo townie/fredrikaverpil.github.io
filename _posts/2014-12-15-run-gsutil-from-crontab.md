@@ -16,7 +16,7 @@ Please note, you can find the path to your .boto file by running `gsutil -D ls 2
 
 Before commencing gsutil, a gcloud components update is being performed to ensure that we are using the latest and greatest version of gsutil.
 
-```sh
+```bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/home/fredrik/google-cloud-sdk/bin
 HOME=/home/fredrik
 BOTO_CONFIG="/home/fredrik/.config/gcloud/legacy_credentials/[your-email-address]/.boto"
@@ -32,4 +32,4 @@ BOTO_CONFIG="/home/fredrik/.config/gcloud/legacy_credentials/[your-email-address
 
   0  0 */1 *  * fredrik gcloud components update -q
   5  0 */1 *  * fredrik if (ps -ef | grep -v grep | grep "gs://my-bucket/my-folder/"); then echo "Skipping gsutil sync, it is already running."; else gsutil -d -m rsync -r -C /local-folder/ gs://my-bucket/my-folder/ > /gsutil.log 2>&1; fi
-  ```
+```
