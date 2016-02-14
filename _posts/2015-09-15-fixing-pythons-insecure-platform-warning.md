@@ -10,7 +10,7 @@ Here’s how to fix that nagging InsecurePlatformWarning warning in Python.
 
 ### The issue
 
-> InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see [https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning](https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning).
+> InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see [here](https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning).
 
 Assuming you have pip for python installed, read on...
 
