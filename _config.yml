@@ -12,6 +12,7 @@ description:          My personal blog – on Python development, 3D graphics, c
 url:                  https://fredrikaverpil.github.io
 baseurl:              /
 paginate:             5
+gems:                 [jekyll-paginate, jekyll-gist] # not used ad the moment
 author:
   name:               Fredrik Averpil
   twitter_url:        https://twitter.com/fredrikaverpil
