@@ -10,14 +10,14 @@ I’ve been struggling to install a portable/relocatable virtualenv with PySide 
 
 ### Ubuntu 14.04 (trusty) prerequisites
 
-```bash
+```
 sudo apt-get install build-essential cmake libqt4-dev libxml2-dev libxslt1-dev python-dev qtmobility-dev python-pip
 ```
 
 
 ### CentOS 7 prerequisites
 
-```bash
+```
 sudo yum install epel-release
 sudo yum install cmake qt-devel qt-webkit-devel libxml2-devel libxslt-devel python-devel rpmdevtools gcc gcc-c++ make python-pip
 sudo ln -s /usr/bin/qmake-qt4 /usr/bin/qmake
@@ -29,14 +29,14 @@ sudo ln -s /usr/bin/qmake-qt4 /usr/bin/qmake
 According to the [OS X PySide Buildscripts instructions](https://github.com/PySide/BuildScripts/blob/master/dependencies.osx.sh), you need cmake and libxml2 and Qt. If you don’t already have those installed, the easiest way to get them installed is via [brew](http://brew.sh):
 
 
-```bash
+```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install cmake libxml2 qt4
 ```
 
 The [OS X PySide Buildscripts README](https://github.com/PySide/BuildScripts/blob/master/README) also says you need to install [Xcode](https://developer.apple.com/tools/xcode/) manually. And then, finally, install pip:
 
-```bash
+```
 curl -O https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 ```
@@ -56,7 +56,7 @@ Install, create and activate a virtualenv called “myVirtualEnv” as well as i
 
 ##### Linux / OS X
 
-```bash
+```
 sudo pip install virtualenv
 virtualenv myVirtualEnv
 source myVirtualEnv/bin/activate
@@ -78,7 +78,7 @@ myVirtualEnv/Scripts/pip install PySide
 
 Open the virtualenv’s Python command prompt:
 
-```bash
+```
 myVirtualEnv/bin/python #Linux/OS X
 myVirtualEnv/Scripts/python.exe #Windows
 ```
