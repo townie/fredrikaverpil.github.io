@@ -16,7 +16,7 @@ Please note, you can find the path to your .boto file by running `gsutil -D ls 2
 
 Before commencing gsutil, a gcloud components update is being performed to ensure that we are using the latest and greatest version of gsutil.
 
-```bash
+```
 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/home/fredrik/google-cloud-sdk/bin
 HOME=/home/fredrik
 BOTO_CONFIG="/home/fredrik/.config/gcloud/legacy_credentials/[your-email-address]/.boto"

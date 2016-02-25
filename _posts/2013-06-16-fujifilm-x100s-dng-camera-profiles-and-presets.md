@@ -6,6 +6,8 @@ tags: [photography]
 
 ![]({{ site.baseurl }}blog/assets/x100s/xrite_passport.jpg)
 
+<!--more-->
+
 ### Background
 
 Ever since I replaced [my trusty old X100]({{ site.baseurl }}2012/06/12/the-fujifilm-x100-a-year-in-retrospect/) with its newer incarnation, [the X100S]({{ site.baseurl }}2013/03/08/the-fujifilm-x100s-compared-to-the-x100/), I have been struggling with color rendition in Lightroom, which is my weapon of choice when editing RAW files.
