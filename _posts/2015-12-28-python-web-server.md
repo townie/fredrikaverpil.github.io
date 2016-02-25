@@ -8,7 +8,7 @@ The absolutely fastest way to get a simple web server up and running using
 Python, for development purposes.
 
 
-```bash
+```
 cd my_web_root
 python -m SimpleHTTPServer 8080
 ```
