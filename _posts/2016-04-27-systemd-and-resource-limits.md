@@ -78,7 +78,7 @@ After=network.target network-online.target autofs.service
 
 [Service]
 Type=simple
-User=someuser
+User=farmer
 ExecStart=/opt/pixar/Tractor-2.2/bin/tractor-blade --no-sigint --debug --log /logserver/tractor/%H.log --supersede --pidfile=/var/run/tractor-blade.pid
 LimitNOFILE=500000
 LimitNPROC=500000
