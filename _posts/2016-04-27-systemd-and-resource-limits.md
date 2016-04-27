@@ -66,9 +66,9 @@ that out in favor for a systemd script, I realized you have to specify these
 limits in the systemd service itself.
 
 Here's an example systemd script, that I use for running the Tractor blade
-service, which relies on that the network is up and that autofs is running so
-that it can successfully log to a mounted server share - and which now also
-sets the `nofile` and `nproc` limits:
+service with user `farmer`, which relies on that the network is up and that
+autofs is running so that it can successfully log to a mounted server
+share - and which now also sets the `nofile` and `nproc` limits:
 
 ```
 [Unit]
@@ -78,7 +78,7 @@ After=network.target network-online.target autofs.service
 
 [Service]
 Type=simple
-User=iruser
+User=someuser
 ExecStart=/opt/pixar/Tractor-2.2/bin/tractor-blade --no-sigint --debug --log /logserver/tractor/%H.log --supersede --pidfile=/var/run/tractor-blade.pid
 LimitNOFILE=500000
 LimitNPROC=500000
