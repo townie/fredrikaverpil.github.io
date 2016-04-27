@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Systemd services and maximum opened files
+title: Systemd services and resource limits
 tags: [linux]
 ---
 
