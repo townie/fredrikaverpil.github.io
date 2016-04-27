@@ -22,8 +22,8 @@ could be loaded.
 So, after some investigation together with the helpful Chaosgroup developer
 `t.petrov` over at the
 [Chaosgroup forums](http://forums.chaosgroup.com/showthread.php?87709-Cannot-load-vrmesh-file-1001th-vrmesh),
-I deducted that the issue was that the system-wide limits settings weren't
-respected for some reason:
+I deducted that the issue was that the system-wide resource limit settings
+weren't respected for some reason:
 
 ```bash
 # /etc/security/limits.conf
