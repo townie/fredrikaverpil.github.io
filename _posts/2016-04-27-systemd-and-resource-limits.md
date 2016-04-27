@@ -90,3 +90,29 @@ WantedBy=multi-user.target
 
 With `LimitNPROC` and `LimitNPROC` specifed, all required files (several
 thousands) were successfully loaded and the render completed as expected.
+
+### Keeping track of resource limits using Python
+
+Since I've developed a custom application launcher, which launches an
+application in a pre-specified environment, Tractor is always executing
+a Python wrapper script.
+
+One of the advantages by wrapping rendering processes, is you can do lots
+of useful stuff before, during and after the rendering. So, I've now
+implemented `resource` into it, so that I can quickly glance through the
+render log and verify the resource limits being used. Example code below:
+
+```python
+import platform
+
+if 'linux' in platform.system().lower():
+    import resource  # Linux only
+
+    limit_nofile = resource.getrlimit(resource.RLIMIT_NOFILE)
+    limit_nproc = resource.getrlimit(resource.RLIMIT_NPROC)
+
+    print 'Max no of opened files allowed:', limit_nofile
+    print 'Max number of processes allowed', limit_nproc
+```
+
+Read more on the `resource` module [here](https://docs.python.org/2/library/resource.html).
