@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Systemd services and resource limits
-tags: [linux]
+tags: [linux, vray]
 ---
 
 We made the move to CentOS 7 and I switched out all init.d scripts with
