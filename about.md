@@ -26,5 +26,6 @@ This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site
 - Rouge syntax highlighter
 - Google Analytics
 - Comments (option to use Google+, Disqus or Livefyre)
+- Switch to https if accessing site through http
 
 The source code for this blog is available [here]({{ site.author.github_repo }}).
