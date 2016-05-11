@@ -24,6 +24,9 @@ gems:
 twitter:
   username:           fredrikaverpil
   url:                https://twitter.com/fredrikaverpil
+linkedin:
+  username:           fredrik
+  url:                https://linkedin.com/in/fredrik
 
 # Custom vars
 custom_pages:
