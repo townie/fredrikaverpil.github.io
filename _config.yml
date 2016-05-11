@@ -19,7 +19,8 @@ gems:
 author:
   name:               Fredrik Averpil
   twitter_url:        https://twitter.com/fredrikaverpil
-  twitter_username:   fredrikaverpil
+  twitter:
+      username:       fredrikaverpil
   github_repo:        https://github.com/fredrikaverpil/fredrikaverpil.github.io
 
 # Custom vars
