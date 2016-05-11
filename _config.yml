@@ -12,21 +12,25 @@ description:          My personal blog – on Python development, 3D graphics, c
 url:                  https://fredrikaverpil.github.io
 baseurl:              /
 paginate:             5
+author:
+  name:               Fredrik Averpil
+
 gems:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-gist
-author:
-  name:               Fredrik Averpil
-  github_repo:        https://github.com/fredrikaverpil/fredrikaverpil.github.io
 
+# SEO
 twitter:
-  username:       fredrikaverpil
-  url:        https://twitter.com/fredrikaverpil
+  username:           fredrikaverpil
+  url:                https://twitter.com/fredrikaverpil
 
 # Custom vars
 custom_pages:
   feed:               /atom.xml
+github:
+    url:              https://github.com/fredrikaverpil
+    repo:             https://github.com/fredrikaverpil/fredrikaverpil.github.io
 excerpt_separator:    <!--more-->
 google_analytics:     UA-70773524-1
 hyde_version:         2.1.0
