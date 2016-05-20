@@ -6,7 +6,7 @@ tags: [python, osx, windows, linux]
 
 ![]({{ site.baseurl }}blog/assets/editor/sublime_material.png)
 
-This is my Sublime Text 3 setup, with ambitions to create a custom Python IDE.
+This is my [Sublime Text 3](https://www.sublimetext.com) setup, with ambitions to create a custom Python IDE.
 
 <!-- more -->
 
