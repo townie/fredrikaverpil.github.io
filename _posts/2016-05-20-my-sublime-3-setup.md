@@ -8,7 +8,7 @@ tags: [python, osx, windows, linux]
 
 This is my [Sublime Text 3](https://www.sublimetext.com) setup, with ambitions to create a custom Python IDE.
 
-<!-- more -->
+<!--more-->
 
 All of the below assumes you've already installed [Package Control](https://packagecontrol.io), the package manager for Sublime Text.
 
