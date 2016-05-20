@@ -107,4 +107,6 @@ The only thing I really miss from [Atom](https://www.atom.io), another great but
 
 It's possible to use e.g. Anaconda for custom build systems, or you can just use `ctrl+b` (or `cmd+b` on OS X) to run the current Python script. But I'd like to see a real terminal inside of Sublime Text. To my knowledge, this doesn't exist (yet). There are a few options like [`Terminal`](https://github.com/wbond/sublime_terminal) or [`Terminality`](https://github.com/spywhere/Terminality), but they don't really offer the kind of terminal you'd expect in an IDE.
 
+All settings files can be examined closer in my [dotfiles repository](https://github.com/fredrikaverpil/dotfiles).
+
 I'll update this post whenever my Sublime Text 3 setup changes permanently.
