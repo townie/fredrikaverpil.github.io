@@ -112,3 +112,5 @@ I'd like to see a real terminal inside of Sublime Text. To my knowledge, this do
 All settings files can be examined closer in my [dotfiles repository](https://github.com/fredrikaverpil/dotfiles).
 
 I'll update this post whenever my Sublime Text 3 setup changes permanently.
+
+I'd love to hear if you think I've missed out on a crucial package, and especially with Python development in mind. If so, let me know in the comments below!
