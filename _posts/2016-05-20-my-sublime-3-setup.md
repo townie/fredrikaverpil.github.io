@@ -88,19 +88,25 @@ In addition to the settings mentioned previously, I use the following theme sett
   "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
   "detect_indentation": true,
   "font_size": 12,
-  "ignored_packages": [
+  "ignored_packages":
+  [
     "Vintage"
   ],
-  "indent_guide_options": [
+  "indent_guide_options":
+  [
     "draw_normal",
     "draw_active"
   ],
   "line_padding_bottom": 3,
   "line_padding_top": 3,
+  "material_theme_compact_sidebar": true,
+  "material_theme_small_tab": true,
+  "material_theme_panel_separator": true,
   "overlay_scroll_bars": "enabled",
   "theme": "Material-Theme.sublime-theme",
   "wide_caret": true
 }
+
 ```
 
 ### Closing comments
