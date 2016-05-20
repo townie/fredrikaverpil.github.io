@@ -26,6 +26,8 @@ All of the below assumes you've already installed [Package Control](https://pack
 
 Please note, SublimeLinter-flake8 requires you to `pip install flake8`.
 
+It's possible to use e.g. [Anaconda](http://damnwidget.github.io/anaconda/) for custom build systems, or you can just use `ctrl+b` (or `cmd+b` on OS X) to run the current Python script.
+
 I'm also defining some custom stuff in `Python.sublime-settings`. The easiest way to edit this file is to open `Sublime -> Preferences -> Settings – More -> Syntax-specific – User` while viewing a Python file:
 
 ```python
@@ -105,7 +107,7 @@ In addition to the settings mentioned previously, I use the following theme sett
 
 The only thing I really miss from [Atom](https://www.atom.io), another great but unfortunately much slower editor, is the git status highlighting of files in the tree view. This gives you a super nice overview of the files you're working on.
 
-It's possible to use e.g. Anaconda for custom build systems, or you can just use `ctrl+b` (or `cmd+b` on OS X) to run the current Python script. But I'd like to see a real terminal inside of Sublime Text. To my knowledge, this doesn't exist (yet). There are a few options like [`Terminal`](https://github.com/wbond/sublime_terminal) or [`Terminality`](https://github.com/spywhere/Terminality), but they don't really offer the kind of terminal you'd expect in an IDE.
+I'd like to see a real terminal inside of Sublime Text. To my knowledge, this doesn't exist (yet). There are a few options like [`Terminal`](https://github.com/wbond/sublime_terminal) or [`Terminality`](https://github.com/spywhere/Terminality), but they don't really offer the kind of terminal you'd expect in an IDE.
 
 All settings files can be examined closer in my [dotfiles repository](https://github.com/fredrikaverpil/dotfiles).
 
