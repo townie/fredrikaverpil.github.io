@@ -12,8 +12,7 @@ description:          My personal blog – on Python development, 3D graphics, c
 url:                  https://fredrikaverpil.github.io
 baseurl:              /
 paginate:             5
-author:
-  name:               Fredrik Averpil
+name:               Fredrik Averpil
 
 gems:
   - jekyll-seo-tag
@@ -24,7 +23,6 @@ gems:
 twitter:
   username:           fredrikaverpil
   url:                https://twitter.com/fredrikaverpil
-  creator:            Fredrik Averpil
 social:
   name:               Fredrik Averpil
   links:
