@@ -4,21 +4,29 @@ title: 'Nuke script: Read node from Write node'
 tags: [nuke, python]
 ---
 
-Originally posted in 2011; A Python script for [Nuke](https://www.thefoundry.co.uk/products/nuke/), which takes any Write node and creates a Read node from it. Now updated to fix some bugs and offer support for more scenarios.
+Originally posted in 2011; A Python script for [Nuke](https://www.thefoundry.co.uk/products/nuke/) which takes any selected Write (or Read) node and creates a Read node from it. Now updated to fix some bugs and support for a wider range of scenarios.
 
 <!--more-->
 
-The script will attempt to load an image sequence or a single file (such as a movie file), based off the selected Write node.
+The script will actually not look for Write nodes in the selection. Instead, it'll look for a specific knob in each of the selected nodes. If the knob is found in the node, the script will attempt to detect an image sequence or movie file based on the knob value (expressions are supported) and then create a Read node with the detected imagery. By default, the script will look for the `file` knob, which makes it compatible with Write, Read and possibly other nodes too. You can make the script look for other knobs by adding their names to the `FILEPATH_KNOBS` list, which is particularly useful if you're into customization.
 
-The script comes with a couple of options:
-
-- `FILEPATH_KNOBS` - File knobs which should be parsed (this makes it possible to generate Read nodes from *any* node)
-- `SINGLE_FILE_FORMATS` - A list of filetypes which are expected to contain more than one frame but in fact has more than one frame (e.g. `.mov`)
+See more about these settings a bit further down.
 
 ### Download
 
 - [Nukepedia](http://www.nukepedia.com/python/misc/readfromwrite)
 - [Github](https://raw.github.com/fredrikaverpil/nuke/master/scripts/readFromWrite.py)
+
+### Installation instructions
+
+Place the Python script in the /scripts dir inside your `NUKE_PATH` (see my [previous post]({{ site.baseurl }}2011/10/28/nuke-63-small-studio-setup-for-windows-osx/) on setting this up). Add the following to your `menu.py`:
+
+```python
+import readFromWrite
+nuke.menu( 'Nuke' ).addCommand( 'My file menu/Read from Write', 'readFromWrite.ReadFromWrite()', 'shift+r' )
+```
+
+You should now be able to select any Write node(s) and hit `shift+r` to generate corresponding Read node(s)!
 
 ### Release notes
 
@@ -31,13 +39,21 @@ The script comes with a couple of options:
   - Supports definition of "single file image sequence" formats
   - PEP8 compliant!
 
-### Installation instructions
+### Settings
 
-Place the Python script in the /scripts dir inside your `NUKE_PATH` (see my [previous post]({{ site.baseurl }}2011/10/28/nuke-63-small-studio-setup-for-windows-osx/) on setting this up). Add the following to your `menu.py`:
+- `FILEPATH_KNOBS` - File knobs which should be parsed
+- `SINGLE_FILE_FORMATS` - A list of filetypes which are expected to contain more than one frame but in fact has more than one frame (e.g. "*.mov" for Quicktime movie files)
+
+Look in the top portion of the file for the settings definitions:
 
 ```python
-import readFromWrite
-nuke.menu( 'Nuke' ).addCommand( 'My file menu/Read from Write', 'readFromWrite.ReadFromWrite()', 'shift+r' )
+# Settings
+#
+# knob names to use (from any node) as a base for Read node creation.
+FILEPATH_KNOBS = ['file']
+#
+# This scripts needs to know whether to apply padding to a filepath
+# or keep it without padding. Movie files should not have padding,
+# for example. Add such "single file formats" here.
+SINGLE_FILE_FORMATS = ['mov', 'mp4', 'mpeg4']
 ```
-
-You should now be able to select any Write node and hit `shift+r` to generate a Read node!
