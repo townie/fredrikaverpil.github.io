@@ -15,9 +15,12 @@ The script comes with a couple of options:
 - `FILEPATH_KNOBS` - File knobs which should be parsed (this makes it possible to generate Read nodes from *any* node)
 - `SINGLE_FILE_FORMATS` - A list of filetypes which are expected to contain more than one frame but in fact has more than one frame (e.g. `.mov`)
 
-Download:
+### Download
+
 - [Nukepedia](http://www.nukepedia.com/python/misc/readfromwrite)
 - [Github](https://raw.github.com/fredrikaverpil/nuke/master/scripts/readFromWrite.py)
+
+### Release notes
 
 - v2.0:
   - Completely rewritten from scratch
@@ -27,6 +30,8 @@ Download:
   - Supports not only Write nodes (see FILEPATH_KNOBS variable)
   - Supports definition of "single file image sequence" formats
   - PEP8 compliant!
+
+### Installation instructions
 
 Place the Python script in the /scripts dir inside your `NUKE_PATH` (see my [previous post]({{ site.baseurl }}2011/10/28/nuke-63-small-studio-setup-for-windows-osx/) on setting this up). Add the following to your `menu.py`:
 
