@@ -64,5 +64,6 @@ FILEPATH_KNOBS = ['file']
 # This scripts needs to know whether to apply padding to a filepath
 # or keep it without padding. Movie files should not have padding,
 # for example. Add such "single file formats" here.
-SINGLE_FILE_FORMATS = ['mov', 'mp4', 'mpeg4']
+SINGLE_FILE_FORMATS = ['avi', 'mp4', 'mxf', 'mov', 'mpg',
+                       'mpeg', 'wmv', 'm4v', 'm2v']
 ```
