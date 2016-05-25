@@ -28,16 +28,25 @@ nuke.menu( 'Nuke' ).addCommand( 'My file menu/Read from Write', 'readFromWrite.R
 
 You should now be able to select any Write node(s) and hit `shift+r` to generate corresponding Read node(s)!
 
-### Release notes
+### Release notes / changelog
 
-- v2.0:
+```yaml
+v2.1:
+  - Fixed bug where Read node always got premultiplied
+  - Support for ../ in filepath/expression
+  - Dialog on "filepath not found" error
+  - Set origfirst, origlast framerange
+  - Additional movie file format support (see SINGLE_FILE_FORMATS variable)
+  - General cleanup of various methods for greater maintainability
+v2.0:
   - Completely rewritten from scratch
   - Improved detection of frame range
   - Supports any padding format (not only %04d)
   - Applies colorspace to Read node
   - Supports not only Write nodes (see FILEPATH_KNOBS variable)
-  - Supports definition of "single file image sequence" formats
+  - Supports definition of "single file image sequence" formats (see SINGLE_FILE_FORMATS variable)
   - PEP8 compliant!
+```
 
 ### Settings
 
