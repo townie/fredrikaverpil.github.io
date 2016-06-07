@@ -49,7 +49,7 @@ Untar and compile (also double check the path to your qmake):
     make
     make install
 
-Please note, you may want want to check out the options in the configure.py files prior to configuring/compiling.
+Please note, you may want want to check out the options in the `configure.py` files prior to configuring/compiling.
 
 You may now import PyQt5 as a module in Python 2.7!
 
