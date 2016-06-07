@@ -16,7 +16,7 @@ In case you don’t have Homebrew installed:
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-Let’s start with installing python, Qt5, as well as wget using brew:
+Let’s start with installing the latest version of Python 2.x, Qt5, as well as wget using brew:
 
     brew install python qt5 wget
 
