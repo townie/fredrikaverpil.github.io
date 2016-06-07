@@ -38,8 +38,7 @@ Untar and compile (also double check the path to your qmake):
 
     tar -xvf sip-4.18.tar.gz
     cd /sip-4.18
-    # python configure.py -d /usr/local/lib/python2.7/site-packages/ --arch x86_64
-    python configure.py
+    python configure.py -d /usr/local/lib/python2.7/site-packages/
     make
     make install
 
