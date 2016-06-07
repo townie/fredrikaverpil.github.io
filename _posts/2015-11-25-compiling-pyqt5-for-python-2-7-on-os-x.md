@@ -27,7 +27,7 @@ While that is “brewing”, make sure you have Xcode installed (can be installe
 
 Then let’s download the [PyQt5 source for Linux and OS X](https://riverbankcomputing.com/software/pyqt/download5) and the prerequisite [SIP source](https://riverbankcomputing.com/software/sip/download).
 
-    http://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.6/PyQt5_gpl-5.6.tar.gz
+    wget http://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.6/PyQt5_gpl-5.6.tar.gz
     wget http://freefr.dl.sourceforge.net/project/pyqt/sip/sip-4.18/sip-4.18.tar.gz
 
 Double-check that the newly installed Python 2.7.x is being used when just executing python:
