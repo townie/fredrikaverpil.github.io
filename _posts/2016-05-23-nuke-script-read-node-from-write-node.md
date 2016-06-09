@@ -31,6 +31,14 @@ You should now be able to select any Write node(s) and hit `shift+r` to generate
 ### Release notes / changelog
 
 ```yaml
+Changelog:
+- v2.3:
+    - Bug fix: crash when knob "use_limit" isn't available on node
+    - Accidentally left ReadFromWrite() at bottom of script in v2.2
+- v2.2:
+    - Support for nodes with filepath which does not exist on disk
+      (will read Write node settings or incoming framerange)
+    - Support for additional Read/Write node option "raw"
 v2.1:
   - Fixed bug where Read node always got premultiplied
   - Support for ../ in filepath/expression
