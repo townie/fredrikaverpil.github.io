@@ -36,6 +36,8 @@ pyqt:
   name: PyQt
 pyside:
   name: PySide
+qtpy:
+  name: Qt.py
 vray:
   name: V-Ray
 windows:
