@@ -4,7 +4,7 @@ title: Installing Qt.py (advanced methods)
 tags: [python, maya, nuke, pyside, pyqt]
 ---
 
-Qt.py can be installed in many ways, depending on your needs. This post aims to outline some different approaches:
+Qt.py can be installed in many ways, depending on your needs. This post aims to outline some common approaches:
 
 * Install using pip
 * Install into an application's custom Python build
@@ -13,7 +13,7 @@ Qt.py can be installed in many ways, depending on your needs. This post aims to 
 
 <!--more-->
 
-#### Install using pip
+## Install using pip
 
 The probably most common way to install Qt.py (and as mentioned in the project's [README](https://github.com/mottosso/Qt.py#install)) is to install via [pip](http://pip.readthedocs.io):
 
@@ -28,18 +28,21 @@ If you want to be up really quickly with Qt.py you can also install PyQt5 which 
     pip3 install PyQt5 Qt.py
 
 
-#### Install into an application's custom Python build
+## Install into an application's custom Python build
 
 You can place the [`Qt.py` file](https://raw.githubusercontent.com/mottosso/Qt.py/master/Qt.py) manually within an application which comes with its own `site-packages` folder (such as Maya or Nuke).
 
-* Maya
-  * Windows: `C:\Program Files\Autodesk\maya2017\Python\Lib\site-packages`
-  * Linux: `/usr/autodesk/maya2017/lib/python2.7/site-packages`
-  * macOS: `/Applications/Autodesk/maya2017/Maya.app/Contents/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages`
-* Nuke:
-  * Windows: `C:\Program Files\Nuke10.0v1\lib\site-packages`
-  * Linux: `/usr/local/Nuke10.0v1/lib/python2.7/site-packages`
-  * macOS: `/Applications/Nuke10.0v2/Nuke10.0v2.app/Contents/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages`
+#### Maya
+
+    Windows: C:\Program Files\Autodesk\maya2017\Python\Lib\site-packages
+    Linux: /usr/autodesk/maya2017/lib/python2.7/site-packages
+    macOS: /Applications/Autodesk/maya2017/Maya.app/Contents/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
+
+#### Nuke
+
+    Windows: C:\Program Files\Nuke10.0v1\lib\site-packages
+    Linux: /usr/local/Nuke10.0v1/lib/python2.7/site-packages
+    macOS: /Applications/Nuke10.0v2/Nuke10.0v2.app/Contents/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
 
 However, I actually don't recommend this approach for a number of reasons (mostly risk of confusion):
 
@@ -47,7 +50,7 @@ However, I actually don't recommend this approach for a number of reasons (mostl
 * It's possible that you forget that you did put Qt.py here, and are trying to load a newer version of Qt.py via e.g. vendoring, but instead the Qt.py from within this custom Python build is being used.
 * For every new version of this main application, you'd have to remember to re-install Qt.py.
 
-#### Vendoring
+## Vendoring
 
 You can download the [`Qt.py` file](https://raw.githubusercontent.com/mottosso/Qt.py/master/Qt.py) and bundle it with your application's source tree. Something like this:
 
@@ -113,7 +116,7 @@ import Qt
 ```
 
 
-#### `sys.path` and `site.addsitedir`
+## `sys.path` and `site.addsitedir`
 
 Qt.py may not be automatically found by your script. If this is so, you can make it available via e.g. the `site` standard Python module:
 
