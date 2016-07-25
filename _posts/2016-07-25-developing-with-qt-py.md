@@ -13,9 +13,6 @@ This post aims to give an introduction to the Qt.py project and how to get set u
 * What is Qt.py
 * How does it work?
 * Installing Qt.py
-  * Install with pip
-  * Install into an application's custom Python build
-  * Vendoring
 * Caveats
 * Contributing
 * Closing comments
