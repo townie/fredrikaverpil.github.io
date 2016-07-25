@@ -4,11 +4,16 @@ title: Installing Qt.py (advanced methods)
 tags: [python, maya, nuke, pyside, pyqt]
 ---
 
-Qt.py can be installed in many ways, depending on your needs. This post aims to outline some different approaches.
+Qt.py can be installed in many ways, depending on your needs. This post aims to outline some different approaches:
+
+* Install using pip
+* Install into an application's custom Python build
+* Vendoring
+* `sys.path` and `site.addsitedir`
 
 <!--more-->
 
-#### Install with pip
+#### Install using pip
 
 The probably most common way to install Qt.py (and as mentioned in the project's [README](https://github.com/mottosso/Qt.py#install)) is to install via [pip](http://pip.readthedocs.io):
 
@@ -105,4 +110,34 @@ QTPY_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
 site.addsitedir(QTPY_PATH)
 
 import Qt
+```
+
+
+#### `sys.path` and `site.addsitedir`
+
+Qt.py may not be automatically found by your script. If this is so, you can make it available via e.g. the `site` standard Python module:
+
+```python
+>>> import Qt
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named Qt
+
+>>> import site
+>>> site.addsitedir(PATH_TO_QTPY)
+>>> import Qt
+>>> print(Qt.__binding__)
+PySide2
+```
+
+...or by adding the Qt.py path to `PATH` via `sys.path.append` or `sys.path.insert`:
+
+```python
+import sys
+sys.path.append(PATH_TO_QTPY)
+```
+
+```python
+import sys
+sys.path.insert(0, PATH_TO_QTPY)
 ```
