@@ -9,7 +9,7 @@ tags: [python, maya, nuke, qtpy, pyside, pyqt]
 * Install using pip
 * Install into an application's custom Python build
 * Vendoring
-* `sys.path` and `site.addsitedir`
+* Make Qt.py available using `sys.path` and `site.addsitedir`
 
 <!--more-->
 
@@ -116,16 +116,20 @@ import Qt
 ```
 
 
-## `sys.path` and `site.addsitedir`
+## Make Qt.py available using `sys.path` and `site.addsitedir`
 
-Qt.py may not be automatically found by your script. If this is so, you can make it available via e.g. the `site` standard Python module:
+In cases where Qt.py is simply not found...
 
 ```python
 >>> import Qt
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ImportError: No module named Qt
+```
 
+...you can make it available via e.g. the `site` standard Python module:
+
+```python
 >>> import site
 >>> site.addsitedir(PATH_TO_QTPY)
 >>> import Qt
@@ -133,14 +137,16 @@ ImportError: No module named Qt
 PySide2
 ```
 
-...or by adding the Qt.py path to `PATH` via `sys.path.append` or `sys.path.insert`:
+Or you can add the Qt.py path to `PATH` via `sys.path.append` or `sys.path.insert`:
 
 ```python
-import sys
-sys.path.append(PATH_TO_QTPY)
+>>> import sys
+>>> sys.path.append(PATH_TO_QTPY)
+>>> import Qt
 ```
 
 ```python
-import sys
-sys.path.insert(0, PATH_TO_QTPY)
+>>> import sys
+>>> sys.path.insert(0, PATH_TO_QTPY)
+>>> import Qt
 ```
