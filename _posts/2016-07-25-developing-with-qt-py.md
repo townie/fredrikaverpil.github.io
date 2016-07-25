@@ -83,7 +83,7 @@ The pure-Python module is contained within the [`Qt.py` file](https://raw.github
 
 ## Installing Qt.py
 
-First off, you should make sure you've got either PySide, PySide2, PyQt4 or PyQt5 installed in your Python environment. Then you can proceed with installing `Qt.py`.
+First off, you should make sure you've got either PySide, PySide2, PyQt4 or PyQt5 installed in your Python environment. Then you can proceed with installing Qt.py.
 
 The tricky part is to make sure your script can find Qt.py. There are many alternatives to achieve this but the perhaps simplest one is to follow these two steps:
 
