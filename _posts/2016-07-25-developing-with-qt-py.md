@@ -4,7 +4,7 @@ title: Developing with Qt.py
 tags: [python, maya, nuke, qtpy, pyside, pyqt]
 ---
 
-This post aims to give an introduction to the Qt.py project and how to get set up with it for PySide/PyQt4 and PySide2/PyQt5 development.
+This post aims to give an introduction to the [Qt.py](https://github.com/mottosso/Qt.py) project and how to get set up with it for PySide/PyQt4 and PySide2/PyQt5 development.
 
 <!--more-->
 

@@ -4,7 +4,7 @@ title: Installing Qt.py (advanced methods)
 tags: [python, maya, nuke, qtpy, pyside, pyqt]
 ---
 
-Qt.py can be installed in many ways, depending on your needs. This post aims to outline some common approaches:
+[Qt.py](https://github.com/mottosso/Qt.py) can be installed in many ways, depending on your needs. This post aims to outline some common approaches:
 
 * Install using pip
 * Install into an application's custom Python build
