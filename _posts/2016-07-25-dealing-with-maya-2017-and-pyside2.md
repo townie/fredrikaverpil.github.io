@@ -4,6 +4,8 @@ title: Dealing with Maya 2017 and PySide2
 tags: [python, maya, qtpy, pyside, pyqt]
 ---
 
+![]({{ site.baseurl }}blog/assets/maya2017/no_pyside.png)
+
 [Maya 2017](http://www.autodesk.com/products/maya/overview) was released today and with it comes a big change; PySide (and PyQt4) no longer works with Maya.
 
 This guide explains how to deal with that and make your Python and PySide/PyQt scripts compatible with Maya 2017 as well as older Maya versions.
