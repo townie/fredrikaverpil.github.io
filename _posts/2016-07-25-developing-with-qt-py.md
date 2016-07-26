@@ -52,9 +52,9 @@ app.exec_()
 
 The code above will run successfully when using Qt.py, regardless of whether you are on Windows, macOS or Linux, Python 2 or Python 3, PySide, PyQt4, PySide2 or PyQt5.
 
-For those of you new to Qt5 (and PySide2 or PyQt5), all widget classes of `QtGui` were moved into its own module called `QtWidgets`. I would dare to say this is one of the largest backwards compatibility breaking changes you will have have to deal with when changing existing scripts to use Qt.py.
+For those of you new to Qt5 (and PySide2 or PyQt5), all widget classes of `QtGui` were moved into its own module called `QtWidgets`. I would dare to say this is one of the largest backwards compatibility breaking changes you will have to deal with when changing existing scripts to use Qt.py.
 
-There are of course differences between all the Pything bindings which Qt.py does not handle. When you stumble upon this, you can query which binding is being used and create binding-specific code for such scenarios. For example, this deals with Qt4 vs Qt5:
+There are of course differences between all the Python bindings which Qt.py does not handle. When you stumble upon this, you can query which binding is being used and create binding-specific code for such scenarios. For example, this deals with Qt4 vs Qt5:
 
 ```python
 from Qt import __binding__
@@ -117,7 +117,7 @@ If you have any questions, don't hesitate to [open an issue](https://github.com/
 
 #### The future of PySide2
 
-This is the [new home of PySide2](https://wiki.qt.io/PySide2), since [The Qt Company](https://www.qt.io) took over the development. Keep an eye out for announcements there. Right now I can see OpenGL is not supported in PySide2.
+[This](https://wiki.qt.io/PySide2) is the new home of PySide2, since [The Qt Company](https://www.qt.io) took over the development. Keep an eye out for its current status and announcements there. Right now I can see OpenGL is not supported in PySide2.
 
 PySide2 development recently took a hard left turn and announced they will officially not support Python 2. Hopefully, as long as an appropriate compiler is used then PySide2 is compatible with Python 2. Maya 2017 which was released today comes with Python 2 and PySide2, so that previous statement seems true. From the [now obsolete PySide2 wiki at Github](https://github.com/PySide/pyside2/wiki):
 
