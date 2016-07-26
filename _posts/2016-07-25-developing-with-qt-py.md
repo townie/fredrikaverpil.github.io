@@ -124,7 +124,7 @@ PySide2 development recently took a hard left turn and announced they will offic
 > **Why there is no PySide2 for Python 2?**  
 > Because Python 2 extensions like PySide need to be compiled with ancient version of MS Visual C++ 9 and that means that all linked libs including Qt need to be compiled with this version. But Qt5, the library that PySide2 wraps, dropped support for MS VC++ 9, and code is unlikely to compile for it anymore. The only solution to fix this, is to help with development and funding of https://mingwpy.github.io/
 
-Because of all of this which I'd actually like to call "uncertainty" around PySide2 ...and also because PyQt5 offers a wheel for Python 3 which can be installed with pip, I'm setting out to use Python 3 and PyQt5 wherever I can. Then I just piggy-back on the existing PySide2 in e.g. Autodesk Maya 2017 and PySide in previous versions of Maya.
+Because of all of this uncertainty around PySide2 ...and also because PyQt5 offers a wheel for Python 3 which can be installed with pip, I'm personally setting out to use Python 3 and PyQt5 wherever I can. Then I just piggy-back on the existing PySide2 in e.g. Autodesk Maya 2017 and PySide in previous versions of Maya.
 
 
 #### QtQuick and PyQt4
