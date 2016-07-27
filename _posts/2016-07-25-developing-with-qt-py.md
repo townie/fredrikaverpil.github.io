@@ -129,4 +129,4 @@ Because of all of this uncertainty around PySide2 ...and also because PyQt5 offe
 
 #### QtQuick and PyQt4
 
-Even though QtQuick is available in PyQt4, I've been recommended to skip this and only use QtQuick in PyQt5, where it apparently works really well.
+Even though [QtQuick](https://www.qt.io/qt-quick/) is available in PyQt4, I've been recommended to skip this and only use QtQuick in PyQt5, where it apparently works really well.
