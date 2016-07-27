@@ -16,7 +16,7 @@ It is likely that this guide will also be applicable to e.g. [Nuke](https://www.
 
 ## Background (Qt4 vs Qt5)
 
-Starting with Maya 2011, Maya's user interface is built using the [Qt](http://www.qt.io) toolkit. Up until and including Maya 2016, Qt version 4 ("Qt4"), [released in 2005](https://en.wikipedia.org/wiki/List_of_Qt_releases#Qt_4), has been used. Today, roughly 11 years later, and starting with Maya 2017, Qt was upgraded to version 5 ("Qt5") to enable a host of enhancements to Maya. Unfortunately, this also breaks backwards compatibility to Qt4.
+Starting with Maya 2011, Maya's user interface is built using the [Qt](http://www.qt.io) toolkit. Up until and including Maya 2016, Qt of version 4 ("Qt4") which was [released in 2005](https://en.wikipedia.org/wiki/List_of_Qt_releases#Qt_4) has been used. Today, roughly 11 years after the Qt4 release, and starting with Maya 2017, Qt was upgraded to version 5 ("Qt5") to enable a host of enhancements to Maya. Unfortunately, this also breaks backwards compatibility to Qt4.
 
 When you use PySide (or PyQt4), you're actually using the Python bindings for Qt4. So naturally, when Qt4 no longer exists in Maya, PySide doesn't work anymore and was therefore removed in Maya 2017. Enter [PySide2](https://wiki.qt.io/PySide2).
 
