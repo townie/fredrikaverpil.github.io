@@ -10,7 +10,7 @@ tags: [python, maya, qtpy, pyside, pyqt]
 
 This guide explains how to deal with that and make your Python and PySide/PyQt scripts compatible with Maya 2017 as well as older Maya versions.
 
-It is likely that this guide will also be applicable to e.g. [Nuke](https://www.thefoundry.co.uk/products/nuke/) or any other Python-enabled DCC app.
+This guide is also applicable to e.g. [Nuke](https://www.thefoundry.co.uk/products/nuke/) or any other Python-enabled DCC app which uses Qt.
 
 <!--more-->
 
