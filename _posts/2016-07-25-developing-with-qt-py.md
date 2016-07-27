@@ -97,7 +97,7 @@ I've also outlined a few advanced (and often better) approaches on how to get Qt
 
 There are some "gotchas" or caveats to be aware of. We are keeping track of them in the [`CAVEATS.md` file](https://github.com/mottosso/Qt.py/blob/master/CAVEATS.md).
 
-The `CAVEATS.md` markdown file is actually created in such a way that it can be parsed and included in the project's Travis tests. This makes it possible for us to better track and document caveats as well as their workarounds.
+The `CAVEATS.md` markdown file is actually created in such a way that it can be parsed and included in the project's [Travis-CI tests](https://travis-ci.org/mottosso/Qt.py). This makes it possible for us to better track and document caveats as well as their workarounds.
 
 We encourage everyone who is using Qt.py to report any such caveats along with a workaround (if available) so that they can be incorporated into the `CAVEATS.md` and in our tests.
 
