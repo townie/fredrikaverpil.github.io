@@ -33,7 +33,7 @@ After installing XQuartz, log out and back in to OS X.
 
 #### Docker for Mac
 
-Download Docker for Mac 1.12 stable from [here](https://docs.docker.com/docker-for-mac/).
+Download Docker for Mac 1.12 stable from [here](https://docs.docker.com/docker-for-mac/), install and run.
 
 
 ## Go!
