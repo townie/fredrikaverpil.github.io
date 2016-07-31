@@ -4,6 +4,8 @@ bash:
   name: Bash
 chromeos:
   name: Chrome OS
+docker:
+  name: Docker
 gce:
   name: GCE
 github:
