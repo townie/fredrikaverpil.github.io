@@ -4,16 +4,18 @@ title: Docker for Mac and GUI applications
 tags: [docker]
 ---
 
-A quick guide on how to run Docker for Mac GUI applications with XQuartz.
+![]({{ site.baseurl }}blog/assets/docker/firefox.png)
+
+A quick guide on how to run containers requiring a GUI Docker for Mac and XQuartz.
 
 <!--more-->
 
 This guide is assuming the following:
 
 * OS X 10.11.5 (El Capitan)
-* XQuartz 2.7.10 beta 2
 * Docker for Mac 1.12 stable
-* Jessie Frazelle's firefox Dockerfile
+* XQuartz 2.7.10 beta 2
+* Jessie Frazelle's Firefox Dockerfile
 
 ## Prerequisites
 
