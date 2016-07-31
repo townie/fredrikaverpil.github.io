@@ -6,7 +6,7 @@ tags: [docker]
 
 ![]({{ site.baseurl }}blog/assets/docker/firefox.png)
 
-A quick guide on how to run containers requiring a GUI Docker for Mac and XQuartz.
+A quick guide on how to run containers requiring a GUI with Docker for Mac and XQuartz.
 
 <!--more-->
 
