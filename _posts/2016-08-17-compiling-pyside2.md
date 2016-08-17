@@ -170,8 +170,7 @@ A wheel was hopefully built in the `dist` folder. So just `cd dist` and `pip ins
 
 Unfortunately, and like with PySide, these wheels are not "portable" and won't install on systems which doesn't already have the specific Qt5 version installed used during compilation. This, I believe, is because PySide2 links dynamically (instead of statically) against the Qt5 installation. Hopefully, this is something The Qt Company will address via official PySide2 wheels, as Riverbank Software is now providing a fully portable PyQt5 wheel for Python 3 which is absolutely awesome. In case you think we could produce such wheels ourselves, I'd appreciate if you'd leave a comment on this further down below!
 
-Personally, this makes me want to develop for PyQt5 wherever I can since this is all it takes to get going if you're using Python 3: `pip install PyQt5`.
-
+Personally, this makes me want to develop for PyQt5 wherever I can since this is all it takes to get going if you're using Python 3: `pip install PyQt5`.  
 If you also feel this way, have a look at the [Qt.py](https://github.com/mottosso/Qt.py) project which will enable you to write code which will work in both PySide2 and PyQt5 (and PySide/PyQt4).
 
 
