@@ -12,9 +12,32 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
 <!--more-->
 
+## Contents
+
+* Precompiled wheels
+* Prerequisites
+  * OS X
+  * Ubuntu 14.04 Linux
+  * Ubuntu 16.04 Linux
+  * Windows 10
+* Notes on prerequisites
+* Clone the repository
+* Build the PySide2 wheel
+  * OS X
+  * Ubuntu 16.04 Linux
+  * Windows 10
+* Install the wheel
+* Closing comments
+
+## Pre-compiled wheels
+
+I've uploaded the wheels compiled from this guide [here](https://github.com/fredrikaverpil/pyside2-wheels).
+
+Unfortunately, and like with PySide, these wheels are not "portable" and won't install on systems which doesn't already have the specific Qt5 version installed used during compilation. This, I believe, is because PySide2 links dynamically (instead of statically) against the Qt5 installation. Hopefully, this is something The Qt Company will address via official PySide2 wheels, as Riverbank Software is now providing a fully portable PyQt5 wheel for Python 3 which is absolutely awesome. In case you think we could produce such wheels ourselves, I'd appreciate if you'd leave a comment on this further down below!
+
+Personally, this makes me want to develop for PyQt5 wherever I can since this is all it takes to get going if you're using Python 3: `pip install PyQt5`.
 
 ## Prerequisites
-
 
 ### OS X
 
@@ -55,7 +78,7 @@ docker run -ti -v $(pwd):/pyside ubuntu:16.04 bash
 
 You may want to start with an `apt-get update`, especially if you're in a Docker container.
 
-Make sure you've got `pip` and the `wheel` package:
+Make sure you've got `pip` (and its `wheel` package):
 
 ```bash
 apt-get install python-pip  # or python3-pip (for Python 3.x)
@@ -144,9 +167,10 @@ python setup.py bdist_wheel --ignore-git --qmake=c:\Qt\Qt5.6.1\5.6\msvc2015\bin\
 
 A wheel was hopefully built in the `dist` folder. So just `cd dist` and `pip install` away!
 
+
 ## Closing comments
 
-As of writing this, I understand that PySide2 is not seen as made generally available just yet, and could perhaps be seen as being in an alpha or beta stage. But they did announce that Python 2 support was officially dropped [here](https://github.com/PySide/pyside2/wiki):
+As of writing this, I understand that PySide2 is not seen as having been made generally available just yet, and could perhaps be seen as being in an alpha or beta stage. But they did announce that Python 2 support was officially dropped [here](https://github.com/PySide/pyside2/wiki):
 
 > Why there is no PySide2 for Python 2? Because Python 2 extensions like PySide need to be compiled with ancient version of MS Visual C++ 9 and that means that all linked libs including Qt need to be compiled with this version. But Qt5, the library that PySide2 wraps, dropped support for MS VC++ 9, and code is unlikely to compile for it anymore. The only solution to fix this, is to help with development and funding of [https://mingwpy.github.io/](https://mingwpy.github.io/)
 
