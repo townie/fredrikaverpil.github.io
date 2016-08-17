@@ -84,6 +84,7 @@ You'll need OpenSSL, Cmake, Microsoft Visual C++ Studio 2015 and, of course, Qt5
 I think the nicest approach would be to install these softwares via [Chocolatey](https://chocolatey.org) but I haven't managed to get that to work flawlessly, so I'm doing this manually instead.
 
 Download and install the 64-bit versions of:
+
 * [OpenSSL](https://sourceforge.net/projects/openssl)
 * [Cmake](https://cmake.org/download)
 * [Microsoft Visual C++ Studio 2015](https://www.visualstudio.com) - Note: during the install, you must check the programming language option for C++, or the `cl` command won't be available. This can also be performed if you run the installer again after having already installed MSVS2015 (choose to "Modify" your installation).
