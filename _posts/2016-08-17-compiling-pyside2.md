@@ -124,6 +124,8 @@ Clone the `pyside-setup` repository and have it also pull down its gitmodules:
 git clone --recursive https://codereview.qt-project.org/pyside/pyside-setup
 ```
 
+Autodesk has also provided the version of PySide2 they used in Maya 2017 on their [open source distributions page](http://www.autodesk.com/company/legal-notices-trademarks/open-source-distribution). If you prefer that, you can download the PySide2.zip file from there and use that instead.
+
 ## Build the PySide2 wheel
 
 The exact paths given in the arguments may not be identical on your system so verify those prior to compiling.
