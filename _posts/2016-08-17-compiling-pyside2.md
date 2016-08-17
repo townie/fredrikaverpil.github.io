@@ -168,7 +168,7 @@ Unfortunately, and like with PySide, these wheels are not "portable" and won't i
 
 Personally, this makes me want to develop for PyQt5 wherever I can since this is all it takes to get going if you're using Python 3: `pip install PyQt5`.
 
-If you also feel this way, have a look at the [Qt.py](https://github.com/mottosso/Qt.py) project which will enable you to write for both PySide2 and PyQt5 (and PySide/PyQt4).
+If you also feel this way, have a look at the [Qt.py](https://github.com/mottosso/Qt.py) project which will enable you to write code which will work in both PySide2 and PyQt5 (and PySide/PyQt4).
 
 
 ## Closing comments
