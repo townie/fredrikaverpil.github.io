@@ -182,4 +182,4 @@ Since the Github repository is basically abandoned, I'd suggest you create a use
 * [PySide2 wiki](https://wiki.qt.io/PySide2)
 * [PySide2 repositories](https://codereview.qt-project.org/#/admin/projects/?filter=pyside)
 * [Bug tracker (issues)](https://bugreports.qt.io/browse/PYSIDE/)
-* [Qt language bindings forum](htps://forum.qt.io/category/15/language-bindings)
+* [Qt language bindings forum](https://forum.qt.io/category/15/language-bindings)
