@@ -123,7 +123,7 @@ python setup.py bdist_wheel --ignore-git --qmake=/usr/local/Cellar/qt5/5.6.1-1/b
 ### Ubuntu 16.04 Linux
 
 
-This command worked fine for me using Python 2.7.XX and Python 3.5.XX. Remember to have pip installed with the `wheel` package or you'll get an error about `bdist_wheel`.
+This command worked fine for me using Python 2.7.12 and Python 3.5.2. Remember to have pip installed with the `wheel` package or you'll get an error about `bdist_wheel`.
 
 ```
 python setup.py bdist_wheel --ignore-git --qmake=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake --cmake=/usr/bin/cmake
