@@ -147,7 +147,7 @@ This command worked fine for me using Python 2.7.12 and Python 3.5.2. Remember t
 python setup.py bdist_wheel --ignore-git --qmake=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake --cmake=/usr/bin/cmake
 ```
 
-Please note, in `setup.py`, the `--standalone` argument is mentioned:
+Please note, in `setup.py`, the `--standalone` argument is mentioned, but I don't see this working when including that in the build command:
 
 > On Linux you can use option --standalone, to embed Qt libraries to PySide2 distribution
 
