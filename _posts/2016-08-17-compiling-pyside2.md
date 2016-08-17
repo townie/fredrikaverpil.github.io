@@ -147,6 +147,10 @@ This command worked fine for me using Python 2.7.12 and Python 3.5.2. Remember t
 python setup.py bdist_wheel --ignore-git --qmake=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake --cmake=/usr/bin/cmake
 ```
 
+EDIT: In `setup.py`:
+
+> On Linux you can use option --standalone, to embed Qt libraries to PySide2 distribution
+
 Please note, I'm not using the `--openssl` argument since I actually wasn't able to figure out where the OpenSSL bin directory resides in Ubuntu. At least, searching using `find / -name openssl` didn't reveal this and the wheel works anyways. If you know where this resides or how to make it available, I'd be grateful if you would like to share this with me in the comments further down below.
 
 
