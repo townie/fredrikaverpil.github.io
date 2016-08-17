@@ -26,7 +26,7 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
   * Ubuntu 16.04 Linux
   * Windows 10
 * Install the wheel
-* Precompiled wheels
+* Notes on precompiled wheels
 * Closing comments
 
 
@@ -160,9 +160,7 @@ python setup.py bdist_wheel --ignore-git --qmake=c:\Qt\Qt5.6.1\5.6\msvc2015\bin\
 
 A wheel was hopefully built in the `dist` folder. So just `cd dist` and `pip install` away!
 
-## Pre-compiled wheels
-
-I've uploaded the wheels compiled from this guide [here](https://github.com/fredrikaverpil/pyside2-wheels).
+## Notes on pre-compiled wheels
 
 Unfortunately, and like with PySide, these wheels are not "portable" and won't install on systems which doesn't already have the specific Qt5 version installed used during compilation. This, I believe, is because PySide2 links dynamically (instead of statically) against the Qt5 installation. Hopefully, this is something The Qt Company will address via official PySide2 wheels, as Riverbank Software is now providing a fully portable PyQt5 wheel for Python 3 which is absolutely awesome. In case you think we could produce such wheels ourselves, I'd appreciate if you'd leave a comment on this further down below!
 
