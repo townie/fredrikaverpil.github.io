@@ -61,7 +61,7 @@ apt-get install python3-pyside2  # for Python 3.5.x
 
 ### Ubuntu 16.04 Linux
 
-I suggest you run a Docker container to build PySide2. This could be done by doing something like this:
+In case you wish to build PySide2 in a Docker container, you can start by doing something like this:
 
 ```bash
 # Map the current folder to the container's /pyside, so you can transfer built
@@ -69,7 +69,7 @@ I suggest you run a Docker container to build PySide2. This could be done by doi
 docker run -ti -v $(pwd):/pyside ubuntu:16.04 bash
 ```
 
-You may want to start with an `apt-get update`, especially if you're in a Docker container.
+You may then want to perform an `apt-get update`, especially if you're in a Docker container.
 
 Make sure you've got `pip` (and its `wheel` package):
 
