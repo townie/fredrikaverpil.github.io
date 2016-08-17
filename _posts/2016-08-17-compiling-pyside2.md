@@ -64,8 +64,8 @@ apt-get install python3-pyside2  # for Python 3.5.x
 In case you wish to build PySide2 in a Docker container, you can start by doing something like this:
 
 ```bash
-# Map the current folder to the container's /pyside, so you can transfer built
-# wheels onto your main machine
+# Map the current folder to the container's /pyside, so you can
+# transfer built wheels onto your main machine
 docker run -ti -v $(pwd):/pyside ubuntu:16.04 bash
 ```
 
