@@ -173,7 +173,7 @@ If you also feel this way, have a look at the [Qt.py](https://github.com/mottoss
 
 ## Closing comments
 
-As of writing this, I understand that PySide2 is not seen as having been made generally available just yet, and could perhaps be seen as being in an alpha or beta stage. But they did announce that Python 2 support was officially dropped [here](https://github.com/PySide/pyside2/wiki):
+As of writing this, I understand that PySide2 is not seen as having been made generally available just yet, and could perhaps be seen as being in an alpha stage. But they did announce that Python 2 support was officially dropped [here](https://github.com/PySide/pyside2/wiki):
 
 > Why there is no PySide2 for Python 2? Because Python 2 extensions like PySide need to be compiled with ancient version of MS Visual C++ 9 and that means that all linked libs including Qt need to be compiled with this version. But Qt5, the library that PySide2 wraps, dropped support for MS VC++ 9, and code is unlikely to compile for it anymore. The only solution to fix this, is to help with development and funding of [https://mingwpy.github.io/](https://mingwpy.github.io/)
 
