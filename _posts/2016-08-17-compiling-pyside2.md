@@ -14,7 +14,6 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
 ## Contents
 
-* Precompiled wheels
 * Prerequisites
   * OS X
   * Ubuntu 14.04 Linux
@@ -27,19 +26,9 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
   * Ubuntu 16.04 Linux
   * Windows 10
 * Install the wheel
+* Precompiled wheels
 * Closing comments
 
-## Pre-compiled wheels
-
-I've uploaded the wheels compiled from this guide [here](https://github.com/fredrikaverpil/pyside2-wheels).
-
-Unfortunately, and like with PySide, these wheels are not "portable" and won't install on systems which doesn't already have the specific Qt5 version installed used during compilation. This, I believe, is because PySide2 links dynamically (instead of statically) against the Qt5 installation. Hopefully, this is something The Qt Company will address via official PySide2 wheels, as Riverbank Software is now providing a fully portable PyQt5 wheel for Python 3 which is absolutely awesome. In case you think we could produce such wheels ourselves, I'd appreciate if you'd leave a comment on this further down below!
-
-Personally, this makes me want to develop for PyQt5 wherever I can since this is all it takes to get going if you're using Python 3: `pip install PyQt5`.
-
-If you also feel this way, have a look at the [Qt.py](https://github.com/mottosso/Qt.py) project which will enable you to write for both PySide2 and PyQt5 (and PySide/PyQt4).
-
-With that said, on to the guide...
 
 ## Prerequisites
 
@@ -170,6 +159,16 @@ python setup.py bdist_wheel --ignore-git --qmake=c:\Qt\Qt5.6.1\5.6\msvc2015\bin\
 ## Install the wheel
 
 A wheel was hopefully built in the `dist` folder. So just `cd dist` and `pip install` away!
+
+## Pre-compiled wheels
+
+I've uploaded the wheels compiled from this guide [here](https://github.com/fredrikaverpil/pyside2-wheels).
+
+Unfortunately, and like with PySide, these wheels are not "portable" and won't install on systems which doesn't already have the specific Qt5 version installed used during compilation. This, I believe, is because PySide2 links dynamically (instead of statically) against the Qt5 installation. Hopefully, this is something The Qt Company will address via official PySide2 wheels, as Riverbank Software is now providing a fully portable PyQt5 wheel for Python 3 which is absolutely awesome. In case you think we could produce such wheels ourselves, I'd appreciate if you'd leave a comment on this further down below!
+
+Personally, this makes me want to develop for PyQt5 wherever I can since this is all it takes to get going if you're using Python 3: `pip install PyQt5`.
+
+If you also feel this way, have a look at the [Qt.py](https://github.com/mottosso/Qt.py) project which will enable you to write for both PySide2 and PyQt5 (and PySide/PyQt4).
 
 
 ## Closing comments
