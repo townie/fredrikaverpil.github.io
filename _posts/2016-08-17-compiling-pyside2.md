@@ -55,7 +55,7 @@ This installed Qt 5.6.1-1 and cmake 3.5.2 on my system.
 
 ### Ubuntu 14.04 Linux
 
-Currently, I'm having issues with not being able to install `libqt5quickwidgets5` via `apt-get`, and because of that I recommend resorting to the following:
+Currently, I'm having issues with not being able to install `libqt5quickwidgets5` via apt-get, and because of that I recommend resorting to the following:
 
 ```bash
 apt-get install python-pyside2  # for Python 2.7.x
@@ -75,7 +75,7 @@ docker run -ti -v $(pwd):/pyside ubuntu:16.04 bash
 
 You may then want to perform an `apt-get update`, especially if you're in a Docker container.
 
-Make sure you've got `pip` (and its `wheel` package):
+Make sure you've got pip (and its wheel package):
 
 ```bash
 apt-get install python-pip  # or python3-pip (for Python 3.x)
@@ -121,7 +121,7 @@ Now we'll also need additional Qt5 dependencies. This command below will probabl
 yum install qt5-*
 ```
 
-Next, we'll install Cmake 3.0 (`yum` only provides 2.x at this time). Please note this will build the Cmake executable in the same directory as the source.
+Next, we'll install Cmake 3.0 (yum only provides 2.x at this time). Please note this will build the Cmake executable in the same directory as the source.
 
 ```bash
 yum install wget
@@ -179,7 +179,7 @@ The exact paths given in the arguments may not be identical on your system so ve
 
 ### Notes on Linux
 
-Please note, in `setup.py`, the `--standalone` argument is mentioned, but I don't see this working when including that in the build command:
+Please note, in setup.py, the `--standalone` argument is mentioned, but I don't see this working when including that in the build command:
 
 > On Linux you can use option --standalone, to embed Qt libraries to PySide2 distribution
 
@@ -240,7 +240,7 @@ python setup.py bdist_wheel --ignore-git --qmake=c:\Qt\Qt5.6.1\5.6\msvc2015\bin\
 
 ## Install the wheel
 
-A wheel was hopefully built in the `dist` folder. So just `cd dist` and `pip install` away!
+A wheel was hopefully built in the dist folder. So just `cd dist` and `pip install` away!
 
 ## Notes on pre-compiled wheels
 
