@@ -227,8 +227,7 @@ make: *** [all] Error 2
 error: Error compiling pyside2
 ```
 
-Unfortunately, I'm [not allowed](http://i.imgur.com/ZWVbnLs.png) to report this to the Qt/PySide developers :(  
-I'm guessing you need to sign the [contribution agreement](https://www.qt.io/contributionagreement/) to be able to contribute.
+I reported this issue [here](https://bugreports.qt.io/browse/PYSIDE-342).
 
 
 ### Windows 10
@@ -263,7 +262,6 @@ Since the Github repository is basically abandoned, I'd suggest you create a use
 * [PySide2 repositories](https://codereview.qt-project.org/#/admin/projects/?filter=pyside)
 * [Bug tracker (issues)](https://bugreports.qt.io/browse/PYSIDE/)
 * [Qt language bindings forum](https://forum.qt.io/category/15/language-bindings)
-* [Qt Contributor Agreement](https://www.qt.io/contributionagreement/)
 * #qt-pyside on irc.freenode.net (replaces the former #pyside channel, after PySide moved into Qt)
 
 Please note that you should use the same MSVC versions when compiling in Windows, as mixing these have known but hard to find side-effects. Read more [here](http://siomsystems.com/mixing-visual-studio-versions/) on that. Since Python 3.5 was compiled with Microsoft C++ Visual Studio 2015 (v14.0), we're good to use that when compiling PySide2 as well.
