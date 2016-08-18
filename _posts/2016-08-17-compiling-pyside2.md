@@ -183,7 +183,7 @@ Please note, in setup.py, the `--standalone` argument is mentioned, but I don't 
 
 > On Linux you can use option --standalone, to embed Qt libraries to PySide2 distribution
 
-Also please note, I'm not using the `--openssl` argument since I actually wasn't able to figure out where the OpenSSL bin directory resides in Ubuntu. At least, searching using `find / -name openssl` didn't reveal this and the wheel works anyways. If you know where this resides or how to make it available, I'd be grateful if you would like to share this with me in the comments further down below.
+Also please note, I'm not using the `--openssl` argument since I actually wasn't able to figure out where the OpenSSL bin directory resides in Ubuntu/CentOS. At least, searching using `find / -name openssl` didn't reveal this and the wheel works anyways. If you know where this resides or how to make it available, I'd be grateful if you would like to share this with me in the comments further down below.
 
 
 ### OS X
