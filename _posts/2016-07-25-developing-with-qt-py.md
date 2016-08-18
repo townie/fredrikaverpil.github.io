@@ -119,7 +119,7 @@ If you have any questions, don't hesitate to [open an issue](https://github.com/
 
 [This](https://wiki.qt.io/PySide2) is the new home of PySide2, since [The Qt Company](https://www.qt.io) took over the development. Keep an eye out for its current status and announcements there. Right now I can see OpenGL is not supported in PySide2.
 
-PySide2 development recently took a hard left turn and announced they will officially not support Python 2. Hopefully, as long as an appropriate compiler is used then PySide2 is compatible with Python 2. Maya 2017 which was released today comes with Python 2 and PySide2, so that previous statement seems true. From the [now obsolete PySide2 wiki at Github](https://github.com/PySide/pyside2/wiki):
+PySide2 development recently took a hard left turn and announced they will not support Python 2 (although not officially, I was told). Hopefully, as long as an appropriate compiler is used then PySide2 is compatible with Python 2. Maya 2017 which was released today comes with Python 2 and PySide2, so that previous statement seems true. From the [now obsolete PySide2 wiki at Github](https://github.com/PySide/pyside2/wiki):
 
 > **Why there is no PySide2 for Python 2?**  
 > Because Python 2 extensions like PySide need to be compiled with ancient version of MS Visual C++ 9 and that means that all linked libs including Qt need to be compiled with this version. But Qt5, the library that PySide2 wraps, dropped support for MS VC++ 9, and code is unlikely to compile for it anymore. The only solution to fix this, is to help with development and funding of https://mingwpy.github.io/
