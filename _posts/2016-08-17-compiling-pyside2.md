@@ -227,7 +227,8 @@ make: *** [all] Error 2
 error: Error compiling pyside2
 ```
 
-Unfortunately, I'm [not allowed](http://i.imgur.com/ZWVbnLs.png) to report this to the Qt/PySide developers :(
+Unfortunately, I'm [not allowed](http://i.imgur.com/ZWVbnLs.png) to report this to the Qt/PySide developers :(  
+I'm guessing you need to sign the [contribution agreement](https://www.qt.io/contributionagreement/) to be able to contribute.
 
 
 ### Windows 10
