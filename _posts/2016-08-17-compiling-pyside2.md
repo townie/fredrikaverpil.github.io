@@ -77,13 +77,14 @@ Make sure you've got `pip` (and its `wheel` package):
 apt-get install python-pip  # or python3-pip (for Python 3.x)
 ```
 
-Then you can get all needed dependencies with apt-get:
+Then proceed with installing some dependencies:
 
 ```bash
-apt-get install build-essential git cmake qt5-default libxml2 libxslt1.1 python-dev qtbase5-dev
+apt-get install build-essential git cmake libxml2 libxslt1.1 python-dev qt5-default qtbase5-dev
 ```
 
-This installed Qt 5.5.1 and cmake 3.5.1 on my system. Please note that cmake version >=3.0 is required.
+The previous command installed Qt 5.5.1 and cmake 3.5.1 on my system. If you really wish to use Qt 5.6.1, you currently need to build Qt from source instead of installing it via `apt-get`. This, however, is for another blog post as it is *extremely* time consuming. You can verify which version of Qt you have by executing `qmake --version`.
+
 
 Additionally, you'll need to install Qt5's libraries:
 
@@ -91,9 +92,10 @@ Additionally, you'll need to install Qt5's libraries:
 apt-get install qttools5-dev-tools libqt5clucene5 libqt5concurrent5 libqt5core5a libqt5dbus5 libqt5designer5 libqt5designercomponents5 libqt5feedback5 libqt5gui5 libqt5help5 libqt5multimedia5 libqt5network5 libqt5opengl5 libqt5opengl5-dev libqt5organizer5 libqt5positioning5 libqt5printsupport5 libqt5qml5 libqt5quick5 libqt5quickwidgets5 libqt5script5 libqt5scripttools5 libqt5sql5 libqt5sql5-sqlite libqt5svg5 libqt5test5 libqt5webkit5 libqt5widgets5 libqt5xml5 libqt5xmlpatterns5 libqt5xmlpatterns5-dev
 ```
 
+
 ### Windows 10
 
-Unfortunately, I have no idea how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. I very much appreciate suggestions in the comments further down below on this. So, at least for now, this guide is for Python 3.5.x only.
+Unfortunately, I have no idea how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. Perhaps you can build Qt from source and then compile it using Microsoft C++ Visual Studio 2010. I very much appreciate suggestions in the comments further down below on this. So, at least for now, this guide is for Python 3.5.x only.
 
 You'll need OpenSSL, Cmake, Microsoft Visual C++ Studio 2015 and, of course, Qt5.
 
@@ -116,7 +118,7 @@ PySide2 (or possibly Qt5?) requires Cmake >=3.0 to work. You can check your vers
 
 ## Clone the repository
 
-The old repository is located in Github. I'm not sure why they still keep it there as it is no longer maintained. The active repositories is hosted by the Qt Company and resides [here](https://codereview.qt-project.org/#/admin/projects/?filter=pyside).
+The old repository is located in Github. I'm not sure why they still keep it there as it is no longer maintained. The active repositories are hosted by the Qt Company and resides [here](https://codereview.qt-project.org/#/admin/projects/?filter=pyside).
 
 Clone the `pyside-setup` repository and have it also pull down its gitmodules:
 
