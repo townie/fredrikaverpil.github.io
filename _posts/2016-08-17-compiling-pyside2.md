@@ -200,3 +200,5 @@ Since the Github repository is basically abandoned, I'd suggest you create a use
 * [PySide2 repositories](https://codereview.qt-project.org/#/admin/projects/?filter=pyside)
 * [Bug tracker (issues)](https://bugreports.qt.io/browse/PYSIDE/)
 * [Qt language bindings forum](https://forum.qt.io/category/15/language-bindings)
+
+I find it somewhat strange that the Qt available for download intended for Python 3.5.x was compiled with Microsoft C++ Visual Studio 2015 since Python 3.5.x is compiled with Microsoft C++ Visual Studio 2010. As far as I'm aware, it's a very bad idea to mix MSVC versions like that. Read more [here](http://siomsystems.com/mixing-visual-studio-versions/) on that.
