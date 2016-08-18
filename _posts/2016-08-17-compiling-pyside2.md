@@ -107,7 +107,7 @@ yum install glibc-devel.i686
 
 ### Windows 10
 
-Unfortunately, I have no idea how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. Perhaps you can build Qt from source and then compile it using Microsoft C++ Visual Studio 2008 ([or 2015?](http://p-nand-q.com/python/building-python-27-with-visual_studio.html)). I very much appreciate suggestions in the comments further down below on this. So, at least for now, this guide is for Python 3.5.x only.
+Unfortunately, I have no idea how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. Perhaps you can build Qt from source and then compile it using Microsoft C++ Visual Studio 2008 ([or 2010/2015?](http://p-nand-q.com/python/building-python-27-with-visual_studio.html)). I very much appreciate suggestions in the comments further down below on this. So, at least for now, this guide is for Python 3.5.x only.
 
 You'll need OpenSSL, Cmake, Microsoft Visual C++ Studio 2015 and, of course, Qt5.
 
