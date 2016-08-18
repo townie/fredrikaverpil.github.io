@@ -18,11 +18,13 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
   * OS X
   * Ubuntu 14.04 Linux
   * Ubuntu 16.04 Linux
+  * CentOS 7 Linux (incomplete guide)
   * Windows 10
 * Clone the repository
 * Build the PySide2 wheel
   * OS X
   * Ubuntu 16.04 Linux
+  * CentOS 7 Linux (incomplete guide)
   * Windows 10
 * Install the wheel
 * Notes on precompiled wheels
@@ -95,7 +97,7 @@ apt-get install qttools5-dev-tools libqt5clucene5 libqt5concurrent5 libqt5core5a
 ```
 
 
-### CentOS 7 Linux
+### CentOS 7 Linux (incomplete guide)
 
 Please note: the guide for CentOS 7 Linux is incomplete and will generate an error mid-build. I'll update this section as soon as I come up with a solution to this problem.
 
@@ -202,7 +204,7 @@ python setup.py bdist_wheel --ignore-git --qmake=/usr/lib/x86_64-linux-gnu/qt5/b
 ```
 
 
-### CentOS 7 Linux
+### CentOS 7 Linux (incomplete guide)
 
 Please note: the guide for CentOS 7 Linux is incomplete and will generate an error mid-build. I'll update this section as soon as I come up with a solution to this problem.
 
