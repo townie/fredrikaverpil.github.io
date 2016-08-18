@@ -107,7 +107,7 @@ yum install glibc-devel.i686
 
 ### Windows 10
 
-Unfortunately, I have no idea how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. Perhaps you can build Qt from source and then compile it using Microsoft C++ Visual Studio 2008 ([or 2010/2015?](http://p-nand-q.com/python/building-python-27-with-visual_studio.html)). I very much appreciate suggestions in the comments further down below on this. So, at least for now, this guide is for Python 3.5.x only.
+Unfortunately, I have no idea how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. Perhaps you can build Qt from source and then compile it using Microsoft C++ Visual Studio 2008 (v9.0) ([or 2010/2015?](http://p-nand-q.com/python/building-python-27-with-visual_studio.html)). I very much appreciate suggestions in the comments further down below on this. So, at least for now, this guide is for Python 3.5.x only.
 
 You'll need OpenSSL, Cmake, Microsoft Visual C++ Studio 2015 and, of course, Qt5.
 
@@ -117,10 +117,10 @@ Download and install the 64-bit versions of:
 
 * [OpenSSL](https://sourceforge.net/projects/openssl)
 * [Cmake](https://cmake.org/download)
-* [Microsoft Visual C++ Studio 2015](https://www.visualstudio.com) - Note: during the install, you must check the programming language option for C++, or the `cl` command won't be available. This can also be performed if you run the installer again after having already installed MSVS2015 (choose to "Modify" your installation).
+* [Microsoft Visual C++ Studio 2015](https://www.visualstudio.com) - Note: during the install, you must check the programming language option for C++, or the `cl` command won't be available. This can also be performed if you run the installer again after having already installed MSVC2015 (choose to "Modify" your installation).
 * Qt 5.6.1-1 from the [Qt archives](https://download.qt.io/archive/qt/), I'm using [qt-opensource-windows-x86-msvc2015_64-5.6.1-1.exe](https://download.qt.io/archive/qt/5.6/5.6.1-1/qt-opensource-windows-x86-msvc2015_64-5.6.1-1.exe).
 
-You might also need the Windows SDK (I'm not sure since I had it installed already when writing this). You can download it for Windows 10 from [here](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk). I have a feeling this is installed by MSVS2015, but I'm not sure. If you know what the deal is here, please let me know in the comments further down below!
+You might also need the Windows SDK (I'm not sure since I had it installed already when writing this). You can download it for Windows 10 from [here](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk). I have a feeling this is installed by MSVC2015, but I'm not sure. If you know what the deal is here, please let me know in the comments further down below!
 
 
 ## Notes on prerequisites
@@ -201,4 +201,4 @@ Since the Github repository is basically abandoned, I'd suggest you create a use
 * [Bug tracker (issues)](https://bugreports.qt.io/browse/PYSIDE/)
 * [Qt language bindings forum](https://forum.qt.io/category/15/language-bindings)
 
-I find it somewhat strange that the Qt available for download intended for Python 3.5.x was compiled with Microsoft C++ Visual Studio 2015 since Python 3.5.x is compiled with Microsoft C++ Visual Studio 2010. As far as I'm aware, it's a very bad idea to mix MSVC versions like that. Read more [here](http://siomsystems.com/mixing-visual-studio-versions/) on that.
+Please take note of that using the same MSVC versions when compiling in Windows, as mixing these have known but hard to find side-effects. Read more [here](http://siomsystems.com/mixing-visual-studio-versions/) on that. Since Python 3.5 was compiled with Microsoft C++ Visual Studio 2015 (v14.0), we're good to use that when compiling PySide2 as well.
