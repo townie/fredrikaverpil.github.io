@@ -8,7 +8,7 @@ tags: [pyside, python]
 
 Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
-[Maya 2017](http://www.autodesk.com/products/maya) shipped with [PySide2](https://wiki.qt.io/PySide2) (2.0.0.dev0) built against [Qt](https://www.qt.io/developers/) 5.6.1, so that's the version of Qt I'm using in this guide as well as 64-bit [Python](https://www.python.org).
+[Maya 2017](http://www.autodesk.com/products/maya) shipped with [PySide2](https://wiki.qt.io/PySide2) (2.0.0~alpha0) built against [Qt](https://www.qt.io/developers/) 5.6.1, so that's the version of Qt I'm using in this guide as well as 64-bit [Python](https://www.python.org).
 
 <!--more-->
 
@@ -127,7 +127,7 @@ Next, we'll install Cmake 3.0 (yum only provides 2.x at this time). Please note 
 yum install wget
 wget http://www.cmake.org/files/v3.0/cmake-3.0.0.tar.gz
 gunzip cmake-3.0.0.tar.gz
-tar xvf cmake-3.0.0.tar.gz
+tar xvf cmake-3.0.0.tar
 cd cmake-3.0.0
 ./bootstrap
 gmake
@@ -209,7 +209,7 @@ python setup.py bdist_wheel --ignore-git --qmake=/usr/lib/x86_64-linux-gnu/qt5/b
 Please note: the guide for CentOS 7 Linux is incomplete and will generate an error mid-build. I'll update this section as soon as I come up with a solution to this problem.
 
 ```
-python setup.py bdist_wheel --ignore-git --qmake=/usr/lib64/qt5/bin/qmake-qt5 --cmake=/root/cmake-3.0.0/cmake
+python setup.py bdist_wheel --ignore-git --qmake=/usr/lib64/qt5/bin/qmake-qt5 --cmake=/root/cmake-3.0.0/bin/cmake
 ```
 
 The error I'm getting mid-build is:
