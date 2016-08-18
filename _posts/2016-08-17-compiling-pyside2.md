@@ -19,7 +19,6 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
   * Ubuntu 14.04 Linux
   * Ubuntu 16.04 Linux
   * Windows 10
-* Notes on prerequisites
 * Clone the repository
 * Build the PySide2 wheel
   * OS X
@@ -31,6 +30,9 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
 
 ## Prerequisites
+
+PySide2 (or possibly Qt5?) requires Cmake >=3.0 to work. You can check your version with `cmake --version`.
+
 
 ### OS X
 
@@ -47,7 +49,7 @@ Then the following packages, easily installed via [brew](https://brew.sh):
 brew install qt5 cmake libxslt libxml2
 ```
 
-Please note, this installed Qt 5.6.1-1 and cmake 3.5.2 on my system.
+This installed Qt 5.6.1-1 and cmake 3.5.2 on my system.
 
 ### Ubuntu 14.04 Linux
 
@@ -83,7 +85,7 @@ Then proceed with installing some dependencies:
 apt-get install build-essential git cmake libxml2 libxslt1.1 python-dev qt5-default qtbase5-dev
 ```
 
-The previous command installed Qt 5.5.1 and cmake 3.5.1 on my system. If you really wish to use Qt 5.6.1, you currently need to build Qt from source instead of installing it via `apt-get`. This, however, is for another blog post as it is *extremely* time consuming. You can verify which version of Qt you have by executing `qmake --version`.
+This installed Qt 5.5.1 and cmake 3.5.1 on my system. If you really wish to use Qt 5.6.1, you currently need to build Qt from source instead of installing it via apt-get. This, however, is for another blog post as it is *extremely* time consuming. You can verify which version of Qt you have by executing `qmake --version`.
 
 
 Additionally, you'll need to install Qt5's libraries:
@@ -95,19 +97,53 @@ apt-get install qttools5-dev-tools libqt5clucene5 libqt5concurrent5 libqt5core5a
 
 ### CentOS 7 Linux
 
-```bash
-yum install python-pip
-yum groupinstall "Development Tools"
-yum install epel-release
-yum install glibc-devel.i686
+Please note: the guide for CentOS 7 Linux is incomplete and will generate an error mid-build. I'll update this section as soon as I come up with a solution to this problem.
 
+```bash
+yum install epel-release
+yum groupinstall "Development Tools"
+yum install qt5-qtbase-devel
+```
+
+This installed Qt 5.6.1 on my system:
+
+```
+/usr/lib64/qt5/bin/qmake-qt5 --version
+QMake version 3.0
+Using Qt version 5.6.1 in /usr/lib64
+```
+
+Now we'll also need additional Qt5 dependencies. This command below will probably install a lot of packages which you actually won't need (note the asterisk in the command below). If you figure out exactly which packages are needed, please leave a comment on that!
+
+```bash
+yum install qt5-*
+```
+
+Next, we'll install Cmake 3.0 (`yum` only provides 2.x at this time). Please note this will build the Cmake executable in the same directory as the source.
+
+```bash
+yum install wget
+wget http://www.cmake.org/files/v3.0/cmake-3.0.0.tar.gz
+gunzip cmake-3.0.0.tar.gz
+tar xvf cmake-3.0.0.tar.gz
+cd cmake-3.0.0
+./bootstrap
+gmake
+gmake install
+```
+
+Install Python:
+
+```bash
+yum install python-pip python-devel  # or python3-pip
+pip install wheel
 ```
 
 
 
 ### Windows 10
 
-Unfortunately, I have no idea how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. Perhaps you can build Qt from source and then compile it using Microsoft C++ Visual Studio 2008 (v9.0) ([or 2010/2015?](http://p-nand-q.com/python/building-python-27-with-visual_studio.html)). I very much appreciate suggestions in the comments further down below on this. So, at least for now, this guide is for Python 3.5.x only.
+Unfortunately, I don't know how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. Perhaps you can build Qt from source and then compile it using Microsoft C++ Visual Studio 2008 (v9.0) ([or 2010/2015?](http://p-nand-q.com/python/building-python-27-with-visual_studio.html)). Perhaps it's worth investigating whether it could be solved with [mingw32](http://www.mingw.org) and/or [mingwpy](https://mingwpy.github.io/). I very much appreciate suggestions in the comments further down below on this. So, at least for now, this guide is for Python 3.5.x only.
 
 You'll need OpenSSL, Cmake, Microsoft Visual C++ Studio 2015 and, of course, Qt5.
 
@@ -121,11 +157,6 @@ Download and install the 64-bit versions of:
 * Qt 5.6.1-1 from the [Qt archives](https://download.qt.io/archive/qt/), I'm using [qt-opensource-windows-x86-msvc2015_64-5.6.1-1.exe](https://download.qt.io/archive/qt/5.6/5.6.1-1/qt-opensource-windows-x86-msvc2015_64-5.6.1-1.exe).
 
 You might also need the Windows SDK (I'm not sure since I had it installed already when writing this). You can download it for Windows 10 from [here](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk). I have a feeling this is installed by MSVC2015, but I'm not sure. If you know what the deal is here, please let me know in the comments further down below!
-
-
-## Notes on prerequisites
-
-PySide2 (or possibly Qt5?) requires Cmake >=3.0 to work. You can check your version with `cmake --version`.
 
 
 ## Clone the repository
@@ -144,6 +175,15 @@ Autodesk has also provided the version of PySide2 they used in Maya 2017 on thei
 
 The exact paths given in the arguments may not be identical on your system so verify those prior to compiling.
 
+### Notes on Linux
+
+Please note, in `setup.py`, the `--standalone` argument is mentioned, but I don't see this working when including that in the build command:
+
+> On Linux you can use option --standalone, to embed Qt libraries to PySide2 distribution
+
+Also please note, I'm not using the `--openssl` argument since I actually wasn't able to figure out where the OpenSSL bin directory resides in Ubuntu. At least, searching using `find / -name openssl` didn't reveal this and the wheel works anyways. If you know where this resides or how to make it available, I'd be grateful if you would like to share this with me in the comments further down below.
+
+
 ### OS X
 
 This command worked fine for me using Python 2.7.11 and Python 3.5.1. Remember to have pip installed with the `wheel` package or you'll get an error about `bdist_wheel`.
@@ -161,11 +201,31 @@ This command worked fine for me using Python 2.7.12 and Python 3.5.2. Remember t
 python setup.py bdist_wheel --ignore-git --qmake=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake --cmake=/usr/bin/cmake
 ```
 
-Please note, in `setup.py`, the `--standalone` argument is mentioned, but I don't see this working when including that in the build command:
 
-> On Linux you can use option --standalone, to embed Qt libraries to PySide2 distribution
+### CentOS 7 Linux
 
-Also please note, I'm not using the `--openssl` argument since I actually wasn't able to figure out where the OpenSSL bin directory resides in Ubuntu. At least, searching using `find / -name openssl` didn't reveal this and the wheel works anyways. If you know where this resides or how to make it available, I'd be grateful if you would like to share this with me in the comments further down below.
+Please note: the guide for CentOS 7 Linux is incomplete and will generate an error mid-build. I'll update this section as soon as I come up with a solution to this problem.
+
+```
+python setup.py bdist_wheel --ignore-git --qmake=/usr/lib64/qt5/bin/qmake-qt5 --cmake=/root/cmake-3.0.0/cmake
+```
+
+The error I'm getting mid-build is:
+
+```
+[  0%] Building CXX object libpyside/CMakeFiles/pyside2.dir/destroylistener.cpp.o
+[  0%] Building CXX object libpyside/CMakeFiles/pyside2.dir/signalmanager.cpp.o
+/root/pyside-setup/pyside_build/py2.7-qt5.6.1-64bit-release/pyside2/libpyside/signalmanager.cpp:48:37: fatal error: private/qv4engine_p.h: No such file or directory
+     #include <private/qv4engine_p.h>
+                                     ^
+compilation terminated.
+make[2]: *** [libpyside/CMakeFiles/pyside2.dir/signalmanager.cpp.o] Error 1
+make[1]: *** [libpyside/CMakeFiles/pyside2.dir/all] Error 2
+make: *** [all] Error 2
+error: Error compiling pyside2
+```
+
+Unfortunately, I'm [not allowed](http://i.imgur.com/ZWVbnLs.png) to report this to the Qt/PySide developers :(
 
 
 ### Windows 10
