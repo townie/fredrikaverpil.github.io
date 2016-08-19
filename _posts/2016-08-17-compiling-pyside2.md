@@ -14,6 +14,7 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
 ## Contents
 
+* Dockerfiles
 * Prerequisites
   * OS X
   * Ubuntu 14.04 Linux
@@ -28,6 +29,7 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
   * Windows 10
 * Install the wheel
 * Notes on precompiled wheels
+* Docker-built wheels via Travis-CI
 * Closing comments
 
 
@@ -248,6 +250,12 @@ Unfortunately, and like with PySide, these wheels are not "portable" and won't i
 
 Personally, this makes me want to develop for PyQt5 wherever I can since this is all it takes to get going if you're using Python 3: `pip install PyQt5`.  
 If you also feel this way, have a look at the [Qt.py](https://github.com/mottosso/Qt.py) project which will enable you to write code which will work in both PySide2 and PyQt5 (and PySide/PyQt4).
+
+
+## Docker-built wheels via Travis-CI
+
+I've set up a repository where I test the wheel building with Docker:  
+[https://github.com/fredrikaverpil/pyside2-wheels](https://github.com/fredrikaverpil/pyside2-wheels)
 
 
 ## Closing comments
