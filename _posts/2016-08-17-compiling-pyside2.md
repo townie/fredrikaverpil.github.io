@@ -120,7 +120,7 @@ Using Qt version 5.6.1 in /usr/lib64
 Now we'll also need additional Qt5 dependencies. This command below will probably install a lot of packages which you actually won't need (note the asterisk in the command below). If you figure out exactly which packages are needed, please leave a comment on that!
 
 ```bash
-yum install qt5-* libxslt libxml2
+yum install qt5-* libxslt libxml2 libxml2-dev libxslt1-dev
 ```
 
 Next, we'll install Cmake 3.0 (yum only provides 2.x at this time). Please note this will build the Cmake executable in the same directory as the source.
