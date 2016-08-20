@@ -19,13 +19,13 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
   * OS X
   * Ubuntu 14.04 Linux
   * Ubuntu 16.04 Linux
-  * CentOS 7 Linux (incomplete guide)
+  * CentOS 7 Linux
   * Windows 10
 * Clone the repository
 * Build the PySide2 wheel
   * OS X
   * Ubuntu 16.04 Linux
-  * CentOS 7 Linux (incomplete guide)
+  * CentOS 7 Linux
   * Windows 10
 * Install the wheel
 * Notes on precompiled wheels
@@ -67,6 +67,9 @@ apt-get install python3-pyside2  # for Python 3.5.x
 
 ### Ubuntu 16.04 Linux
 
+Please note, not all Qt5 modules are being used when building the wheel, see this issue report:  
+[https://bugreports.qt.io/browse/PYSIDE-343](https://bugreports.qt.io/browse/PYSIDE-343)
+
 In case you wish to build PySide2 in a Docker container, you can start by doing something like this:
 
 ```bash
@@ -86,7 +89,7 @@ apt-get install python-pip  # or python3-pip (for Python 3.x)
 Then proceed with installing some dependencies:
 
 ```bash
-apt-get install build-essential git cmake libxml2 libxslt1.1 python-dev qt5-default qtbase5-dev
+apt-get install build-essential git cmake libxml2 libxslt1.1 libxml2-dev libxslt1-dev python-dev qt5-default qtbase5-dev
 ```
 
 This installed Qt 5.5.1 and cmake 3.5.1 on my system. If you really wish to use Qt 5.6.1, you currently need to build Qt from source instead of installing it via apt-get. This, however, is for another blog post as it is *extremely* time consuming. You can verify which version of Qt you have by executing `qmake --version`.
@@ -99,14 +102,14 @@ apt-get install qttools5-dev-tools libqt5clucene5 libqt5concurrent5 libqt5core5a
 ```
 
 
-### CentOS 7 Linux (incomplete guide)
+### CentOS 7 Linux
 
 Please note: the guide for CentOS 7 Linux is incomplete and will generate an error mid-build. I'll update this section as soon as I come up with a solution to this problem.
 
 ```bash
 yum install epel-release
 yum groupinstall "Development Tools"
-yum install qt5-qtbase-devel
+yum install qt5-qtbase-devel    
 ```
 
 This installed Qt 5.6.1 on my system:
@@ -120,27 +123,25 @@ Using Qt version 5.6.1 in /usr/lib64
 Now we'll also need additional Qt5 dependencies. This command below will probably install a lot of packages which you actually won't need (note the asterisk in the command below). If you figure out exactly which packages are needed, please leave a comment on that!
 
 ```bash
-yum install qt5-* libxslt libxml2 libxml2-devel libxslt1-devel
+yum install qt5-* libxslt libxml2 libxml2-devel libxslt-devel
 ```
 
 Next, we'll install Cmake 3.0 (yum only provides 2.x at this time). Please note this will build the Cmake executable in the same directory as the source.
 
 ```bash
-yum install wget
-wget http://www.cmake.org/files/v3.0/cmake-3.0.0.tar.gz
-gunzip cmake-3.0.0.tar.gz
-tar xvf cmake-3.0.0.tar
-cd cmake-3.0.0
-./bootstrap
-gmake
-gmake install
+yum install cmake3
 ```
 
-Install Python:
+Install Python 2.x or 3.5:
 
 ```bash
-yum install python-pip python-devel  # or python3-pip
+yum install python-libs python-pip python-devel
 pip install wheel
+```
+
+```bash
+yum install python35u python35u-libs python35u-devel python35u-pip
+pip3.5 install wheel
 ```
 
 
@@ -206,30 +207,36 @@ python setup.py bdist_wheel --ignore-git --qmake=/usr/lib/x86_64-linux-gnu/qt5/b
 ```
 
 
-### CentOS 7 Linux (incomplete guide)
+### CentOS 7 Linux
 
-Please note: the guide for CentOS 7 Linux is incomplete and will generate an error mid-build. I'll update this section as soon as I come up with a solution to this problem.
-
-```
-python setup.py bdist_wheel --ignore-git --qmake=/usr/lib64/qt5/bin/qmake-qt5 --cmake=/root/cmake-3.0.0/bin/cmake
-```
-
-The error I'm getting mid-build is:
+Due to [this issue](https://bugreports.qt.io/browse/PYSIDE-342), you need to manually add the following to `/pyside-setup/sources/pyside2/pyslidelib/CMakeLists.txt`, after the first line (which says `project(libpyside)`):
 
 ```
-[  0%] Building CXX object libpyside/CMakeFiles/pyside2.dir/destroylistener.cpp.o
-[  0%] Building CXX object libpyside/CMakeFiles/pyside2.dir/signalmanager.cpp.o
-/root/pyside-setup/pyside_build/py2.7-qt5.6.1-64bit-release/pyside2/libpyside/signalmanager.cpp:48:37: fatal error: private/qv4engine_p.h: No such file or directory
-     #include <private/qv4engine_p.h>
-                                     ^
-compilation terminated.
-make[2]: *** [libpyside/CMakeFiles/pyside2.dir/signalmanager.cpp.o] Error 1
-make[1]: *** [libpyside/CMakeFiles/pyside2.dir/all] Error 2
-make: *** [all] Error 2
-error: Error compiling pyside2
+#HACK: CMake with broken Qt5Qml_PRIVATE_INCLUDE_DIRS, Qt5Quick_PRIVATE_INCLUDE_DIRS
+  if(${Qt5Qml_FOUND})
+    if(NOT "${Qt5Qml_PRIVATE_INCLUDE_DIRS}" MATCHES "/QtQml/")
+      string(REPLACE "/QtCore" "/QtQml" replaceme "${Qt5Core_PRIVATE_INCLUDE_DIRS}")
+      list(APPEND Qt5Qml_PRIVATE_INCLUDE_DIRS ${replaceme})
+      list(REMOVE_DUPLICATES Qt5Qml_PRIVATE_INCLUDE_DIRS)
+    endif()
+  endif()
+  if(${Qt5Quick_FOUND})
+    if(NOT "${Qt5Quick_PRIVATE_INCLUDE_DIRS}" MATCHES "/QtQuick/")
+      string(REPLACE "/QtCore" "/QtQuick" replaceme "${Qt5Core_PRIVATE_INCLUDE_DIRS}")
+      list(APPEND Qt5Quick_PRIVATE_INCLUDE_DIRS ${Qt5Qml_PRIVATE_INCLUDE_DIRS})
+      list(APPEND Qt5Quick_PRIVATE_INCLUDE_DIRS ${replaceme})
+      list(REMOVE_DUPLICATES Qt5Quick_PRIVATE_INCLUDE_DIRS)
+    endif()
+  endif()
 ```
 
-I reported this issue [here](https://bugreports.qt.io/browse/PYSIDE-342).
+Then you can build the PySide2 wheel:
+
+```
+python setup.py bdist_wheel --ignore-git --qmake=/usr/lib64/qt5/bin/qmake-qt5 --cmake=/usr/bin/cmake3
+```
+
+If you wish to use Python 3.5, execute `python3.5` instead of `python`.
 
 
 ### Windows 10
