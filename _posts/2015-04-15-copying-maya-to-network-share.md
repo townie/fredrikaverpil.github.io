@@ -15,5 +15,9 @@ If you just perform a simple copy, you’ll probably get something like this:
 The solution is to copy the files which are symlinked:
 
 ```bash
+# Linux
 cp -vrLp /src /dst
+
+# OS X
+cp -vRL /src /dst
 ```
