@@ -28,11 +28,11 @@ Recent (October, 2016) noteworthy news:
 **Windows / WSL interoperability.** Users can now launch Windows binaries directly from a WSL command prompt.  This is the number one request from our users on the WSL User Voice page.  Some examples include:
 
 ```bash
-$ export PATH=$PATH:/mnt/c/Windows/System32
-$ notepad.exe
-$ ipconfig.exe | grep IPv4 | cut -d: -f2
-$ ls -la | findstr.exe foo.txt
-$ cmd.exe /c dir
+export PATH=$PATH:/mnt/c/Windows/System32
+notepad.exe
+ipconfig.exe | grep IPv4 | cut -d: -f2
+ls -la | findstr.exe foo.txt
+cmd.exe /c dir
 ```
 
 ### Report issues and vote for new features
