@@ -57,9 +57,10 @@ I don't know if I'm not oldtimer enough, but the default colors sceheme in bash 
 ### Issues I've come across
 
 In short, interoperability between WSL/Windows doesn't seem to work:
-    - Symlinking files in /mnt/c from WSL won't work
-    - Modifying files in Windows from WSL will break things
-    - [Modifying files in WSL from Windows will break things](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/)
+
+- Symlinking files in /mnt/c from WSL won't work
+- Modifying files in Windows from WSL will break things
+- [Modifying files in WSL from Windows will break things](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/)
 
 
 ### Managing the WSL installation
