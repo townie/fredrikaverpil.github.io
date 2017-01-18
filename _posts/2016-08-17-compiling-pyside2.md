@@ -10,6 +10,7 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
 [Maya 2017](http://www.autodesk.com/products/maya) shipped with [PySide2](https://wiki.qt.io/PySide2) (2.0.0~alpha0) built against [Qt](https://www.qt.io/developers/) 5.6.1, so that's the version of Qt I'm using in this guide as well as 64-bit [Python](https://www.python.org).
 
+
 <!--more-->
 
 ## Contents
@@ -67,7 +68,7 @@ apt-get install python3-pyside2  # for Python 3.5.x
 
 ### Ubuntu 16.04 Linux
 
-Please note, not all Qt5 modules are being used when building the wheel, see this issue report:  
+Please note, not all Qt5 modules are being used when building the wheel, see this issue report:
 [https://bugreports.qt.io/browse/PYSIDE-343](https://bugreports.qt.io/browse/PYSIDE-343)
 
 In case you wish to build PySide2 in a Docker container, you can start by doing something like this:
@@ -109,7 +110,7 @@ Please note: the guide for CentOS 7 Linux is incomplete and will generate an err
 ```bash
 yum install epel-release
 yum groupinstall "Development Tools"
-yum install qt5-qtbase-devel    
+yum install qt5-qtbase-devel
 ```
 
 This installed Qt 5.6.1 on my system:
@@ -255,13 +256,13 @@ A wheel was hopefully built in the dist folder. So just `cd dist` and `pip insta
 
 Unfortunately, and like with PySide, these wheels are not "portable" and won't install on systems which doesn't already have the specific Qt5 version installed used during compilation. This, I believe, is because PySide2 links dynamically (instead of statically) against the Qt5 installation. Hopefully, this is something The Qt Company will address via official PySide2 wheels, as Riverbank Software is now providing a fully portable PyQt5 wheel for Python 3 which is absolutely awesome. In case you think we could produce such wheels ourselves, I'd appreciate if you'd leave a comment on this further down below!
 
-Personally, this makes me want to develop for PyQt5 wherever I can since this is all it takes to get going if you're using Python 3: `pip install PyQt5`.  
+Personally, this makes me want to develop for PyQt5 wherever I can since this is all it takes to get going if you're using Python 3: `pip install PyQt5`.
 If you also feel this way, have a look at the [Qt.py](https://github.com/mottosso/Qt.py) project which will enable you to write code which will work in both PySide2 and PyQt5 (and PySide/PyQt4).
 
 
 ## Docker-built wheels via Travis-CI
 
-I've set up a repository where I test the wheel building with Docker:  
+I've set up a repository where I test the wheel building with Docker:
 [https://github.com/fredrikaverpil/pyside2-wheels](https://github.com/fredrikaverpil/pyside2-wheels)
 
 
