@@ -150,7 +150,6 @@ pip3.5 install wheel
 
 ### Windows 10
 
----
 
 Unfortunately, I don't know how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. The reason is that the [official Python 2.7 build](https://python.org) is compiled using the now ancient Microsoft C++ Visual Studio 2008 (v9.0). This means Qt itself must also be compiled using this version of MSVC in order to avoid severe issues. Unfortunately, there's no such readily available version of Qt 5.6.1. To work around this, you can [compile Python yourself](http://p-nand-q.com/python/building-python-27-with-visual_studio.html)), matching the MSVC used to compile Qt. This however will give you a headache when you realize any Python package (which is not purely written in Python) must also be compiled using that version of MSVC.
 
