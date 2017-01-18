@@ -151,7 +151,9 @@ pip3.5 install wheel
 ### Windows 10
 
 
-Unfortunately, I don't know how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. The reason is that the [official Python 2.7 build](https://python.org) is compiled using the now ancient Microsoft C++ Visual Studio 2008 (v9.0). This means Qt itself must also be compiled using this version of MSVC in order to avoid severe issues. Unfortunately, there's no such readily available version of Qt 5.6.1. To work around this, you can [compile Python yourself](http://p-nand-q.com/python/building-python-27-with-visual_studio.html)), matching the MSVC used to compile Qt. This however will give you a headache when you realize any Python package (which is not purely written in Python) must also be compiled using that version of MSVC.
+Unfortunately, I don't know how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. The reason is that the [official Python 2.7 build](https://python.org) is compiled using the now ancient Microsoft C++ Visual Studio 2008 (v9.0). This means Qt itself must also be compiled using this version of MSVC in order to avoid severe issues. Unfortunately, there's no such readily available version of Qt 5.6.1. What it all boils down to is you want to have used the same MSVC version for Python, Qt and PySide2.
+
+To work around this, you can [compile Python yourself](http://p-nand-q.com/python/building-python-27-with-visual_studio.html), matching the MSVC used to compile Qt. Or you could attempt to compile Qt using MSVC 2008. In either case, this will give you a headache when you realize any Python package (which is not purely written in Python) must also be compiled using whatever version of MSVC you have opted for.
 
 Another solution worth investigating, which seems better to me (but I may be mistaken here), is to compile PySide2 using [mingw32](http://www.mingw.org) and/or [mingwpy](https://mingwpy.github.io/) rather than MSVC. I very much appreciate suggestions in the comments further down below on this.
 
