@@ -10,7 +10,9 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
 [Maya 2017](http://www.autodesk.com/products/maya) shipped with [PySide2](https://wiki.qt.io/PySide2) (2.0.0~alpha0) built against [Qt](https://www.qt.io/developers/) 5.6.1, so that's the version of Qt I'm using in this guide as well as 64-bit [Python](https://www.python.org).
 
-Note: Before reading on, you may want to skip this alltogether and go directly to my [pre-built Python wheels](https://github.com/fredrikaverpil/pyside2-wheels).
+Note #1: Before reading on, you may want to skip this alltogether and go directly to my [pre-built Python wheels](https://github.com/fredrikaverpil/pyside2-wheels).
+
+Note #2: This article was edited on 2017-01-19 to clarify the state of Python 2.x/3.5 with PySide2.
 
 <!--more-->
 
@@ -153,7 +155,7 @@ pip3.5 install wheel
 
 Unfortunately, I don't know how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. The reason is that the [official Python 2.7 build](https://python.org) is compiled using the now ancient Microsoft C++ Visual Studio 2008 (v9.0). This means Qt itself must also be compiled using this version of MSVC in order to avoid severe issues. Unfortunately, there's no such readily available version of Qt 5.6.1. What it all boils down to is you want to have used the same MSVC version for Python, Qt and PySide2.
 
-To work around this, you can [compile Python yourself](http://p-nand-q.com/python/building-python-27-with-visual_studio.html), matching the MSVC used to compile Qt. Or you could attempt to compile Qt using MSVC 2008. In either case, this will give you a headache when you realize any Python package (which is not purely written in Python) must also be compiled using whatever version of MSVC you have opted for.
+To work around this, you can [compile Python yourself](http://p-nand-q.com/python/building-python-27-with-visual_studio.html), matching the MSVC used to compile Qt. This is what Autodesk is doing by the way, in order to support PySide2 in Maya 2017. Or you could attempt to compile Qt using MSVC 2008. In either case, this will give you a headache when you realize any Python package (which is not purely written in Python) must also be compiled using whatever version of MSVC you have opted for.
 
 Another solution worth investigating, which seems better to me (but I may be mistaken here), is to compile PySide2 using [mingw32](http://www.mingw.org) and/or [mingwpy](https://mingwpy.github.io/) rather than MSVC. I very much appreciate suggestions in the comments further down below on this.
 
@@ -276,11 +278,13 @@ I've set up a repository where I test the wheel building with Docker:
 
 ## Closing comments
 
-As of writing this, I understand that PySide2 is not seen as having been made generally available just yet, and could perhaps be seen as being in an alpha stage. But they did announce that Python 2 support was dropped [here](https://github.com/PySide/pyside2/wiki) (although not officially, I was told):
+As of writing this, I understand that PySide2 is not seen as having been made generally available just yet, and could perhaps be seen as being in an alpha stage. They did announce that Python 2 support was dropped [here](https://github.com/PySide/pyside2/wiki) (although not officially, I was told):
 
 > Why there is no PySide2 for Python 2? Because Python 2 extensions like PySide need to be compiled with ancient version of MS Visual C++ 9 and that means that all linked libs including Qt need to be compiled with this version. But Qt5, the library that PySide2 wraps, dropped support for MS VC++ 9, and code is unlikely to compile for it anymore. The only solution to fix this, is to help with development and funding of [https://mingwpy.github.io/](https://mingwpy.github.io/)
 
-Since the Github repository is basically abandoned, I'd suggest you create a user account with The Qt Company and start checking out the repository over at Qt, where apparently the real action is:
+This is yet another aging sign of Python 2.x. Personally, I'm developing with Python 3.5 as the interpreter of choice in my IDE and I make sure my code is backwards compatible with Python 2.7, which is actually very easy for the most part. I think that the [FVX Reference Platform](http://www.vfxplatform.com) should plan ahead (starting now) for a move onto Python 3.5 as there are great reluctancy in the industry towards this move. It'll involve a lot of code porting, yes, but with enough headsup time this shouldn't be blocking such a move. In a developer's world, this is how it works. You can't hold on to old code forever.
+
+Since the old PySide Github repository is basically abandoned, I'd suggest you create a user account with The Qt Company and start checking out the repository over at Qt, where apparently the real action is:
 
 * [PySide2 wiki](https://wiki.qt.io/PySide2)
 * [PySide2 repositories](https://codereview.qt-project.org/#/admin/projects/?filter=pyside)
