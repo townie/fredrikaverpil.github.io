@@ -290,6 +290,6 @@ Since the old PySide Github repository is basically abandoned, I'd suggest you c
 * [PySide2 repositories](https://codereview.qt-project.org/#/admin/projects/?filter=pyside)
 * [Bug tracker (issues)](https://bugreports.qt.io/browse/PYSIDE/)
 * [Qt language bindings forum](https://forum.qt.io/category/15/language-bindings)
-* #qt-pyside on irc.freenode.net (replaces the former #pyside channel, after PySide moved into Qt)
+* [PySide/PySide2 Gitter channel](https://gitter.im/PySide/pyside2) or #qt-pyside on irc.freenode.net (replaces the former #pyside channel, after PySide moved into Qt)
 
 Please note that you should use the same MSVC versions when compiling in Windows, as mixing these have known but hard to find side-effects. Read more [here](http://siomsystems.com/mixing-visual-studio-versions/) on that. Since Python 3.5 was compiled with Microsoft C++ Visual Studio 2015 (v14.0), we're good to use that when compiling PySide2 as well.
