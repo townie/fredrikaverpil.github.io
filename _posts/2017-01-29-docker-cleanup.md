@@ -4,7 +4,7 @@ title: Docker cleanup
 tags: [docker]
 ---
 
-Quick and easy way to remove all containers and all images along with their volumes:
+Quick and easy way to remove all containers (and their volumes) as well as all images:
 
 ```bash
 # Remove containers and their volumes
