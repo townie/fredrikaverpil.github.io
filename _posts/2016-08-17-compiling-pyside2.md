@@ -153,9 +153,9 @@ pip3.5 install wheel
 ### Windows 10
 
 
-Unfortunately, I don't know how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. The reason is that the [official Python 2.7 build](https://python.org) is compiled using the now ancient Microsoft C++ Visual Studio 2008 (v9.0). This means Qt itself must also be compiled using this version of MSVC in order to avoid severe issues. Unfortunately, there's no such readily available version of Qt 5.6.1. What it all boils down to is you want to have used the same MSVC version for Python, Qt and PySide2.
+Unfortunately, I don't know how to compile PySide2 using Qt 5.6.1 for Python 2.7.x in Windows. The reason is that the [official Python 2.7 build](https://python.org) is compiled using the now ancient Microsoft C++ Visual Studio 2008 (v9.0). This means Qt itself must also be compiled using this version of MSVC in order to avoid severe issues (read more [here](http://siomsystems.com/mixing-visual-studio-versions/)). Unfortunately, there's no such readily available version of Qt 5.6.1. What it all boils down to is you want to have used the same MSVC version for Python, Qt and PySide2.
 
-To work around this, you can [compile Python yourself](http://p-nand-q.com/python/building-python-27-with-visual_studio.html), matching the MSVC used to compile Qt. This is what Autodesk is doing by the way, in order to support PySide2 in Maya 2017. Or you could attempt to compile Qt using MSVC 2008. In either case, this will give you a headache when you realize any Python package (which is not purely written in Python) must also be compiled using whatever version of MSVC you have opted for.
+To work around this, you can [compile Python yourself](http://p-nand-q.com/python/building-python-27-with-visual_studio.html), matching the MSVC used to compile Qt. This is what Autodesk is doing by the way, in order to support PySide2 in Maya 2017 without mixing different MSVC versions. Or you could attempt to compile Qt using MSVC 2008. In either case, this will give you a headache when you realize any Python package (which is not purely written in Python) must also be compiled using whatever version of MSVC you have opted for. And perhaps because of this, you'll now start to wonder what packages you're currently importing when in Maya...
 
 Another solution worth investigating, which seems better to me (but I may be mistaken here), is to compile PySide2 using [mingw32](http://www.mingw.org) and/or [mingwpy](https://mingwpy.github.io/) rather than MSVC. I very much appreciate suggestions in the comments further down below on this.
 
@@ -291,5 +291,3 @@ Since the old PySide Github repository is basically abandoned, I'd suggest you c
 * [Bug tracker (issues)](https://bugreports.qt.io/browse/PYSIDE/)
 * [Qt language bindings forum](https://forum.qt.io/category/15/language-bindings)
 * [PySide/PySide2 Gitter channel](https://gitter.im/PySide/pyside2) or #qt-pyside on irc.freenode.net (replaces the former #pyside channel, after PySide moved into Qt)
-
-Please note that you should use the same MSVC versions when compiling in Windows, as mixing these have known but hard to find side-effects. Read more [here](http://siomsystems.com/mixing-visual-studio-versions/) on that. Since Python 3.5 was compiled with Microsoft C++ Visual Studio 2015 (v14.0), we're good to use that when compiling PySide2 as well.
