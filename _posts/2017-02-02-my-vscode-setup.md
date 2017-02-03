@@ -162,7 +162,6 @@ This is great if you e.g. wish to override the Python interpreter (used for debu
     "python.pythonPath": "${workspaceRoot}/../../../skalman/condaenvs/skalman_py35/",
     "python.linting.pylintArgs": ["--disable=E0611"],
     "python.autoComplete.extraPaths": [
-        // Maya 2017, OS X
         "/Applications/Autodesk/maya2017/Maya.app/Contents/Frameworks/Python.framework/Versions/Current/lib/python27.zip",
         "/Applications/Autodesk/maya2017/Maya.app/Contents/Frameworks/Python.framework/Versions/Current/lib/python2.7",
         "/Applications/Autodesk/maya2017/Maya.app/Contents/Frameworks/Python.framework/Versions/Current/lib/python2.7/plat-darwin",
