@@ -84,19 +84,20 @@ I would've wanted to use this to sync my vscode experience between my macOS lapt
 These are all extensions I use frequently.
 
 
-* [Python]() <--- seriously, check this out.
-* [Project Manager]()
-* [Settings Sync]()
-* [Trailing Spaces]()
-* [Material Theme]()
-* [Open in Github/Bitbucket]()
-* [MayaPort]()
-* [MEL - Maya Embedded Language]()
-* [Clock in status bar]()
-* [Docker Support]()
-* [Jinja]()
-* [Prettify JSON]()
-* [gitignore]()
+* [Python](https://github.com/DonJayamanne/pythonVSCode) <--- seriously, check this out.
+* [Project Manager](https://github.com/alefragnani/vscode-project-manager)
+* [Settings Sync](https://github.com/shanalikhan/code-settings-sync)
+* [Trailing Spaces](https://github.com/shardulm94/vscode-trailingspaces)
+* [Material Theme](https://github.com/fredrikaverpil/vscode-material-theme)
+* [Open in Github/Bitbucket](https://github.com/ziyasal/vscode-open-in-github)
+* [MayaPort](https://github.com/NCCA/mayaport)
+* [MEL - Maya Embedded Language](https://github.com/sator-imaging/Visual-Studio-Code-MEL-Language)
+* [Clock in status bar](https://github.com/compulim/vscode-clock)
+* [Docker Support](https://github.com/Microsoft/vscode-docker)
+* [Jinja](https://github.com/wholroyd/vscode-jinja)
+* [Prettify JSON](https://github.com/mohsen1/vscode-prettify-json)
+* [gitignore](https://github.com/CodeZombieCH/vscode-gitignore)
+
 
 #### Python settings
 
