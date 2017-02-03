@@ -108,10 +108,10 @@ Pyhton-specifics in my `settings.json` (user settings).
 {
     // vscode
     "editor.detectIndentation": true,
-    "files.insertFinalNewline": true,
     "editor.formatOnPaste": true,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
+    "files.insertFinalNewline": true,
 
     // only for python language files
     "[python]": {
