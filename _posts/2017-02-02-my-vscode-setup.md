@@ -227,17 +227,17 @@ And then we have the debugger. The debugger settings are stored in `your_project
             "type": "python",
             "request": "launch",
             "stopOnEntry": false,
-            "console": "integratedTerminal",
             "pythonPath": "${config.python.pythonPath}",
             "program": "${workspaceRoot}/scripts/standalone_gui/standalone_gui.py",
             "cwd": "${workspaceRoot}",
             "debugOptions": [
                 "WaitOnAbnormalExit",
-                "WaitOnNormalExit"
+                "WaitOnNormalExit",
+                "RedirectOutput"
             ]
         },
         {
-            "name": "Python (opened file)",
+            "name": "Python",
             "type": "python",
             "request": "launch",
             "stopOnEntry": true,
