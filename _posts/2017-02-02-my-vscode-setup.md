@@ -75,7 +75,7 @@ Worth mentioning is that [a lot of work](https://github.com/Microsoft/vscode/pul
 
 ## My setup (`settings.json`)
 
-There's a nice extension which makes it quite to keep your entire vscode setup in sync with other machines: [Settings sync](https://github.com/shanalikhan/code-settings-sync/). This extension uploads your settings into a private Github gist (using a Github token) which can be updated/downloaded on demand or, if you wish, automatically when the settings change.
+There's a nice extension which makes it quite easy to keep your entire vscode setup in sync with other machines: [Settings sync](https://github.com/shanalikhan/code-settings-sync/). This extension uploads your settings into a private Github gist (using a Github token) which can be updated/downloaded on demand or, if you wish, automatically when the settings change.
 
 I would've wanted to use this to sync my vscode experience between my macOS laptop and my Windows workstation but there are some cross-platform path caveats (Github issues listed above). So for now I need to maintain one gist for macOS and one for Windows.
 
