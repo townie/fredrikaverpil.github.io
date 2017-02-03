@@ -110,12 +110,12 @@ Pyhton-specifics in my `settings.json` (user settings).
     "editor.detectIndentation": true,
     "files.insertFinalNewline": true,
     "editor.formatOnPaste": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
 
     // only for python language files
     "[python]": {
-        "editor.rulers": [72, 79],
-        "editor.tabSize": 4,
-        "editor.insertSpaces": true
+        "editor.rulers": [72, 79]
     },
 
     // pythonVSCode extension
@@ -159,7 +159,7 @@ This is great if you e.g. wish to override the Python interpreter (used for debu
 
 ```json
 {
-    "python.pythonPath": "${workspaceRoot}/../../../skalman/condaenvs/skalman_py35/",
+    "python.pythonPath": "${workspaceRoot}/../../../condaenvs/app_py35/",
     "python.linting.pylintArgs": ["--disable=E0611"],
     "python.autoComplete.extraPaths": [
         "/Applications/Autodesk/maya2017/Maya.app/Contents/Frameworks/Python.framework/Versions/Current/lib/python27.zip",
@@ -192,10 +192,10 @@ You can create tasks which you can invoke with `Tasks: Run tasks` from the comma
             "taskName": "Build docs",
             "command": "dummy",
             "osx": {
-                "command": "${workspaceRoot}/../../../skalman/condaenvs/skalman_py35/bin/python ${workspaceRoot}/scripts/build_docs/build_docs.py"
+                "command": "${workspaceRoot}/../../../condaenvs/app_py35/bin/python ${workspaceRoot}/scripts/build_docs/build_docs.py"
             },
             "windows": {
-                "command": "${workspaceRoot}/../../../skalman/condaenvs/skalman_py35/Python.exe ${workspaceRoot}/scripts/build_docs/build_docs.py"
+                "command": "${workspaceRoot}/../../../condaenvs/app_py35/Python.exe ${workspaceRoot}/scripts/build_docs/build_docs.py"
             },
             "isShellCommand": true,
             "isBackground": false
@@ -204,10 +204,10 @@ You can create tasks which you can invoke with `Tasks: Run tasks` from the comma
             "taskName": "Run My app",
             "command": "dummy",
             "osx": {
-                "command": "$HOME/skalman/condaenvs/skalman_py35/bin/python ${workspaceRoot}/scripts/standalone_gui/standalone_gui.py"
+                "command": "$HOME/../../../condaenvs/app_py35/bin/python ${workspaceRoot}/scripts/standalone_gui/standalone_gui.py"
             },
             "windows": {
-                "command": "%HOMEDRIVE%%HOMEPATH%/skalman/condaenvs/skalman_py35/python.exe ${workspaceRoot}/scripts/standalone_gui/standalone_gui.py"
+                "command": "%HOMEDRIVE%%HOMEPATH%/../../../condaenvs/app_py35/python.exe ${workspaceRoot}/scripts/standalone_gui/standalone_gui.py"
             },
             "isShellCommand": true,
             "isBackground": false
