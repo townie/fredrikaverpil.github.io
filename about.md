@@ -9,8 +9,8 @@ Throughout the years I have been spending my professional life within the digita
 
 ## Get in touch!
 
-E-mail: fredrik.averpil [at] gmail.com  
-Twitter: [{{ site.twitter.username }}]({{ site.twitter.url }})  
+E-mail: fredrik.averpil [at] gmail.com
+Twitter: [{{ site.twitter.username }}]({{ site.twitter.url }})
 Mobile: +46.708.12.12.75
 
 ## Blog info
@@ -23,7 +23,7 @@ This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site
 - Excerpts on index page
 - Pinch and zoom on touch devices
 - Video embeds with fluidvids.js
-- Rouge syntax highlighter
+- Rouge syntax highlighter, `syntax-one-dark.css`
 - Google Analytics
 - Comments (option to use Google+, Disqus or Livefyre)
 - Switch to https if accessing site through http
