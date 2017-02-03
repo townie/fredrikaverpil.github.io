@@ -4,7 +4,7 @@ title: My Visual Studio Code setup
 tags: [python, osx, windows, linux]
 ---
 
-![](https://cloud.githubusercontent.com/assets/994357/20610669/042cc31a-b29d-11e6-9657-87427ceb9e6a.png)
+![](https://cloud.githubusercontent.com/assets/994357/22574280/55963086-e9ae-11e6-8469-2c26a255f1ad.png)
 
 This is my [Visual Studio Code](https://code.visualstudio.com) (vscode) setup, with ambitions to create a custom Python IDE.
 
