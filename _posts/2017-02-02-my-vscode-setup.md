@@ -89,6 +89,7 @@ These are all extensions I use frequently.
 * [Settings Sync](https://github.com/shanalikhan/code-settings-sync)
 * [Trailing Spaces](https://github.com/shardulm94/vscode-trailingspaces)
 * [Material Theme](https://github.com/fredrikaverpil/vscode-material-theme)
+* [Guides](https://github.com/spywhere/vscode-guides)
 * [Open in Github/Bitbucket](https://github.com/ziyasal/vscode-open-in-github)
 * [MayaPort](https://github.com/NCCA/mayaport)
 * [MEL - Maya Embedded Language](https://github.com/sator-imaging/Visual-Studio-Code-MEL-Language)
