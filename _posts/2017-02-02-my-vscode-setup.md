@@ -101,6 +101,7 @@ These are all extensions I use frequently.
 * [Sort](https://github.com/henriiik/vscode-sort)
 * [Sort lines](https://github.com/Tyriar/vscode-sort-lines)
 * [Sort JSON objects](https://github.com/richie5um/vscode-sort-json)
+* [VimL](https://github.com/fallenwood/vscode-viml/)
 
 
 #### Python settings
