@@ -98,6 +98,9 @@ These are all extensions I use frequently.
 * [Jinja](https://github.com/wholroyd/vscode-jinja)
 * [Prettify JSON](https://github.com/mohsen1/vscode-prettify-json)
 * [gitignore](https://github.com/CodeZombieCH/vscode-gitignore)
+* [Sort](https://github.com/henriiik/vscode-sort)
+* [Sort lines](https://github.com/Tyriar/vscode-sort-lines)
+* [Sort JSON objects](https://github.com/richie5um/vscode-sort-json)
 
 
 #### Python settings
