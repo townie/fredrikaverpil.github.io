@@ -62,6 +62,7 @@ Note: strikethrough means features were implemented, either in the [insider buil
   * Create environment variable within user/workspace settings: [vscode#18709](https://github.com/Microsoft/vscode/issues/18709)
   * Support environment variables when resolving values in settings: [vscode#2809](https://github.com/Microsoft/vscode/issues/2809)
   * Add OS-specific dependency PATHs: [vscode#17619](https://github.com/Microsoft/vscode/issues/17619#issuecomment-273424889)
+  * Auto-detection of binaries [pythonVSCode#716](https://github.com/DonJayamanne/pythonVSCode/issues/716)
 * Automatically expand full docstring when autocompleting: [pythonVSCode#645](https://github.com/DonJayamanne/pythonVSCode/issues/645)
 * Disable auto-completion when writing comments/docstrings: [pythonVSCode#74](https://github.com/DonJayamanne/pythonVSCode/issues/74)
 * Sync Color Theme Settings: [code-settings-sync#185](https://github.com/shanalikhan/code-settings-sync/issues/185)
