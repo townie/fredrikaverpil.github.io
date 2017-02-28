@@ -60,8 +60,9 @@ I don't know if I'm not oldtimer enough, but the default colors sceheme in bash 
 In short, interoperability (except launching applications) between WSL/Windows doesn't seem to work:
 
 - Symlinking files between WSL and /mnt/c won't work
-- Modifying files in Windows from WSL will break things
 - [Modifying files in WSL from Windows will break things](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/)
+
+However, it's fine to modify files stored in your Windows filesystem from within bash. So if you were in `/mnt/c/dev/project` and launched `code.exe ./`, Visual Code would open the current folder.
 
 
 ### Managing the WSL installation
