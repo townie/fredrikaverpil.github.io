@@ -65,7 +65,7 @@ Note: strikethrough means features were implemented, either in the [insider buil
   * Auto-detection of binaries [pythonVSCode#716](https://github.com/DonJayamanne/pythonVSCode/issues/716)
 * Automatically expand full docstring when autocompleting: [pythonVSCode#645](https://github.com/Microsoft/vscode/issues/18582)
 * Disable auto-completion when writing comments/docstrings: [pythonVSCode#74](https://github.com/DonJayamanne/pythonVSCode/issues/74)
-* Sync Color Theme Settings: [code-settings-sync#185](https://github.com/shanalikhan/code-settings-sync/issues/185)
+* ~~Sync Color Theme Settings: [code-settings-sync#185](https://github.com/shanalikhan/code-settings-sync/issues/185)~~
 * Option to ignore sync some settings, files and folders: [code-settings-sync#100](https://github.com/shanalikhan/code-settings-sync/issues/100)
 * Support cross platform path definitions ($HOME) [vscode-project-manager#88](https://github.com/alefragnani/vscode-project-manager/issues/88)
 
