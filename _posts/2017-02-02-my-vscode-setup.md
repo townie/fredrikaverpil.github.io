@@ -66,7 +66,7 @@ Note: strikethrough means features were implemented, either in the [insider buil
 * Automatically expand full docstring when autocompleting: [pythonVSCode#645](https://github.com/Microsoft/vscode/issues/18582)
 * Disable auto-completion when writing comments/docstrings: [pythonVSCode#74](https://github.com/DonJayamanne/pythonVSCode/issues/74)
 * ~~Sync Color Theme Settings: [code-settings-sync#185](https://github.com/shanalikhan/code-settings-sync/issues/185)~~
-* Option to ignore sync some settings, files and folders: [code-settings-sync#100](https://github.com/shanalikhan/code-settings-sync/issues/100)
+* ~~Option to ignore sync some settings, files and folders: [code-settings-sync#100](https://github.com/shanalikhan/code-settings-sync/issues/100)~~
 * Support cross platform path definitions ($HOME) [vscode-project-manager#88](https://github.com/alefragnani/vscode-project-manager/issues/88)
 
 I also wasn't able to find a Material theme which resembled the one I wanted to use, so I created [one](https://github.com/fredrikaverpil/vscode-material-theme). It's identical to the `Material-Theme.tmTheme` by [Mattia Astorino](https://github.com/equinusocio) which I used to have in ST3. There are talks about opening up the UI API ([vscode#1833](https://github.com/Microsoft/vscode/issues/1833), [vscode#3112](https://github.com/Microsoft/vscode/issues/3112)) to allow for the kind of UI customization Mattia has been doing with ST3 and it seems like he might be [looking to use that](https://github.com/equinusocio/vsc-material-theme) when possible, wich would be awesome.
