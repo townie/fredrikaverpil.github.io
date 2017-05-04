@@ -12,7 +12,7 @@ How do you know a user doesn’t have the wrong version of Qt.py when running yo
 
 ## What’s "vendoring"?
 
-Bundling a third-party application with your own application is sometimes referred to as "vendoring". By vendoring, you explicitly control which version of a dependency is being used with your application.. Since there are numerous versions of Qt.py you want to make sure your application is used with the version of Qt.py you had in mind when designing your application.
+Bundling a third-party application with your own application is sometimes referred to as "vendoring". By vendoring, you explicitly control which version of a dependency is being used with your application. Since there are numerous versions of Qt.py you want to make sure your application is used with the version of Qt.py you had in mind when designing your application.
 
 
 ## Licensing
