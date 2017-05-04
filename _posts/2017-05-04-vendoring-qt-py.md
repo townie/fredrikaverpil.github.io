@@ -103,7 +103,7 @@ True
 
 ## Pro tip #2: Making your package available on PyPi
 
-If you wish to go even further and let users download your package from PyPi via [pip](https://packaging.python.org/installing/), you'll need to add a `setup.py` file (and optionally a `setup.cfg` file if you e.g. wish to generate a universal wheel) and configure it accordingly. Read more about this over at the [`setuptools` documentation](https://packaging.python.org/distributing/).
+If you wish to go even further and let users download your package from [PyPi](https://pypi.python.org/pypi) (via [pip](https://packaging.python.org/installing/)), you'll need to add a `setup.py` file (and optionally a `setup.cfg` file if you e.g. wish to generate a universal wheel) and configure it accordingly. Then I'd recommend you create a wheel and finally upload that to PyPi. Read more about this over at the [`setuptools` documentation](https://packaging.python.org/distributing/).
 
 [Here's](https://github.com/mottosso/Qt.py/blob/master/setup.py) the `setup.py` in the Qt.py project as an example.
 
