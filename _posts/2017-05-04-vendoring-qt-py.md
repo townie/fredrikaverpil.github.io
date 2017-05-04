@@ -72,7 +72,7 @@ If you would rather specify a custom path where you’ll have the package sittin
 
 For more info on the site package, see here: https://docs.python.org/2/library/site.html
 
-For this example, I’m cloning the git repository down onto my local macOS disk drive:
+For this example, I’m cloning the example [git repository](https://github.com/fredrikaverpil/Qt.py-vendoring/) down onto my local macOS disk drive:
 
 ```bash
 cd ~/code/repos
