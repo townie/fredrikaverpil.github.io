@@ -4,30 +4,30 @@ title: Vendoring Qt.py
 tags: [python, qtpy, pyside, pyqt]
 ---
 
-How do you know a user doesn’t have the wrong version of Qt.py when running your application?  
-– Simple, you bundle Qt.py with your application. Here’s a short write-up on how you could go about doing just that.
+How do you know a user doesn't have the wrong version of Qt.py when running your application?  
+– Simple, you bundle Qt.py with your application. Here's a short write-up on how you could go about doing just that.
 
 <!--more-->
 
 
-## What’s "vendoring"?
+## What's "vendoring"?
 
 Bundling a third-party application with your own application is sometimes referred to as "vendoring". By vendoring, you explicitly control which version of a dependency is being used with your application. Since there are numerous versions of Qt.py you want to make sure your application is used with the version of Qt.py you had in mind when designing your application.
 
 
 ## Licensing
 
-It’s important to mention you cannot bundle *any* application with your own application. You must look into what you’re actually legally allowed to do. In the case with Qt.py, it’s developed under the MIT license, which means you can do anything you like with it. You can even modify Qt.py, sell your software with it bundled and keep it all closed source. However, speaking as a collaborator on the project, we’re always super happy to hear about you’re doing with Qt.py :)
+It's important to mention you cannot bundle *any* application with your own application. You must look into what you're actually legally allowed to do. In the case with Qt.py, it's developed under the MIT license, which means you can do anything you like with it. You can even modify Qt.py, sell your software with it bundled and keep it all closed source. However, speaking as a collaborator on the project, we're always super happy to hear about what you're doing with Qt.py :)
 
 Curious on different types of licensing?  
 – Check this out: [https://choosealicense.com/licenses/](https://choosealicense.com/licenses/)
 
-With that out of the way, let’s move on...
+With that out of the way, let's move on...
 
 
 ## Python package folder structure
 
-In this example, I’ll just create a simple folder structure where we’ll put the Qt.py script in a "vendor" folder and our main app (`myapp.py`) at the top level. The `__init__.py` files makes it possible for Python to import the contents of the folders as modules.
+In this example, I'll just create a simple folder structure where we'll put the Qt.py script in a "vendor" folder and our main app (`myapp.py`) at the top level. The `__init__.py` files makes it possible for Python to import the contents of the folders as modules.
 
 ```
 mypackage/
@@ -63,7 +63,7 @@ You now have a couple of options of where to tell your users to put your package
 >>> print(site.getusersitepackages())
 ```
 
-If you would rather specify a custom path where you’ll have the package sitting, you can tell Python to look for the package in a specific path:
+If you would rather specify a custom path where you'll have the package sitting, you can tell Python to look for the package in a specific path:
 
 ```python
 >>> import site
@@ -72,7 +72,7 @@ If you would rather specify a custom path where you’ll have the package sittin
 
 For more info on the `site` package, see [here](https://docs.python.org/2/library/site.html).
 
-For this example, I’m cloning the example [git repository](https://github.com/fredrikaverpil/Qt.py-vendoring/) down onto my local macOS disk drive:
+For this example, I'm cloning the example [git repository](https://github.com/fredrikaverpil/Qt.py-vendoring/) down onto my local macOS disk drive:
 
 ```bash
 cd ~/code/repos
@@ -81,7 +81,7 @@ git clone https://github.com/fredrikaverpil/Qt.py-vendoring.git
 
 ## Running your application
 
-Make sure the interpreter you're using has either PySide, PyQt4, PySide2 or PyQt5 installed. Then import `myapp` from `mypackage` and, finally, run the `myapp.run()` function. I’m doing it like this:
+Make sure the interpreter you're using has either PySide, PyQt4, PySide2 or PyQt5 installed. Then import `myapp` from `mypackage` and, finally, run the `myapp.run()` function. I'm doing it like this:
 
 ```python
 >>> import site
@@ -93,7 +93,7 @@ Make sure the interpreter you're using has either PySide, PyQt4, PySide2 or PyQt
 
 ## Pro tip #1: Semantic versioning
 
-By using semantic versioning (aka "semver") you can check the versions against e.g. a required minimum version which your application requires. One way of doing this is to utilize `setuptool`’s `packaging.version.parse` function:
+By using semantic versioning (aka "semver") you can check the versions against e.g. a required minimum version which your application requires. One way of doing this is to utilize `setuptool`'s `packaging.version.parse` function:
 
 ```python
 >>> from packaging import version
@@ -103,11 +103,11 @@ True
 
 ## Pro tip #2: Making your package available on PyPi
 
-If you wish to go even further and let users download your package from PyPi via [pip](https://packaging.python.org/installing/), you’ll need to add a `setup.py` file (and optionally a `setup.cfg` file if you e.g. wish to generate a universal wheel) and configure it accordingly. Read more about this over at the [`setuptools` documentation](https://packaging.python.org/distributing/).
+If you wish to go even further and let users download your package from PyPi via [pip](https://packaging.python.org/installing/), you'll need to add a `setup.py` file (and optionally a `setup.cfg` file if you e.g. wish to generate a universal wheel) and configure it accordingly. Read more about this over at the [`setuptools` documentation](https://packaging.python.org/distributing/).
 
 [Here's](https://github.com/mottosso/Qt.py/blob/master/setup.py) the `setup.py` in the Qt.py project as an example.
 
 
 ## How are you distributing Qt.py?
 
-I’m curious on how you make Qt.py available to users. Let me know in the comments below!
+I'm curious on how you make Qt.py available to users. Let me know in the comments below!
