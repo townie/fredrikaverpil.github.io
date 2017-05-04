@@ -27,7 +27,7 @@ With that out of the way, let’s move on...
 
 ## Python package folder structure
 
-In this example, I’ll just create a simple folder structure where we’ll put the Qt.py script in a "vendor" folder and our main app (myapp.py) at the top level. The `__init__.py` files makes it possible for Python to import the contents of the folders as modules.
+In this example, I’ll just create a simple folder structure where we’ll put the Qt.py script in a "vendor" folder and our main app (`myapp.py`) at the top level. The `__init__.py` files makes it possible for Python to import the contents of the folders as modules.
 
 ```
 mypackage/
@@ -70,7 +70,7 @@ If you would rather specify a custom path where you’ll have the package sittin
 >>> site.addsitedir(YOUR_PATH_HERE)  # add path containing myPackage to PYTHONPATH
 ```
 
-For more info on the site package, see [here](https://docs.python.org/2/library/site.html).
+For more info on the `site` package, see [here](https://docs.python.org/2/library/site.html).
 
 For this example, I’m cloning the example [git repository](https://github.com/fredrikaverpil/Qt.py-vendoring/) down onto my local macOS disk drive:
 
@@ -81,7 +81,7 @@ git clone https://github.com/fredrikaverpil/Qt.py-vendoring.git
 
 ## Running your application
 
-Make sure the interpreter you're using has either PySide, PyQt4, PySide2 or PyQt5 installed. Then import myapp from mypackage and run myapp. I’m doing it like this:
+Make sure the interpreter you're using has either PySide, PyQt4, PySide2 or PyQt5 installed. Then import `myapp` from `mypackage` and, finally, run the `myapp.run()` function. I’m doing it like this:
 
 ```python
 >>> import site
