@@ -50,7 +50,7 @@ print(Qt.__binding__)
 # and so on...
 ```
 
-For a complete and working example, please see this git repo I set up: https://github.com/fredrikaverpil/Qt.py-vendoring/
+For a complete and working example, please see this git repo I set up: [https://github.com/fredrikaverpil/Qt.py-vendoring/](https://github.com/fredrikaverpil/Qt.py-vendoring/)
 
 
 ## Installation instructions
