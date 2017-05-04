@@ -4,7 +4,7 @@ title: Vendoring Qt.py
 tags: [python, qtpy, pyside, pyqt]
 ---
 
-How do you know a user doesn't have the wrong version of Qt.py when running your application?  
+How do you know a user doesn't have the wrong version of [Qt.py](https://github.com/mottosso/Qt.py) when running your application?  
 – Simple, you bundle Qt.py with your application. Here's a short write-up on how you could go about doing just that.
 
 <!--more-->
