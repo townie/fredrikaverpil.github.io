@@ -20,7 +20,7 @@ Bundling a third-party application with your own application is sometimes referr
 It’s important to mention you cannot bundle *any* application with your own application. You must look into what you’re actually legally allowed to do. In the case with Qt.py, it’s developed under the MIT license, which means you can do anything you like with it. You can even modify Qt.py, sell your software with it bundled and keep it all closed source. However, speaking as a collaborator on the project, we’re always super happy to hear about you’re doing with Qt.py :)
 
 Curious on different types of licensing?  
-– Check this out: https://choosealicense.com/licenses/
+– Check this out: [https://choosealicense.com/licenses/](https://choosealicense.com/licenses/)
 
 With that out of the way, let’s move on...
 
@@ -70,7 +70,7 @@ If you would rather specify a custom path where you’ll have the package sittin
 >>> site.addsitedir(YOUR_PATH_HERE)  # add path containing myPackage to PYTHONPATH
 ```
 
-For more info on the site package, see here: https://docs.python.org/2/library/site.html
+For more info on the site package, see [here](https://docs.python.org/2/library/site.html).
 
 For this example, I’m cloning the example [git repository](https://github.com/fredrikaverpil/Qt.py-vendoring/) down onto my local macOS disk drive:
 
@@ -105,7 +105,7 @@ True
 
 If you wish to go even further and let users download your package from PyPi via [pip](https://packaging.python.org/installing/), you’ll need to add a `setup.py` file (and optionally a `setup.cfg` file if you e.g. wish to generate a universal wheel) and configure it accordingly. Read more about this over at the [`setuptools` documentation](https://packaging.python.org/distributing/).
 
-Here’s what the `setup.py` in the Qt.py project looks like: https://github.com/mottosso/Qt.py/blob/master/setup.py
+[Here's](https://github.com/mottosso/Qt.py/blob/master/setup.py) the `setup.py` in the Qt.py project as an example.
 
 
 ## How are you distributing Qt.py?
