@@ -111,38 +111,3 @@ If you wish to go even further and let users download your package from PyPi via
 ## How are you distributing Qt.py?
 
 I’m curious on how you make Qt.py available to users. Let me know in the comments below!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Powershell-equivalents of bash commands
-
-#### `man`
-
-This shows the documentation for the command `Get-ChildItem` which is equivalent to `ls`:
-
-```powershell
-Get-Help Get-ChildItem
-```
-
-Tip: You can type `Get-ChildItem -` followed by tab. This will roll through the different arguments that can be used with `Get-ChildItem`.
-
-
-#### `grep`
-
-`Get-Command` lists all available commands, and if we grep "test", only commands with "test" are printed.
-
-```powershell
-Get-Command | Select-String -SimpleMatch test
-```
