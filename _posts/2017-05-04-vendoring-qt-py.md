@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vendoring Qt.py
-tags: [python]
+tags: [python, qtpy, pyside, pyqt]
 ---
 
 How do you know a user doesn’t have the wrong version of Qt.py when running your application?  
