@@ -11,7 +11,7 @@ Here's a bunch of ways you can query render layers in Maya 2017.
 
 ## MEL
 
-```c++
+```
 $renderLayerNames = `renderSetup -q -renderLayers`;
 ```
 
@@ -42,7 +42,7 @@ for render_layer in render_layers:
 ```
 
 
-### Exploring Render Setup functions
+## Exploring Render Setup functions
 
 It seems Autodesk did not create a Render Setup documentation. If you run the following, you're going to get all the callable functions of `render_setup`:
 
