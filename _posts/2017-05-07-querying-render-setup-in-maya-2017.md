@@ -219,6 +219,13 @@ This is what I get with Maya 2017 Update 3:
 
 
 
+## Exploring Render layer functions
+
+Just like how we look inside of the render setup object, we can look into a render layer object and find out what functions are available.
+
+I'll try to add this to this blog post and create another gist in a couple of days.
+
+
 ### What tricks are you using?
 
 Please use the comments below to share any findings! :)
