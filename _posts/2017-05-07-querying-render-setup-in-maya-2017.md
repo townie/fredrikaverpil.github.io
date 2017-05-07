@@ -191,13 +191,13 @@ for member in dir(render_setup):
 # Index
 print('## Index')
 for function_name in sorted(callable_functions):
-        if not function_name.startswith('__'):
+        if not function_name.startswith('_'):
             print('<a href="#' + function_name + '">`' + function_name + '`</a>')
 
 # Functions
 print('# Callable')
 for function_name, function in sorted(callable_functions.items()):
-    if not function_name.startswith('__'):
+    if not function_name.startswith('_'):
         print('## `' + function_name + '`')
 
         print('**`' + function_name + '.__doc__`**')
