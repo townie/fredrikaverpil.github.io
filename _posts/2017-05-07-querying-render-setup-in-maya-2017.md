@@ -4,19 +4,20 @@ title: Querying Render Setup in Maya 2017
 tags: [python, maya]
 ---
 
-Here's a bunch of ways you can query render layers in Maya 2017.
+It seems Autodesk did not create a Render Setup documentation. This is me collecting code snippets and exploring Python functions.
 
 <!--more-->
 
 
-## MEL
+## MEL code snippets
 
 ```
+# Return render layer names without the "rs_" prefix
 $renderLayerNames = `renderSetup -q -renderLayers`;
 ```
 
 
-## Python
+## Python code snippets
 
 
 ### Render layer names
@@ -24,6 +25,7 @@ $renderLayerNames = `renderSetup -q -renderLayers`;
 ```python
 import maya.cmds as cmds
 
+# Return render layer names without the "rs_" prefix
 render_layer_names = cmds.renderSetup(q=True, renderLayers=True)
 ```
 
@@ -36,7 +38,7 @@ render_setup = renderSetup.instance()
 render_layers = render_setup.getRenderLayers()
 
 for render_layer in render_layers:
-    render_layer_name = render_layer.name()
+    render_layer_name = render_layer.name()  # Without "rs_" prefix
     is_renderable = render_layer.isRenderable()
     print(render_layer_name, is_renderable)
 ```
@@ -44,7 +46,7 @@ for render_layer in render_layers:
 
 ## Exploring Render Setup functions
 
-It seems Autodesk did not create a Render Setup documentation. If you run the following, you're going to get all the callable functions of `render_setup`:
+If you run the following, you're going to get all the callable functions of `render_setup`:
 
 ```python
 import maya.app.renderSetup.model.renderSetup as renderSetup
