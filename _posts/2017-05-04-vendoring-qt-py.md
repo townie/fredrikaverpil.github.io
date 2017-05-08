@@ -34,7 +34,7 @@ mypackage/
   vendor/
     __init__.py
     Qt.py
-  __init.py
+  __init__.py
   myapp.py
 ```
 
@@ -106,6 +106,11 @@ True
 If you wish to go even further and let users download your package from [PyPi](https://pypi.python.org/pypi) (via [pip](https://packaging.python.org/installing/)), you'll need to add a `setup.py` file (and optionally a `setup.cfg` file if you e.g. wish to generate a universal wheel) and configure it accordingly. Then I'd recommend you create a wheel and finally upload that to PyPi. Read more about this over at the [`setuptools` documentation](https://packaging.python.org/distributing/).
 
 [Here's](https://github.com/mottosso/Qt.py/blob/master/setup.py) the `setup.py` in the Qt.py project as an example.
+
+
+## Notes
+
+I previously covered vendoring in my [Installing Qt.py (advanced methods)](https://fredrikaverpil.github.io/2016/07/25/installing-qt-py-advanced-methods/) blog post. Check it out for additional info.
 
 
 ## How are you distributing Qt.py?
