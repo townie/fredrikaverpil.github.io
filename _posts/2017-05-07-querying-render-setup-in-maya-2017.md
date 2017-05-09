@@ -243,7 +243,6 @@ Just like how we look inside of the render setup object, we can look into a rend
 ```python
 import maya.app.renderSetup.model.renderSetup as renderSetup
 
-
 def get_callable_attributes(obj):
     """Returns the callable attributes of an object"""
     
@@ -253,31 +252,6 @@ def get_callable_attributes(obj):
         if callable(attr_obj):
             callable_attrs[attr] = attr_obj
     return callable_attrs
-
-
-def print_markdown(callable_attrs):
-    """Print the help of each callable attribute in markdown"""
-
-    # Index
-    print('## Index')
-    for attr_name in sorted(callable_attrs):
-            if not attr_name.startswith('_'):
-                print('<a href="#' + attr_name + '">`' + attr_name + '`</a>')
-
-    # Functions
-    print('## Callable')
-    for attr_name, attr_obj in sorted(callable_attrs.items()):
-        if not attr_name.startswith('_'):
-            print('### `' + attr_name + '`')
-
-            print('`' + str(attr_obj.__class__) + '`')
-                    
-            print('```')
-            print(help(attr_obj))
-            print('```')       
-            
-            print('\n<br><br>\n')
-
 
 render_setup = renderSetup.instance()
 render_layers = render_setup.getRenderLayers()
@@ -402,7 +376,7 @@ typeId
 typeName
 ```
 
-Again, we can access the `help(function)` and see if that helps revealing useful "callables" (such as methods) by re-using the previously used `get_callable_attritbutes()` and `print_markdown()` functions:
+Again, we can access the `help(function)` and see if that helps revealing useful "callables" (such as methods) by re-using the previously used `get_callable_attritbutes()` and `print_markdown()` functions (so make sure those are already sourced):
 
 ```python
 import maya.app.renderSetup.model.renderSetup as renderSetup
