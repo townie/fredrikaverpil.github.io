@@ -395,7 +395,7 @@ And this is the markdown generated, put into a gist:
 
 ## Exploring Render layer collections
 
-We can use the `getCollections()` of a render layer object and look into it as well. Again, assuming you've created a collection in a render layer.
+We can use the `getCollections()` of a render layer object and look into it as well. Again, assuming you've created a collection in a render layer and have the `get_callable_attributes()` and `print_markdown()` functions sourced.
 
 ```python
 import maya.app.renderSetup.model.renderSetup as renderSetup
