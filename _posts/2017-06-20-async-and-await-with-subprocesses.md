@@ -22,7 +22,8 @@ import asyncio
 
 
 async def run_command(*args):
-    """
+    """Run command in subprocess
+    
     Example from:
         http://asyncio.readthedocs.io/en/latest/subprocess.html
     """
@@ -30,6 +31,37 @@ async def run_command(*args):
     process = await asyncio.create_subprocess_exec(
         *args,
         # stdout must a pipe to be accessible as process.stdout
+        stdout=asyncio.subprocess.PIPE)
+
+    # Status
+    print('Started:', args, '(pid = ' + str(process.pid) + ')')
+
+    # Wait for the subprocess to finish
+    stdout, stderr = await process.communicate()
+
+    # Progress
+    if process.returncode == 0:
+        print('Done:', args, '(pid = ' + str(process.pid) + ')')
+    else:
+        print('Failed:', args, '(pid = ' + str(process.pid) + ')')
+
+    # Result
+    result = stdout.decode().strip()
+
+    # Return stdout
+    return result
+
+
+async def run_command_shell(command):
+    """Run command in subprocess (shell)
+    
+    Note:
+        This can be used if you wish to execute e.g. "copy"
+        on Windows, which can only be executed in the shell.
+    """
+    # Create subprocess
+    process = await asyncio.create_subprocess_shell(
+        command,
         stdout=asyncio.subprocess.PIPE)
 
     # Status
@@ -91,6 +123,10 @@ if __name__ == '__main__':
     tasks = []
     for command in commands:
         tasks.append(run_command(*command))
+    
+
+    # # Shell execution example
+    # tasks = [run_command_shell('copy c:/somefile d:/new_file')]
 
     # # List comprehension example
     # tasks = [
