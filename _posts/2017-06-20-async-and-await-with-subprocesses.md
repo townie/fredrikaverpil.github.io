@@ -65,16 +65,16 @@ async def run_command_shell(command):
         stdout=asyncio.subprocess.PIPE)
 
     # Status
-    print('Started:', args, '(pid = ' + str(process.pid) + ')')
+    print('Started:', command, '(pid = ' + str(process.pid) + ')')
 
     # Wait for the subprocess to finish
     stdout, stderr = await process.communicate()
 
     # Progress
     if process.returncode == 0:
-        print('Done:', args, '(pid = ' + str(process.pid) + ')')
+        print('Done:', command, '(pid = ' + str(process.pid) + ')')
     else:
-        print('Failed:', args, '(pid = ' + str(process.pid) + ')')
+        print('Failed:', command, '(pid = ' + str(process.pid) + ')')
 
     # Result
     result = stdout.decode().strip()
