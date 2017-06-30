@@ -71,7 +71,7 @@ I'd like to point out that you don't have to deal with the activate/deactivate s
 
 ### Writing an application for Maya, Nuke and standalone
 
-So, you want to write an application using PySide/PyQt which needs to run in multiple environments such as in Maya, Nuke and even standalone?
+So, you want to write an application using PySide/PyQt which needs to run in multiple environments such as in Maya, Nuke and even as a standalone application?
 
 This is when you need to look into the [Qt.py](https://github.com/mottosso/Qt.py) project!
 
