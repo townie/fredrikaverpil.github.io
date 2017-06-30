@@ -24,7 +24,7 @@ python -c "import PyQt5; print(PyQt5)"  # aaaaaah, how refreshing
 
 ### Manage virtual environments using `conda`
 
-Instead of using e.g. [virtualenv](https://virtualenv.pypa.io/en/stable/) to manage virtual environments, I use conda. Conda can actually manage individual Python distributions and pre-compiled dependencies.
+Instead of using e.g. [virtualenv](https://virtualenv.pypa.io/en/stable/) to manage virtual environments, I use [conda](https://conda.io/docs/using/). Conda can actually manage individual Python distributions and pre-compiled dependencies.
 
 Then I also use the conda distribution of the PyQt5 Python binding, available on [conda-forge](https://conda-forge.github.io). Conda-forge is an open source community-led collection of software for the conda package manager.
 
