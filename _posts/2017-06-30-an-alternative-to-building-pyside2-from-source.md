@@ -8,7 +8,7 @@ I've received questions lately on the issues that people are having while attemp
 
 <!--more-->
 
-### The alternative to building PySide2 from source; PyQt5
+### The alternative to building PySide2 from source; PyQt5 (+ Qt.py)
 
 So you want to use PySide2 but experience issues when building it from source. In case you're really just interested in using Qt indirectly, I might have a solution for you. Meaning you're really just interested in using PySide or PyQt to access Qt5 functionality.
 
@@ -24,7 +24,7 @@ python -c "import PyQt5; print(PyQt5)"  # aaaaaah, how refreshing
 
 ### A note on switching between PyQt5 and PySide2
 
-Eventually, you might want to switch to PySide2 for whatever reason. This is why it could be good to also look into [Qt.py](https://github.com/mottosso/Qt.py). Qt.py offers the possibility to develop regardless of which Qt Python binding you're using and you can change binding down the road.
+Eventually, you might want to switch to PySide2 for whatever reason. This is why it could be good to also look into [Qt.py](https://github.com/mottosso/Qt.py). Qt.py offers the possibility to develop regardless of which Qt Python binding you're using and you can change binding down the road without changing your code.
 
 More on this further down in this blog post...
 
