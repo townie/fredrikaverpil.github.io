@@ -24,9 +24,11 @@ python -c "import PyQt5; print(PyQt5)"  # aaaaaah, how refreshing
 
 ### Manage virtual environments using `conda`
 
-Instead of using e.g. [virtualenv](https://virtualenv.pypa.io/en/stable/) to manage virtual environments, I use conda. Conda can actually manage individual Python distributions and pre-compiled dependencies which is super powerful.
+Instead of using e.g. [virtualenv](https://virtualenv.pypa.io/en/stable/) to manage virtual environments, I use conda. Conda can actually manage individual Python distributions and pre-compiled dependencies.
 
-Then I also use the conda distribution of the PyQt5 Python binding, available on [conda-forge](https://conda-forge.github.io). I prefer using [Miniconda](https://conda.io/miniconda.html), as then it doesn't come pre-bundled with a bunch of packages (which the bigger [Anaconda](https://anaconda.org) distribution does). But regardless of whether you choose Miniconda or Anaconda, they both install the `conda` command, which is what we need.
+Then I also use the conda distribution of the PyQt5 Python binding, available on [conda-forge](https://conda-forge.github.io). Conda-forge is an open source community-led collection of software for the conda package manager.
+
+There are two flavours of conda; [Miniconda](https://conda.io/miniconda.html) and Anaconda. I prefer using Miniconda, as then it doesn't come pre-bundled with a bunch of packages (which the bigger [Anaconda](https://anaconda.org) distribution does). But regardless of whether you choose Miniconda or Anaconda, they both install the `conda` command, which is what we need.
 
 So basically, to get set up with a conda environment loaded with PyQt5, you first need to install conda (I would recommend Miniconda). Here are a couple of examples on how to install that:
 
