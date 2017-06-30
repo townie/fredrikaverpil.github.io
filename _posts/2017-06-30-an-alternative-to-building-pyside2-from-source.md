@@ -69,9 +69,6 @@ Give it a test run:
 I'd like to point out that you don't have to deal with the activate/deactivate stuff in order to use your environment. You just need to specify the absolute full path to the python binary.
 
 
-### 
-
-
 ### Writing an application for Maya, Nuke and standalone
 
 So, you want to write an application using PySide/PyQt which needs to run in multiple environment such as in Maya, Nuke and even standalone?
