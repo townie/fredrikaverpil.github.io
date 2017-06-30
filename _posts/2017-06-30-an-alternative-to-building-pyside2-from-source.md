@@ -22,6 +22,13 @@ pip install PyQt5
 python -c "import PyQt5; print(PyQt5)"  # aaaaaah, how refreshing
 ```
 
+### A note on switching between PyQt5 and PySide2
+
+Eventually, you might want to switch to PySide2 for whatever reason. This is why it could be good to also look into [Qt.py](https://github.com/mottosso/Qt.py). Qt.py offers the possibility to develop regardless of which Qt Python binding you're using and you can change binding down the road.
+
+More on this further down in this blog post...
+
+
 ### Manage virtual environments using `conda`
 
 Instead of using e.g. [virtualenv](https://virtualenv.pypa.io/en/stable/) to manage virtual environments, I use [conda](https://conda.io/docs/using/). Conda can actually manage individual Python distributions and pre-compiled dependencies.
@@ -60,6 +67,9 @@ Give it a test run:
 ```
 
 I'd like to point out that you don't have to deal with the activate/deactivate stuff in order to use your environment. You just need to specify the absolute full path to the python binary.
+
+
+### 
 
 
 ### Writing an application for Maya, Nuke and standalone
