@@ -51,7 +51,7 @@ conda config --add channels conda-forge  # enable conda-forge channel, which con
 conda create --mkdir -p ~/myCondaEnv python=3.6 pyqt  # change the path into where you want your Python env
 ```
 
-Please note the above gives you the most recent PyQt which is 5.6.2-1 as of writing this. You can pin the PyQt version in the `conda create` command so that the next time you install the environment you get the same PyQt version. You can read up on conda to manage your environment by recording its dependencies down into a specifications file (similar to a requirements.txt file).
+Please note the above gives you the most recent PyQt which is 5.6.2-1 as of writing this. You can pin the PyQt version in the `conda create` command so that the next time you install the environment you get the same PyQt version. You can [read up on conda](https://conda.io/docs/using/) to manage your environment by recording its dependencies down into a specifications file (similar to a requirements.txt file).
 
 Give it a test run:
 
