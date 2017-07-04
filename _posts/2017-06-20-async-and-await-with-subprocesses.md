@@ -16,6 +16,7 @@ Note:
 """
 
 import os
+import sys
 import time
 import platform
 import asyncio
@@ -83,8 +84,25 @@ async def run_command_shell(command):
     return result
 
 
-def run_asyncio_commands(tasks):
+def make_chunks(l, n):
+    """Yield successive n-sized chunks from l.
+
+    Note:
+        Taken from https://stackoverflow.com/a/312464
+    """
+    if sys.version_info.major == 2:
+        for i in xrange(0, len(l), n):
+            yield l[i:i + n]
+    else:
+        # Assume Python 3
+        for i in range(0, len(l), n):
+            yield l[i:i + n]
+
+
+def run_asyncio_commands(tasks, max_concurrent_tasks=0):
     """Run tasks asynchronously using asyncio and return results
+
+    If max_concurrent_tasks are set to 0, no limit is applied.
 
     Note:
         By default, Windows uses SelectorEventLoop, which does not support
@@ -92,15 +110,24 @@ def run_asyncio_commands(tasks):
         https://docs.python.org/3/library/asyncio-eventloops.html#windows
     """
 
-    if platform.system() == 'Windows':
-        loop = asyncio.ProactorEventLoop()
-        asyncio.set_event_loop(loop)
-    else:
-        loop = asyncio.get_event_loop()
+    all_results = []
 
-    commands = asyncio.gather(*tasks)  # Unpack list using *
-    results = loop.run_until_complete(commands)
-    loop.close()
+    if max_concurrent_tasks == 0:
+        chunks = [tasks]
+    else:
+        chunks = make_chunks(l=tasks, n=max_concurrent_tasks)
+
+    for tasks_in_chunk in chunks:
+        if platform.system() == 'Windows':
+            loop = asyncio.ProactorEventLoop()
+            asyncio.set_event_loop(loop)
+        else:
+            loop = asyncio.get_event_loop()
+
+        commands = asyncio.gather(*tasks_in_chunk)  # Unpack list using *
+        results = loop.run_until_complete(commands)
+        all_results += results
+        loop.close()
     return results
 
 
@@ -134,10 +161,11 @@ if __name__ == '__main__':
     #     for project in accessible_projects(all_projects)
     # ]
 
-    results = run_asyncio_commands(tasks)
+    results = run_asyncio_commands(tasks, max_concurrent_tasks=20)  # At most 20 parallel tasks
     print('Results:', results)
 
     end = time.time()
-    print('Script ran in', str(end - start), 'seconds')
+    rounded_end = ('{0:.4f}'.format(round(end-start,4)))
+    print('Script ran in about', str(rounded_end), 'seconds')
 
 ```
