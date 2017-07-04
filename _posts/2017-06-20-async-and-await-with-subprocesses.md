@@ -128,7 +128,7 @@ def run_asyncio_commands(tasks, max_concurrent_tasks=0):
         results = loop.run_until_complete(commands)
         all_results += results
         loop.close()
-    return results
+    return all_results
 
 
 if __name__ == '__main__':
