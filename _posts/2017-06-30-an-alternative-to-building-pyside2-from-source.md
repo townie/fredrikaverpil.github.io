@@ -10,7 +10,7 @@ I've received questions lately on the issues that people are having while attemp
 
 ### The alternative to building PySide2 from source; PyQt5 (+ Qt.py)
 
-So you want to use PySide2 but experience issues when building it from source. In case you're really just interested in using Qt5 indirectly, I might have a solution for you. Meaning you're really just interested in using PySide or PyQt to access Qt5 functionality.
+So you want to use PySide2 but experience issues when building it from source. In case you're really just interested in using Qt5 indirectly, I might have a solution for you... meaning; you're really just interested in using PySide or PyQt to access Qt5 functionality.
 
 PySide2 is under the Qt Company umbrella and it would make sense to want to use it (they should know best how to conform to Qt, right?). However, the development of PySide2 seems not yet to be on par with e.g. the PyQt equivalent; PyQt5. Especially not when it comes to just installing it and getting on with life. Hopefully, it will be soon. But in the interim, this blog post could perhaps be of help.
 
@@ -37,7 +37,7 @@ Then I also use the conda distribution of the PyQt5 Python binding, available on
 
 There are two flavours of conda; [Miniconda](https://conda.io/miniconda.html) and [Anaconda](https://anaconda.org). I prefer using Miniconda, as then it doesn't come pre-bundled with a bunch of packages (which the bigger Anaconda distribution has bundled). But regardless of whether you choose Miniconda or Anaconda, they both install the `conda` command, which is what we need.
 
-So basically, to get set up with a conda environment loaded with PyQt5, you first need to install conda (I would recommend Miniconda). Here are a couple of examples on how to install that:
+So basically, to get set up with a conda environment loaded with PyQt5, you first need to install conda. Here are a couple of examples on how to install Miniconda:
 
 ```bash
 # Windows
