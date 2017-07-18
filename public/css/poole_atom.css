@@ -360,6 +360,9 @@ tbody tr:nth-child(odd) th {
 
 /* Donate */
 .donate {
+  display: inline-block;
+  *display: inline; /* for older IE */
+  *zoom: 1; /* for older IE */
   margin-bottom: 4em;
 }
 
