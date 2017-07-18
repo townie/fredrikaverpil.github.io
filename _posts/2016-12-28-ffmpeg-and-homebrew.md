@@ -37,6 +37,6 @@ for i in WILDCARD; do ffmpeg -i $i [options] $i.mp4; done
 
 ### Merge .m4a with .mp4
 
-```
+```bash
 ffmpeg -i video.mp4 -i audio.m4a -codec copy output.mp4
 ```
