@@ -29,3 +29,9 @@ ffmpeg -i MOVIEFILE -vcodec copy -acodec copy output.mp4
 # Replace WILDCARD with e.g. *webm
 for i in WILDCARD; do ffmpeg -i $i -vcodec copy -acodec copy $i.mp4; done
 ```
+
+### Merge .m4a with .mp4
+
+```
+ffmpeg -i video.mp4 -i audio.m4a -c copy output.mp4
+```
