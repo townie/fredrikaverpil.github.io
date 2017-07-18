@@ -42,3 +42,6 @@ node_modules
 
 # Sublime project
 *.sublime-project
+
+# Various
+Gemfile.lock
