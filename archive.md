@@ -5,5 +5,5 @@ title: Archive
 
 {% include filter_by_tag.html %}
 
-{% for post in site.posts %}<span class="mono">{{ post.date | date_to_string }}</span> &raquo; [ {{ post.title }} ]({{ post.url }})  
+{% for post in site.posts %}<span class="mono-archive">{{ post.date | date_to_string }}</span> &raquo; [ {{ post.title }} ]({{ post.url }})  
 {% endfor %}
