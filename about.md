@@ -25,7 +25,7 @@ This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site
 - Video embeds with fluidvids.js
 - Rouge syntax highlighter, `syntax-one-dark.css`
 - Google Analytics
-- Comments (option to use Google+, Disqus or Livefyre)
+- Comments (option to use Google+ or Disqus)
 - Switch to https if accessing site through http
 - Jekyll SEO
 

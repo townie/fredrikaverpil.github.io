@@ -48,6 +48,4 @@ force_https:          true
 comments:
   use_disqus:         true
   use_googleplus:     false
-  use_livefyre:       false
   disqus_shortname:   ffredrikk
-  livefyre_siteid:    379699
