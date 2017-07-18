@@ -369,7 +369,7 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Monospace font for archive */
-.mono-archive {
+.archivemono {
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-size: 1rem;
 }
