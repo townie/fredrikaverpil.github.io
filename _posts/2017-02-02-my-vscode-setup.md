@@ -8,7 +8,7 @@ tags: [python, osx, windows, linux]
 
 This is my [Visual Studio Code](https://code.visualstudio.com) (vscode) setup, with ambitions to create a custom Python IDE.
 
-I previously posted about my Sublime Text 3 (ST3) setup [here]({{ site.baseurl }}2016/05/20/my-sublime-3-setup/), but I've fully moved on to use vscode instead so I figured I'd share this new setup.
+I previously posted about my Sublime Text 3 (ST3) setup [here]({{ site.baseurl }}/2016/05/20/my-sublime-3-setup/), but I've fully moved on to use vscode instead so I figured I'd share this new setup.
 
 <!--more-->
 

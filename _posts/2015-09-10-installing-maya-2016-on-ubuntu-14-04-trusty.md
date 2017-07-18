@@ -4,7 +4,7 @@ title: Installing Maya 2016 on Ubuntu 14.04 (trusty)
 tags: [linux, maya]
 ---
 
-![]({{ site.baseurl }}blog/assets/maya_install/maya_ubuntu.png)
+![]({{ site.baseurl }}/blog/assets/maya_install/maya_ubuntu.png)
 
 It took some trial and error to successfully install and license Maya 2016 in Ubuntu 14.04, and here’s how I did it.
 

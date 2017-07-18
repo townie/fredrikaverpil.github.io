@@ -4,7 +4,7 @@ title: Compiling PySide2 from source
 tags: [pyside, python]
 ---
 
-![]({{ site.baseurl }}blog/assets/pyside2/pyside2_compile.png)
+![]({{ site.baseurl }}/blog/assets/pyside2/pyside2_compile.png)
 
 Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 

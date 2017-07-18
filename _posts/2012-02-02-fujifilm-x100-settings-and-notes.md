@@ -4,7 +4,7 @@ title: Fujifilm X100 settings & notes
 tags: [photography]
 ---
 
-![Fujifilm X100]({{ site.baseurl }}blog/assets/x100/fujifilm_x100.jpg)
+![Fujifilm X100]({{ site.baseurl }}/blog/assets/x100/fujifilm_x100.jpg)
 
 Some facts about the camera which are easy to forget as well some notes to self.
 
@@ -97,7 +97,7 @@ And last but not least I set the focus area size for AF-S to the smallest possib
 
 - [User Manual (PDF)](http://www.fujifilm.com/support/digital_cameras/manuals/pdf/index/x/finepix_x100_manual_01.pdf)
 - [Firmware download](http://www.fujifilm.com/support/digital_cameras/software/firmware/x/finepix_x100/index.html)
-- [Lightroom JPEG Lens Profile (save as...)]({{ site.baseurl }}blog/assets/x100/Fujifilm_FinePix_X100_JPEG.lcp)
+- [Lightroom JPEG Lens Profile (save as...)]({{ site.baseurl }}/blog/assets/x100/Fujifilm_FinePix_X100_JPEG.lcp)
 
 ## Reviews
 
@@ -124,6 +124,6 @@ In Motion Panorama mode, banding appears sometimes. This could be the result of 
 
 Make sure to check out some of my other X100 articles:
 
-- [Fujifilm Finepix X100 – a year in retrospect]({{ site.baseurl }}2012/06/12/the-fujifilm-x100-a-year-in-retrospect/)
-- [Fujifilm Finepix X100 – RAW and film simulation]({{ site.baseurl }}2012/08/04/fujifilm-finepix-x100-raw-and-film-simulation/)
-- [Fujifilm Finepix X100 – LCD/EVF observations]({{ site.baseurl }}2012/08/09/fujifilm-finepix-x100-lcd-evf-observations/)
+- [Fujifilm Finepix X100 – a year in retrospect]({{ site.baseurl }}/2012/06/12/the-fujifilm-x100-a-year-in-retrospect/)
+- [Fujifilm Finepix X100 – RAW and film simulation]({{ site.baseurl }}/2012/08/04/fujifilm-finepix-x100-raw-and-film-simulation/)
+- [Fujifilm Finepix X100 – LCD/EVF observations]({{ site.baseurl }}/2012/08/09/fujifilm-finepix-x100-lcd-evf-observations/)

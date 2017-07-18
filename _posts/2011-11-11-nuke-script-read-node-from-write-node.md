@@ -33,7 +33,7 @@ Download: [readFromWrite.py](https://raw.github.com/fredrikaverpil/nuke/master/s
 - v1.1: Support for filenamefilter callback
 - v1.0: Initial release
 
-Place the Python script in the /scripts dir inside your `NUKE_PATH` (see my [previous post]({{ site.baseurl }}2011/10/28/nuke-63-small-studio-setup-for-windows-osx/) on setting this up). Add the following to your `menu.py`:
+Place the Python script in the /scripts dir inside your `NUKE_PATH` (see my [previous post]({{ site.baseurl }}/2011/10/28/nuke-63-small-studio-setup-for-windows-osx/) on setting this up). Add the following to your `menu.py`:
 
 ```python
 import readFromWrite

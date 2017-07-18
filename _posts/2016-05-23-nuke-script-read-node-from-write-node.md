@@ -19,7 +19,7 @@ See more about these settings a bit further down.
 
 ### Installation instructions
 
-Place the Python script in the /scripts dir inside your `NUKE_PATH` (see my [previous post]({{ site.baseurl }}2011/10/28/nuke-63-small-studio-setup-for-windows-osx/) on setting this up). Add the following to your `menu.py`:
+Place the Python script in the /scripts dir inside your `NUKE_PATH` (see my [previous post]({{ site.baseurl }}/2011/10/28/nuke-63-small-studio-setup-for-windows-osx/) on setting this up). Add the following to your `menu.py`:
 
 ```python
 import readFromWrite

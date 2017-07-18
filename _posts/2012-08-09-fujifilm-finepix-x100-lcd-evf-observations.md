@@ -4,7 +4,7 @@ title: Fujifilm Finepix X100 – LCD/EVF observations
 tags: [photography]
 ---
 
-![]({{ site.baseurl }}blog/assets/x100/x100_observations_01.jpg)
+![]({{ site.baseurl }}/blog/assets/x100/x100_observations_01.jpg)
 
 Some people have asked whether the “Preview Depth of Field” function is different from the regular LCD/EVF view or not (which it is), why the histogram is acting up (which it sometimes can do) and I’ve also seen questions regarding why exposure lock (AE-L) mapped to the AFL/AEL-button does not seem to be happening when pressing the AFL/AEL-button. Here’s an attempt to try and explain why this is so.
 
@@ -46,6 +46,6 @@ Do note that in manual focusing mode (MF) the AFL/AEL-button serves as a single 
 
 Make sure to check out some of my other X100 articles:
 
-- [Fujifilm Finepix X100 – settings & notes]({{ site.baseurl }}2012/02/02/fujifilm-x100-settings-and-notes/)
-- [Fujifilm Finepix X100 – a year in retrospect]({{ site.baseurl }}2012/06/12/the-fujifilm-x100-a-year-in-retrospect/)
-- [Fujifilm Finepix X100 – RAW and film simulation]({{ site.baseurl }}2012/08/04/fujifilm-finepix-x100-raw-and-film-simulation/)
+- [Fujifilm Finepix X100 – settings & notes]({{ site.baseurl }}/2012/02/02/fujifilm-x100-settings-and-notes/)
+- [Fujifilm Finepix X100 – a year in retrospect]({{ site.baseurl }}/2012/06/12/the-fujifilm-x100-a-year-in-retrospect/)
+- [Fujifilm Finepix X100 – RAW and film simulation]({{ site.baseurl }}/2012/08/04/fujifilm-finepix-x100-raw-and-film-simulation/)

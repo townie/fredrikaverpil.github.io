@@ -4,7 +4,7 @@ title: Fujifilm Finepix X100 – RAW and film simulation
 tags: [photography]
 ---
 
-![]({{ site.baseurl }}blog/assets/x100/x100_filmsim_01.jpg)
+![]({{ site.baseurl }}/blog/assets/x100/x100_filmsim_01.jpg)
 
 – Why film simulations are not disabled when shooting RAW?
 
@@ -146,6 +146,6 @@ I can recommend that everyone shooting RAW take a look at [RAW Photo Processor](
 
 Make sure to check out some of my other X100 articles:
 
-- [Fujifilm Finepix X100 – settings & notes]({{ site.baseurl }}2012/02/02/fujifilm-x100-settings-and-notes/)
-- [Fujifilm Finepix X100 – a year in retrospect]({{ site.baseurl }}2012/06/12/the-fujifilm-x100-a-year-in-retrospect/)
-- [Fujifilm Finepix X100 – LCD/EVF observations]({{ site.baseurl }}2012/08/09/fujifilm-finepix-x100-lcd-evf-observations/)
+- [Fujifilm Finepix X100 – settings & notes]({{ site.baseurl }}/2012/02/02/fujifilm-x100-settings-and-notes/)
+- [Fujifilm Finepix X100 – a year in retrospect]({{ site.baseurl }}/2012/06/12/the-fujifilm-x100-a-year-in-retrospect/)
+- [Fujifilm Finepix X100 – LCD/EVF observations]({{ site.baseurl }}/2012/08/09/fujifilm-finepix-x100-lcd-evf-observations/)

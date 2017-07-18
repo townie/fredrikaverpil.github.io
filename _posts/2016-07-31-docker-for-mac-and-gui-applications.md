@@ -46,7 +46,7 @@ open -a XQuartz
 
 In the XQuartz preferences, go to the "Security" tab and make sure you've got "Allow connections from network clients" ticked:
 
-![]({{ site.baseurl }}blog/assets/docker/xquartz_preferences.png)
+![]({{ site.baseurl }}/blog/assets/docker/xquartz_preferences.png)
 
 Again, in e.g. bash, run `xhost` and allow connections from your local machine:
 

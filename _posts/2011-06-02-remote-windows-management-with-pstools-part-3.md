@@ -14,11 +14,11 @@ So now, make up your mind, whether to run the render slave as a service or not. 
 
 Place the PsTools suite of executables somewhere on your machine or preferably on a server that all machines on your network can access (so that it can be run from anywhere).
 
-The scripts below can be downloaded [here]({{ site.baseurl }}blog/assets/pstools/pstools_scripts_vray_slaves.zip).
+The scripts below can be downloaded [here]({{ site.baseurl }}/blog/assets/pstools/pstools_scripts_vray_slaves.zip).
 
 ## Standalone command line window management: Starting the V-Ray slaves
 
-Just like in [the second part of my PsTools article series]({{ site.baseurl }}2011/05/15/remote-windows-management-with-pstools-part-2/), we will need the `batlauncher.bat` script, the `hosts.txt` text file as well as create two additional files:
+Just like in [the second part of my PsTools article series]({{ site.baseurl }}/2011/05/15/remote-windows-management-with-pstools-part-2/), we will need the `batlauncher.bat` script, the `hosts.txt` text file as well as create two additional files:
 
 Contents of `trigger_vray_slaves_start.bat`:
 
@@ -137,4 +137,4 @@ In order to stop the service, a very similar command can be used:
 PsService.exe \\10.0.1.101 -u roger -p rabbit stop "VRayMayaSpawner 2012"
 ```
 
-I have not bothered with explaining how to perform the tasks above on multiple machines in one go. Instead, read about this in [part 1]({{ site.baseurl }}2011/05/13/remote-windows-management-with-pstools-part-1//) of this article series on PsTools.
+I have not bothered with explaining how to perform the tasks above on multiple machines in one go. Instead, read about this in [part 1]({{ site.baseurl }}/2011/05/13/remote-windows-management-with-pstools-part-1//) of this article series on PsTools.

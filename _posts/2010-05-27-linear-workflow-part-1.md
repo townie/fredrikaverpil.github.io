@@ -30,4 +30,4 @@ More reading on gamma and linearism:
 
 So, how do I preserve a linear workflow using Maya and Nuke?
 
-– Check out [part 2]({{ site.baseurl }}2010/06/27/linear-workflow-part-2/) in this thrilling blog series.
+– Check out [part 2]({{ site.baseurl }}/2010/06/27/linear-workflow-part-2/) in this thrilling blog series.

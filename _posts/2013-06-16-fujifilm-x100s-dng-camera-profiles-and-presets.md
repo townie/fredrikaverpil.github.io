@@ -4,13 +4,13 @@ title: Fujifilm X100S camera profiles and presets
 tags: [photography]
 ---
 
-![]({{ site.baseurl }}blog/assets/x100s/xrite_passport.jpg)
+![]({{ site.baseurl }}/blog/assets/x100s/xrite_passport.jpg)
 
 <!--more-->
 
 ### Background
 
-Ever since I replaced [my trusty old X100]({{ site.baseurl }}2012/06/12/the-fujifilm-x100-a-year-in-retrospect/) with its newer incarnation, [the X100S]({{ site.baseurl }}2013/03/08/the-fujifilm-x100s-compared-to-the-x100/), I have been struggling with color rendition in Lightroom, which is my weapon of choice when editing RAW files.
+Ever since I replaced [my trusty old X100]({{ site.baseurl }}/2012/06/12/the-fujifilm-x100-a-year-in-retrospect/) with its newer incarnation, [the X100S]({{ site.baseurl }}/2013/03/08/the-fujifilm-x100s-compared-to-the-x100/), I have been struggling with color rendition in Lightroom, which is my weapon of choice when editing RAW files.
 
 <strong>Update 8<sup>th</sup> April, 2014:</strong> Adobe today released Adobe Camera RAW 8.4 which includes huge improvements on color rendition in Lightroom 5.4 and Photoshop CC (version 14.2.1). This more or less renders my camera profiles obsolete. But do read on if you like…
 
@@ -46,7 +46,7 @@ The fluorescent shot and the tungsten shot were both taken in a dark room with e
 ### Presets
 
 
-[![]({{ site.baseurl }}blog/assets/x100s/presets.jpg)](https://www.flickr.com/photos/fredrik/9051954579/)  
+[![]({{ site.baseurl }}/blog/assets/x100s/presets.jpg)](https://www.flickr.com/photos/fredrik/9051954579/)  
 *Presets comparison. Click image for larger version.*
 
 

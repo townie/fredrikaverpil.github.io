@@ -4,7 +4,7 @@ title: Generating a spherical HDR image with V-Ray for Maya
 tags: [vray, maya]
 ---
 
-![]({{ site.baseurl }}blog/assets/vray/vray_spherical_hdr_01.png)
+![]({{ site.baseurl }}/blog/assets/vray/vray_spherical_hdr_01.png)
 
 <!--more-->
 
@@ -15,7 +15,7 @@ tags: [vray, maya]
 
 ## Sample scene
 
-Example Maya scene provided [here]({{ site.baseurl }}blog/assets/vray/spherical_hdr_gen_maya.ma) (save as); a simple cube environment, an area light and a camera.
+Example Maya scene provided [here]({{ site.baseurl }}/blog/assets/vray/spherical_hdr_gen_maya.ma) (save as); a simple cube environment, an area light and a camera.
 
-![]({{ site.baseurl }}blog/assets/vray/vray_spherical_hdr_02.png)
+![]({{ site.baseurl }}/blog/assets/vray/vray_spherical_hdr_02.png)
 *Sample Maya scene.*

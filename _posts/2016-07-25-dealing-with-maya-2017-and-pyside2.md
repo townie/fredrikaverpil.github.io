@@ -4,7 +4,7 @@ title: Dealing with Maya 2017 and PySide2
 tags: [python, maya, qtpy, pyside, pyqt]
 ---
 
-![]({{ site.baseurl }}blog/assets/maya2017/no_pyside.png)
+![]({{ site.baseurl }}/blog/assets/maya2017/no_pyside.png)
 
 [Maya 2017](http://www.autodesk.com/products/maya/overview) was released today and with it comes a big change; PySide (and PyQt4) no longer works with Maya.
 
@@ -107,4 +107,4 @@ else:
 
 There are also a set of rules which would help you during development. Please have a look at the project's [README](https://github.com/mottosso/Qt.py#rules) for more details.
 
-In case you're interested in reading more on Qt.py, check out my guide on [Developing with Qt.py]({{ site.baseurl }}2016/07/25/developing-with-qt-py/).
+In case you're interested in reading more on Qt.py, check out my guide on [Developing with Qt.py]({{ site.baseurl }}/2016/07/25/developing-with-qt-py/).
