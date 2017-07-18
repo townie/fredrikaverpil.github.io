@@ -10,7 +10,7 @@ title:                Fredrik Averpil
 tagline:              My personal blog
 description:          My personal blog – on Python development, 3D graphics, compositing and photography.
 url:                  https://fredrikaverpil.github.io
-baseurl:              {{ site.url }}/
+baseurl:
 paginate:             5
 name:                 Fredrik Averpil
 
