@@ -8,12 +8,11 @@ Quick note on how to install ffmpeg (using Homebrew) for mp4 format converisons.
 
 <!--more-->
 
-This requires Homebrew.
-
 
 ### Install ffmpeg
 
-```
+```bash
+# OS X, using Homebrew
 brew install ffmpeg --with-fdk-aac --with-sdl2 --with-freetype --with-libass --with-libvorbis --with-libvpx --with-opus --with-x265
 ```
 
