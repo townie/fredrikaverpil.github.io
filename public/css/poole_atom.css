@@ -367,6 +367,11 @@ tbody tr:nth-child(odd) th {
   border-radius: 3px;
 }
 
+/* Monospace font */
+.mono {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
 /* Related posts */
 .related {
   padding-top: 2rem;
