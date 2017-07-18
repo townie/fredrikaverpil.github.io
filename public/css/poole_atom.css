@@ -358,6 +358,9 @@ tbody tr:nth-child(odd) th {
   color: #9da5b4;
 }
 
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 /* Donate */
 .donate {
   display: block;
