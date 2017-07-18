@@ -358,6 +358,11 @@ tbody tr:nth-child(odd) th {
   color: #9da5b4;
 }
 
+/* Donate */
+.donate {
+  margin-bottom: 4em;
+}
+
 /* Related posts */
 .related {
   padding-top: 2rem;
