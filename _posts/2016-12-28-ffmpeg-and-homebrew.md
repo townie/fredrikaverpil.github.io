@@ -9,28 +9,34 @@ Quick note on how to install ffmpeg (using Homebrew) for mp4 format converisons.
 <!--more-->
 
 
-### Install ffmpeg
+### .webm and .mp4
 
 ```bash
-# OS X, using Homebrew
+# Install (macOS using Homebrew)
 brew install ffmpeg --with-fdk-aac --with-sdl2 --with-freetype --with-libass --with-libvorbis --with-libvpx --with-opus --with-x265
+
+# .webm -> .mp4
+ffmpeg -i input.webm -codec copy output.mp4
+
+# .mp4 -> .webm
+ffmpeg -i input.mp4 -strict -2 output.webm
 ```
 
-### Convert to .mp4 without re-encoding
+### Verify ffmpeg build configuration
 
-```
-ffmpeg -i MOVIEFILE -vcodec copy -acodec copy output.mp4
+```bash
+ffmpeg -buildconf
 ```
 
 ### Convert all files in the same directory to .mp4
 
 ```bash
 # Replace WILDCARD with e.g. *webm
-for i in WILDCARD; do ffmpeg -i $i -vcodec copy -acodec copy $i.mp4; done
+for i in WILDCARD; do ffmpeg -i $i [options] $i.mp4; done
 ```
 
 ### Merge .m4a with .mp4
 
 ```
-ffmpeg -i video.mp4 -i audio.m4a -c copy output.mp4
+ffmpeg -i video.mp4 -i audio.m4a -codec copy output.mp4
 ```
