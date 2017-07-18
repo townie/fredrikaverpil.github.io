@@ -4,7 +4,7 @@ title: Docker for Mac and GUI applications
 tags: [docker]
 ---
 
-![]({{ site.baseurl }}blog/assets/docker/firefox.png)
+![]({{ site.baseurl }}/blog/assets/docker/firefox.png)
 
 A quick guide on how to run containers requiring a GUI with Docker for Mac and XQuartz.
 
