@@ -4,7 +4,7 @@ title: Notes on ffmpeg
 tags: [osx, video]
 ---
 
-Quick note on how to install ffmpeg (using Homebrew) and various mp4 conversion commands.
+Quick note on how to install ffmpeg (using Homebrew) and various mp4 conversion commands on Unix.
 
 <!--more-->
 
