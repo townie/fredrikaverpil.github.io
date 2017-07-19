@@ -10,7 +10,8 @@ Throughout the years I have been spending my professional life within the digita
 ## Get in touch!
 
 E-mail: fredrik@averpil.com  
-Twitter: [{{ site.twitter.username }}]({{ site.twitter.url }})  
+Github: [https://github.com/fredrikaverpil](github.com/fredrikaverpil)  
+LinkedIn: [https://linkedin.com/in/fredrik](linkedin.com/in/fredrik)  
 Mobile: +46.708.12.12.75
 
 ## Blog info
