@@ -1,3 +1,8 @@
+---
+layout: null
+title: null
+---
+
 # Full instructions at https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-1-create-a-local-repository-for-your-jekyll-site
 
 # Install bundler (requires Ruby 2.x.x)
