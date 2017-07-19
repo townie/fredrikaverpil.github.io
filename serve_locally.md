@@ -5,8 +5,8 @@ gem install bundler
 
 # Set up Gemfile and install
 cd GITHUB_PAGES_REPO
-echo source 'https://rubygems.org' > Gemfile
-echo gem 'github-pages', group: :jekyll_plugins >> Gemfile
+echo "source 'https://rubygems.org'" > Gemfile
+echo "gem 'github-pages', group: :jekyll_plugins" >> Gemfile
 bundle install
 
 # Serve website
