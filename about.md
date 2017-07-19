@@ -9,7 +9,8 @@ Throughout the years I have been spending my professional life within the digita
 
 ## Get in touch!
 
-fredrik@averpil.com | +46-708-121275  
+fredrik@averpil.com  
++46-708-121275  
 [github.com/fredrikaverpil](https://github.com/fredrikaverpil)  
 [linkedin.com/in/fredrik](https://linkedin.com/in/fredrik)
 
