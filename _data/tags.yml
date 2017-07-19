@@ -40,6 +40,8 @@ pyside:
   name: PySide
 qtpy:
   name: Qt.py
+video:
+  name: Video
 vray:
   name: V-Ray
 windows:
