@@ -40,3 +40,10 @@ for i in WILDCARD; do ffmpeg -i $i [options] $i.mp4; done
 ```bash
 ffmpeg -i video.mp4 -i audio.m4a -codec copy output.mp4
 ```
+
+### Extract JPG at given time from video
+
+```bash
+# Enter time in hh:mm:ss
+ffmpeg -ss 00:00:46 -i input.mp4 -vframes 1 -q:v 2 output.jpg
+```
