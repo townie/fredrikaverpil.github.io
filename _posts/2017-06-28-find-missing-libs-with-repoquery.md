@@ -4,7 +4,7 @@ title: Find missing libs with repoquery
 tags: [linux]
 ---
 
-Not sure how I didn't learn about this until today. Anyways, if you end up with missing libs on CentOS/RedHat, use `repoquery` to find missing libs.
+Not sure how I didn't learn about this until today. Anyways, if you end up with missing libs on CentOS/RedHat, use [repoquery](http://yum.baseurl.org/wiki/RepoQuery) to find missing libs.
 
 <!--more-->
 
