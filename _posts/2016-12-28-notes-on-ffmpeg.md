@@ -20,14 +20,14 @@ brew uninstall ffmpeg
 # Install (macOS using Homebrew)
 brew install ffmpeg --with-fdk-aac --with-sdl2 --with-freetype --with-libass --with-libvorbis --with-libvpx --with-opus --with-x265
 
+# Verify ffmpeg build configuration
+ffmpeg -buildconf
+
 # .webm -> .mp4
 ffmpeg -i input.webm -codec copy output.mp4
 
 # .mp4 -> .webm
 ffmpeg -i input.mp4 -strict -2 output.webm
-
-# Verify ffmpeg build configuration
-ffmpeg -buildconf
 ```
 
 
