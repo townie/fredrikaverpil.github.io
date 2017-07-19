@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ffmpeg and Homebrew
+title: Notes on ffmpeg
 tags: [osx, video]
 ---
 
