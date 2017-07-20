@@ -10,9 +10,11 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
 [Maya 2017](http://www.autodesk.com/products/maya) shipped with [PySide2](https://wiki.qt.io/PySide2) (2.0.0~alpha0) built against [Qt](https://www.qt.io/developers/) 5.6.1, so that's the version of Qt I'm using in this guide as well as 64-bit [Python](https://www.python.org).
 
-Note #1: Before reading on, you may want to skip this alltogether and go directly to my [pre-built Python wheels](https://github.com/fredrikaverpil/pyside2-wheels).
+**Note:** Before reading on, you may want to skip this alltogether and go directly to my [pre-built Python wheels](https://github.com/fredrikaverpil/pyside2-wheels).
 
-Note #2: This article was edited on 2017-01-19 to clarify the state of Python 2.x/3.5 with PySide2.
+**Update 2017-01-19:** Added clarification; the state of Python 2.x/3.5 with PySide2.
+
+**Update 2017-07-20:** In order to successfully build wheels against Qt5.6, you need to make sure you're using the `5.6` branch of the `pyside-setup` repository and *not* the `dev` branch.
 
 <!--more-->
 
