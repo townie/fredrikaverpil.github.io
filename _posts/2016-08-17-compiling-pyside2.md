@@ -14,7 +14,9 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
 **Update 2017-01-19:** Added clarification; the state of Python 2.x/3.5 with PySide2.
 
-**Update 2017-07-20:** In order to successfully build wheels against Qt5.6, you need to make sure you're using the `5.6` branch of the `pyside-setup` repository and *not* the `dev` branch.
+**Update 2017-07-19:** In order to successfully build wheels against Qt5.6, you need to make sure you're using the `5.6` branch of the `pyside-setup` repository and *not* the `dev` branch.
+
+**Update 2017-07-20:** Most build instructions are out of date. Please refer to the most up to date instructions [here](https://github.com/fredrikaverpil/pyside2-wheels).
 
 <!--more-->
 
