@@ -8,6 +8,11 @@ I've received questions lately on the issues that people are having while attemp
 
 <!--more-->
 
+### A formal request to provide official PySide2 wheels
+
+Before we start, make sure to cast a friendly vote [here](https://bugreports.qt.io/browse/PYSIDE-558) to have The Qt Company (QtC) prioritize the development of official PySide2 wheels.
+
+
 ### The alternative to building PySide2 from source; PyQt5 (+ Qt.py)
 
 So you want to use PySide2 but experience issues when building it from source. In case you're really just interested in using Qt5 indirectly, I might have a solution for you... meaning; you're really just interested in using PySide or PyQt to access Qt5 functionality.
