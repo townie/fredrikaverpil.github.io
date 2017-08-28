@@ -20,6 +20,8 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
 **Update 2017-07-20:** Most build instructions are out of date. Please refer to the most up to date instructions [here](https://github.com/fredrikaverpil/pyside2-wheels).
 
+**Update 2017-08-28:** You may want to just `conda install pyside2`, see [here](https://github.com/conda-forge/pyside2-feedstock) for more info.
+
 <!--more-->
 
 ## Contents
