@@ -68,7 +68,7 @@ Start-Process "${HOME}\Downloads\Miniconda3-latest-Windows-x86_64.exe" "/S /D=${
 
 ## Install conda environment
 
-This is the same for all platforms, given that `conda` exists on `$PATH`.
+This is the same for all platforms, given that `conda` exists on `$PATH` and that you're using Powershell if on Windows.
 
 ```bash
 # Enable conda-forge
