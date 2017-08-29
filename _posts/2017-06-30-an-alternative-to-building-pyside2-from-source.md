@@ -6,7 +6,15 @@ tags: [python, pyside, pyqt, qt.py]
 
 I've received questions lately on the issues that people are having while attempting to build PySide2 on Windows, macOS and Linux. Instead of building PySide2, there's actually a workaround which works just as well for some people...
 
+**Update 2018-08-28**: PySide2 can now be installed with `conda`:
+
+```bash
+conda config --add channels conda-forge
+conda install pyside2
+```
+
 <!--more-->
+
 
 ### A formal request to provide official PySide2 wheels
 
