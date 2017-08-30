@@ -6,7 +6,7 @@ tags: [python, pyside]
 
 This is reminder-to-self about how to get set up and contribute to PySide2 using Gerrit. It could also be a fun read "on the bus" before actually setting this up yourself, to get an overview on what's required to get up and running with Gerrit.
 
-However, I discourage you following my personal notes without reading through the official docs when you actually get set up yourself.
+However, I discourage you following my personal notes without reading through the official docs when you actually get set up yourself. Anything can get changed in the official docs at any time, which isn't reflected here. The point of this post is just to make a note-to-self and offer a "bigger picture" before actually digging in.
 
 <!--more-->
 
