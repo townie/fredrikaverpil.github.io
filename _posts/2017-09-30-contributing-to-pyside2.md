@@ -79,7 +79,7 @@ cd ~/code/repos/_gerrit/pyside-setup
 git config --local commit.template ~/code/repos/_gerrit/qt5/commit-template
 ```
 
-**Note**: Again, since all `git config` commands are local to the `pyside-setup` repository, you probably also want to apply them to the `qt5` repository.
+**Note**: Again, since all `git config` commands are local to the `pyside-setup` repository, you probably also want to apply them to the `qt5` repository you just cloned.
 
 
 ### Git branches and submodules
